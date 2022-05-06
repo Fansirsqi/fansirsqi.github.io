@@ -241,7 +241,18 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+    background-color: #845EC2;
+    /* background: white;
+    background: linear-gradient(
+        to right bottom, 
+        rgba(133, 133, 133, 1),
+        rgba(255,255,255,0.1)
+    ); */
+    /* background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(255,94,247,1) 17%, rgba(2,245,255,1) 100%);
+    background-size: auto;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    background-color: rgba(0,0,0,0); */
 }
 
 .text-color {
@@ -249,7 +260,7 @@ mark {
 }
 
 .white-color {
-    color: #fff;
+    color: rgb(255, 255, 255);
 }
 
 .progress-bar {
@@ -283,6 +294,7 @@ header .nav-transparent {
     background-color: transparent !important;
     background-image: none;
     box-shadow: none;
+    color: rgb(69, 69, 69);
 }
 
 header nav .brand-span {
