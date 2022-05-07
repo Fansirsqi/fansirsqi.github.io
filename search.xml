@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>test</title>
+      <link href="/2022/05/07/linux-xi-tong-tong-guo-openssl-ming-ling-sheng-cheng-ssl-zheng-shu/"/>
+      <url>/2022/05/07/linux-xi-tong-tong-guo-openssl-ming-ling-sheng-cheng-ssl-zheng-shu/</url>
+      
+        <content type="html"><![CDATA[<h3 id="Linux-系统通过openssl命令生成ssl-证书。"><a href="#Linux-系统通过openssl命令生成ssl-证书。" class="headerlink" title="Linux 系统通过openssl命令生成ssl 证书。"></a>Linux 系统通过openssl命令生成ssl 证书。</h3><p>首先执行如下命令生成一个key</p><p><code>openssl genrsa -des3 -out ssl.key 1024</code></p><p>然后他会要求你输入这个key文件的密码。不推荐输入。因为以后要给nginx使用。每次reload nginx配置时候都要你验证这个PAM密码的。<br>由于生成时候必须输入密码。你可以输入后 再删掉。</p><p><code>mv ssl.key xxx.key openssl rsa -in xxx.key -out ssl.key rm xxx.key</code></p><p>然后根据这个key文件生成证书请求文件</p><p><code>openssl req -new -key ssl.key -out ssl.csr</code></p><p>以上命令生成时候要填很多东西 一个个看着写吧（可以随便，毕竟这是自己生成的证书）</p><p>最后根据这2个文件生成crt证书文件</p><p><code>openssl x509 -req -days 365 -in ssl.csr -signkey ssl.key -out ssl.crt</code></p><p>这里365是证书有效期 。这个大家随意。最后使用到的文件是key和crt文件。</p><p>如果需要用pfx 可以用以下命令生成</p><p><code>openssl pkcs12 -export -inkey ssl.key -in ssl.crt -out ssl.pfx</code></p><p>在需要使用证书的nginx配置文件的server节点里加入以下配置就可以了。</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">server <span class="token punctuation">{</span>listen <span class="token number">443</span><span class="token punctuation">;</span>server_name bbs.nau.edu.cn<span class="token punctuation">;</span><span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token variable">$uri</span> <span class="token operator">!</span>~ *<span class="token string">"/logging.php$"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>rewrite ^/<span class="token punctuation">(</span>.*<span class="token punctuation">)</span>$ <span class="token punctuation">[</span>http://<span class="token variable">$host</span>/<span class="token variable">$1</span><span class="token punctuation">]</span><span class="token punctuation">(</span>http://%24host/%241<span class="token punctuation">)</span> redirect<span class="token punctuation">;</span><span class="token punctuation">}</span>ssl on<span class="token punctuation">;</span>ssl_certificate /home/ssl.crt<span class="token punctuation">;</span>ssl_certificate_key /home/ssl.key<span class="token punctuation">;</span>ssl_session_timeout 5m<span class="token punctuation">;</span>ssl_protocols SSLv2 SSLv3 TLSv1<span class="token punctuation">;</span>ssl_ciphers ALL:<span class="token operator">!</span>ADH:<span class="token operator">!</span>EXPORT56:RC4+RSA:+HIGH:+MEDIUM:+LOW:+SSLv2:+EXP<span class="token punctuation">;</span>ssl_prefer_server_ciphers on<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> SSL </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>typora-vue-theme 示例</title>
       <link href="/2018/09/07/hello-world/"/>
       <url>/2018/09/07/hello-world/</url>
