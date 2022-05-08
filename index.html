@@ -543,80 +543,6 @@
                     
 
                     
-                    <div id="recommend-sections" class="recommend">
-                        
-
-
-
-
-
-<div class="title"><i class="far fa-thumbs-up"></i>&nbsp;&nbsp;推荐文章</div>
-
-<div class="row">
-
-    
-    
-    <div class="col s12 m6" >
-        
-             <div class="post-card" style="background-image: url('/medias/images/03.jpg')">
-        
-            <div class="post-body">
-                <div class="post-categories">
-                    
-                        
-                            <a href="/categories/Markdown/" class="category">Markdown</a>
-                        
-                    
-                </div>
-                <a href="/2018/09/07/hello-world/">
-                    <h3 class="post-title">typora-vue-theme 示例</h3>
-                </a>
-                <p class="post-description">
-                    
-                        这是你自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要
-                    
-                </p>
-                <a href="/2018/09/07/hello-world/" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #FF5E3A 0%, #FF2A68 100%)" target="_blank">
-                    <i class="icon far fa-eye fa-fw"></i>阅读更多
-                </a>
-            </div>
-        </div>
-    </div>
-    
-    
-    <div class="col s12 m6" >
-        
-             <div class="post-card" style="background-image: url('/medias/images/05.jpg')">
-        
-            <div class="post-body">
-                <div class="post-categories">
-                    
-                        
-                            <a href="/categories/Linux/" class="category">Linux</a>
-                        
-                    
-                </div>
-                <a href="/2022/05/07/linux-xi-tong-tong-guo-openssl-ming-ling-sheng-cheng-ssl-zheng-shu/">
-                    <h3 class="post-title">test</h3>
-                </a>
-                <p class="post-description">
-                    
-                        这是你自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要
-                    
-                </p>
-                <a href="/2022/05/07/linux-xi-tong-tong-guo-openssl-ming-ling-sheng-cheng-ssl-zheng-shu/" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #EF4DB6 0%, #C643FC 100%)" target="_blank">
-                    <i class="icon far fa-eye fa-fw"></i>阅读更多
-                </a>
-            </div>
-        </div>
-    </div>
-    
-
-</div>
-
-
-                    </div>
-                    
                 </div>
             </div>
         </div>
@@ -1056,6 +982,14 @@ $(function () {
     
 
     <!-- 雪花特效 -->
+     
+        <script type="text/javascript">
+            // 只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            if (windowWidth > 768) {
+                document.write('<script type="text/javascript" src="/libs/others/snow.js"><\/script>');
+            }
+        </script>
     
 
     <!-- 鼠标星星特效 -->
@@ -1098,6 +1032,11 @@ $(function () {
 
     <!--腾讯兔小巢-->
     
+    
+    <script type="text/javascript" color="0,0,255"
+        pointColor="0,0,255" opacity='0.7'
+        zIndex="-1" count="99"
+        src="/libs/background/canvas-nest.js"></script>
     
 
     
