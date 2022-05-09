@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-05-09T02:37:27.975Z</updated>
+  <updated>2022-05-09T04:00:30.185Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/2022/05/09/what-is-table-sql/"/>
     <id>http://example.com/2022/05/09/what-is-table-sql/</id>
     <published>2022-05-09T01:55:53.125Z</published>
-    <updated>2022-05-09T02:37:27.975Z</updated>
+    <updated>2022-05-09T04:00:30.185Z</updated>
     
     
       
@@ -49,7 +49,7 @@
     <link href="http://example.com/2022/05/09/soft-test-mean/"/>
     <id>http://example.com/2022/05/09/soft-test-mean/</id>
     <published>2022-05-09T01:55:53.122Z</published>
-    <updated>2022-05-09T02:27:18.678Z</updated>
+    <updated>2022-05-09T04:00:53.955Z</updated>
     
     
       
@@ -81,7 +81,7 @@
     <link href="http://example.com/2022/05/09/linux-note/"/>
     <id>http://example.com/2022/05/09/linux-note/</id>
     <published>2022-05-09T01:55:53.118Z</published>
-    <updated>2022-05-09T02:24:37.285Z</updated>
+    <updated>2022-05-09T04:01:14.797Z</updated>
     
     
       
@@ -116,7 +116,7 @@
     <link href="http://example.com/2022/05/09/software-development-process-software-testing-process/"/>
     <id>http://example.com/2022/05/09/software-development-process-software-testing-process/</id>
     <published>2022-05-09T01:55:53.113Z</published>
-    <updated>2022-05-09T02:29:43.903Z</updated>
+    <updated>2022-05-09T04:00:44.031Z</updated>
     
     
       
@@ -143,7 +143,7 @@
     <link href="http://example.com/2022/05/09/how-to-use-git/"/>
     <id>http://example.com/2022/05/09/how-to-use-git/</id>
     <published>2022-05-09T01:55:53.112Z</published>
-    <updated>2022-05-09T02:24:45.492Z</updated>
+    <updated>2022-05-09T04:01:23.012Z</updated>
     
     
       
@@ -195,7 +195,7 @@
     <link href="http://example.com/2021/11/01/2021-11-01/"/>
     <id>http://example.com/2021/11/01/2021-11-01/</id>
     <published>2021-10-31T16:00:00.000Z</published>
-    <updated>2022-05-09T02:29:07.589Z</updated>
+    <updated>2022-05-09T04:01:50.015Z</updated>
     
     
       
@@ -226,7 +226,7 @@
     <link href="http://example.com/2021/10/28/2021-10-28/"/>
     <id>http://example.com/2021/10/28/2021-10-28/</id>
     <published>2021-10-27T16:00:00.000Z</published>
-    <updated>2022-05-09T02:29:19.899Z</updated>
+    <updated>2022-05-09T04:01:53.599Z</updated>
     
     
     <summary type="html">&lt;h3 id=&quot;1-软件测试流程（详细）&quot;&gt;&lt;a href=&quot;#1-软件测试流程（详细）&quot; class=&quot;headerlink&quot; title=&quot;1. 软件测试流程（详细）&quot;&gt;&lt;/a&gt;1. 软件测试流程（详细）&lt;/h3&gt;&lt;p&gt;   作需求分析-需求评审-编写测试计划-设计测试方案-编写用例测试-评审用例-搭建测试环境，准备测试数据-冒烟测试-执行用例-提交bug-回归测试-编写测试报告&lt;/p&gt;
@@ -256,7 +256,7 @@
     <link href="http://example.com/2021/10/28/assembly-language-note/"/>
     <id>http://example.com/2021/10/28/assembly-language-note/</id>
     <published>2021-10-27T16:00:00.000Z</published>
-    <updated>2022-05-09T02:30:50.194Z</updated>
+    <updated>2022-05-09T04:01:36.144Z</updated>
     
     
       
@@ -286,7 +286,7 @@
     <link href="http://example.com/2021/10/26/adb-info/"/>
     <id>http://example.com/2021/10/26/adb-info/</id>
     <published>2021-10-25T16:00:00.000Z</published>
-    <updated>2022-05-09T02:19:47.370Z</updated>
+    <updated>2022-05-09T04:00:17.455Z</updated>
     
     
       
@@ -313,7 +313,7 @@
     <link href="http://example.com/2021/10/26/to-packages-with-extensions/"/>
     <id>http://example.com/2021/10/26/to-packages-with-extensions/</id>
     <published>2021-10-25T16:00:00.000Z</published>
-    <updated>2022-05-09T02:33:38.426Z</updated>
+    <updated>2022-05-09T04:00:37.543Z</updated>
     
     
       
@@ -338,7 +338,7 @@
     <link href="http://example.com/2021/10/23/navicat-unknow-error-to-mysql/"/>
     <id>http://example.com/2021/10/23/navicat-unknow-error-to-mysql/</id>
     <published>2021-10-22T16:00:00.000Z</published>
-    <updated>2022-05-09T02:26:23.349Z</updated>
+    <updated>2022-05-09T04:01:09.928Z</updated>
     
     
       
@@ -368,7 +368,7 @@
     <link href="http://example.com/2021/10/19/softtest-listen/"/>
     <id>http://example.com/2021/10/19/softtest-listen/</id>
     <published>2021-10-18T16:00:00.000Z</published>
-    <updated>2022-05-09T02:27:38.361Z</updated>
+    <updated>2022-05-09T04:00:48.482Z</updated>
     
     
       
@@ -395,7 +395,7 @@
     <link href="http://example.com/2021/10/18/npm-warn/"/>
     <id>http://example.com/2021/10/18/npm-warn/</id>
     <published>2021-10-17T16:00:00.000Z</published>
-    <updated>2022-05-09T02:32:33.053Z</updated>
+    <updated>2022-05-09T04:01:04.692Z</updated>
     
     
       
@@ -423,7 +423,7 @@
     <link href="http://example.com/2018/09/07/hello-world/"/>
     <id>http://example.com/2018/09/07/hello-world/</id>
     <published>2018-09-07T01:25:00.000Z</published>
-    <updated>2022-05-07T16:27:23.170Z</updated>
+    <updated>2022-05-09T04:01:30.493Z</updated>
     
     
       
