@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-05-09T04:00:30.185Z</updated>
+  <updated>2022-05-10T09:18:48.482Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,99 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SQL Server命令以Mac OS，MySQL为例</title>
+    <link href="http://example.com/2022/05/10/sql-server-ming-ling/"/>
+    <id>http://example.com/2022/05/10/sql-server-ming-ling/</id>
+    <published>2022-05-10T08:48:21.379Z</published>
+    <updated>2022-05-10T09:18:48.482Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、基础命令&quot;&gt;&lt;a href=&quot;#一、基础命令&quot; class=&quot;headerlink&quot; title=&quot;一、基础命令&quot;&gt;&lt;/a&gt;&lt;strong&gt;一、基础命令&lt;/strong&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;1. 启动服务&lt;/strong&gt;&lt;/p&gt;
+&lt;pre</summary>
+        
+      
+    
+    
+    
+    <category term="MYSQL" scheme="http://example.com/categories/MYSQL/"/>
+    
+    
+    <category term="MYSQL" scheme="http://example.com/tags/MYSQL/"/>
+    
+    <category term="SQL命令" scheme="http://example.com/tags/SQL%E5%91%BD%E4%BB%A4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>性能测试总体流程</title>
+    <link href="http://example.com/2022/05/10/xing-neng-ce-shi-zong-ti-liu-cheng/"/>
+    <id>http://example.com/2022/05/10/xing-neng-ce-shi-zong-ti-liu-cheng/</id>
+    <published>2022-05-10T08:48:03.149Z</published>
+    <updated>2022-05-10T09:16:59.903Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;收集需求&lt;/li&gt;
+&lt;li&gt;开发测试脚本&lt;/li&gt;
+&lt;li&gt;执行测试&lt;/li&gt;
+&lt;li&gt;分析及报告&lt;/li&gt;
+&lt;li&gt;性能优化&lt;/li&gt;
+&lt;li&gt;执行测试&lt;/li&gt;
+&lt;li&gt;分析及报告&lt;/li&gt;
+&lt;li&gt;重复以上步骤…&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3</summary>
+        
+      
+    
+    
+    
+    <category term="软件测试" scheme="http://example.com/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
+    
+    
+    <category term="性能测试" scheme="http://example.com/tags/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/"/>
+    
+    <category term="测试性能流程" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E6%80%A7%E8%83%BD%E6%B5%81%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>postaman断言</title>
+    <link href="http://example.com/2022/05/09/postman-duan-yan/"/>
+    <id>http://example.com/2022/05/09/postman-duan-yan/</id>
+    <published>2022-05-09T05:01:49.807Z</published>
+    <updated>2022-05-09T05:04:24.435Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;strong&gt;介绍断言之前，我们先测试1个接口：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;接口地址：&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="postaman" scheme="http://example.com/categories/postaman/"/>
+    
+    
+    <category term="软件测试" scheme="http://example.com/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
+    
+    <category term="posatman" scheme="http://example.com/tags/posatman/"/>
+    
+  </entry>
   
   <entry>
     <title>表怎么来的</title>
