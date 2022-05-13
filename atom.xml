@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-05-10T09:18:48.482Z</updated>
+  <updated>2022-05-13T10:25:51.003Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,88 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>ubuntu修改root用户密码</title>
+    <link href="http://example.com/2022/05/13/ubuntu-xiu-gai-root-yong-hu-mi-ma/"/>
+    <id>http://example.com/2022/05/13/ubuntu-xiu-gai-root-yong-hu-mi-ma/</id>
+    <published>2022-05-12T16:00:00.000Z</published>
+    <updated>2022-05-13T10:25:51.003Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;ubuntu修改root用户密码&quot;&gt;&lt;a href=&quot;#ubuntu修改root用户密码&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Ubuntu" scheme="http://example.com/categories/Ubuntu/"/>
+    
+    
+    <category term="Ubuntu" scheme="http://example.com/tags/Ubuntu/"/>
+    
+    <category term="修改初始root用户密码" scheme="http://example.com/tags/%E4%BF%AE%E6%94%B9%E5%88%9D%E5%A7%8Broot%E7%94%A8%E6%88%B7%E5%AF%86%E7%A0%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>宝塔登录面板重置密码</title>
+    <link href="http://example.com/2022/05/13/bao-ta-deng-lu-mian-ban-chong-zhi-mi-ma/"/>
+    <id>http://example.com/2022/05/13/bao-ta-deng-lu-mian-ban-chong-zhi-mi-ma/</id>
+    <published>2022-05-12T16:00:00.000Z</published>
+    <updated>2022-05-13T10:18:27.433Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;宝塔登录面板重置密码&quot;&gt;&lt;a href=&quot;#宝塔登录面板重置密码&quot; class=&quot;headerlink&quot; title=&quot;宝塔登录面板重置密码&quot;&gt;&lt;/a&gt;宝塔登录面板重置密码&lt;/h3&gt;&lt;p&gt;进入ssh输入以下命令重置密码（把命令最后面的 </summary>
+        
+      
+    
+    
+    
+    <category term="宝塔面板" scheme="http://example.com/categories/%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF/"/>
+    
+    
+    <category term="宝塔密码重置" scheme="http://example.com/tags/%E5%AE%9D%E5%A1%94%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Centos开启SSH服务</title>
+    <link href="http://example.com/2022/05/13/centos-kai-qi-ssh-fu-wu/"/>
+    <id>http://example.com/2022/05/13/centos-kai-qi-ssh-fu-wu/</id>
+    <published>2022-05-12T16:00:00.000Z</published>
+    <updated>2022-05-13T10:24:23.899Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;Centos开启SSH服务&quot;&gt;&lt;a href=&quot;#Centos开启SSH服务&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="SSH开启" scheme="http://example.com/categories/SSH%E5%BC%80%E5%90%AF/"/>
+    
+    
+    <category term="ssh" scheme="http://example.com/tags/ssh/"/>
+    
+  </entry>
+  
+  <entry>
     <title>SQL Server命令以Mac OS，MySQL为例</title>
     <link href="http://example.com/2022/05/10/sql-server-ming-ling/"/>
     <id>http://example.com/2022/05/10/sql-server-ming-ling/</id>
     <published>2022-05-10T08:48:21.379Z</published>
-    <updated>2022-05-10T09:18:48.482Z</updated>
+    <updated>2022-05-10T09:27:30.461Z</updated>
     
     
       
@@ -288,7 +365,7 @@
     <link href="http://example.com/2021/11/01/2021-11-01/"/>
     <id>http://example.com/2021/11/01/2021-11-01/</id>
     <published>2021-10-31T16:00:00.000Z</published>
-    <updated>2022-05-09T04:01:50.015Z</updated>
+    <updated>2022-05-13T10:07:45.700Z</updated>
     
     
       
@@ -319,17 +396,15 @@
     <link href="http://example.com/2021/10/28/2021-10-28/"/>
     <id>http://example.com/2021/10/28/2021-10-28/</id>
     <published>2021-10-27T16:00:00.000Z</published>
-    <updated>2022-05-09T04:01:53.599Z</updated>
+    <updated>2022-05-13T10:10:08.745Z</updated>
     
     
-    <summary type="html">&lt;h3 id=&quot;1-软件测试流程（详细）&quot;&gt;&lt;a href=&quot;#1-软件测试流程（详细）&quot; class=&quot;headerlink&quot; title=&quot;1. 软件测试流程（详细）&quot;&gt;&lt;/a&gt;1. 软件测试流程（详细）&lt;/h3&gt;&lt;p&gt;   作需求分析-需求评审-编写测试计划-设计测试方案-编写用例测试-评审用例-搭建测试环境，准备测试数据-冒烟测试-执行用例-提交bug-回归测试-编写测试报告&lt;/p&gt;
-&lt;h3 id=&quot;2-测试计划内容&quot;&gt;&lt;a href=&quot;#2-测试计划内容&quot; class=&quot;headerlink&quot; title=&quot;2. 测试计划内容&quot;&gt;&lt;/a&gt;2. 测试计划内容&lt;/h3&gt;&lt;p&gt; 测试范围. 时间进度安排. 资源配置（人员和设备）. 存在的风险和规避的措施等 &lt;/p&gt;
-&lt;h3 id=&quot;3-测试报告内容&quot;&gt;&lt;a href=&quot;#3-测试报告内容&quot; class=&quot;headerlink&quot; title=&quot;3. 测试报告内容&quot;&gt;&lt;/a&gt;3. 测试报告内容&lt;/h3&gt;&lt;p&gt;  数据的统计：人力设备时间的统计，用例覆盖率的统计. 用例执行率统计，缺陷的统计（数量，严重级别，来源. 类型），遗留缺陷及存在的风险和规避措施，对测试对象  的评估/测试结论。&lt;/p&gt;
-&lt;h3 id=&quot;4-linux搭建测试环境步骤&quot;&gt;&lt;a href=&quot;#4-linux搭建测试环境步骤&quot; class=&quot;headerlink&quot; title=&quot;4. linux搭建测试环境步骤&quot;&gt;&lt;/a&gt;4. linux搭建测试环境步骤&lt;/h3&gt;&lt;p&gt;  1.用``xftp&lt;code&gt; 将安装包传到服务器（zip压缩包）   2.用&lt;/code&gt;unzip&lt;code&gt;进行解压   3.进行安装(用&lt;/code&gt;rpm&lt;code&gt;命令安装 apache  mysql等安装包）  &lt;/code&gt;yum&lt;code&gt;   4.将程序包拷贝到&lt;/code&gt;/var/www/html&lt;code&gt;下面（部署）   5.到&lt;/code&gt;/etc/httpd/conf/httpd.conf&lt;code&gt;修改配置文件,启动服务&lt;/code&gt;service mysqld start&lt;code&gt;  6.启动服务&lt;/code&gt;service httpd  start`&lt;br&gt;  7.访问系统&lt;/p&gt;</summary>
+    <summary type="html">&lt;h3 id=&quot;1-软件测试流程（详细）&quot;&gt;&lt;a href=&quot;#1-软件测试流程（详细）&quot; class=&quot;headerlink&quot; title=&quot;1. 软件测试流程（详细）&quot;&gt;&lt;/a&gt;1. 软件测试流程（详细）&lt;/h3&gt;&lt;p&gt;作需求分析-需求评审-编写测试计划-设计测试方案-编写用例测试-评审用例-搭建测试环境，准备测试数据-冒烟测试-执行用例-提交bug-回归测试-编写测试报告&lt;/p&gt;
+&lt;h3 id=&quot;2-测试计划内容&quot;&gt;&lt;a href=&quot;#2-测试计划内容&quot; class=&quot;headerlink&quot; title=&quot;2. 测试计划内容&quot;&gt;&lt;/a&gt;2. 测试计划内容&lt;/h3&gt;&lt;p&gt;测试范围. 时间进度安排. 资源配置（人员和设备）. 存在的风险和规避的措施等&lt;/p&gt;
+&lt;h3 id=&quot;3-测试报告内容&quot;&gt;&lt;a href=&quot;#3-测试报告内容&quot; class=&quot;headerlink&quot; title=&quot;3. 测试报告内容&quot;&gt;&lt;/a&gt;3. 测试报告内容&lt;/h3&gt;&lt;p&gt;数据的统计：人力设备时间的统计，用例覆盖率的统计. 用例执行率统计，缺陷的统计（数量，严重级别，来源. 类型），遗留缺陷及存在的风险和规避措施，对测试对象  的评估/测试结论。&lt;/p&gt;
+&lt;h3 id=&quot;4-linux搭建测试环境步骤&quot;&gt;&lt;a href=&quot;#4-linux搭建测试环境步骤&quot; class=&quot;headerlink&quot; title=&quot;4. linux搭建测试环境步骤&quot;&gt;&lt;/a&gt;4. linux搭建测试环境步骤&lt;/h3&gt;&lt;p&gt;1.用``xftp&lt;code&gt; 将安装包传到服务器（zip压缩包） 2.用&lt;/code&gt;unzip&lt;code&gt;进行解压 3.进行安装(用&lt;/code&gt;rpm&lt;code&gt;命令安装 apache  mysql等安装包）  &lt;/code&gt;yum&lt;code&gt; 4.将程序包拷贝到&lt;/code&gt;/var/www/html&lt;code&gt;下面（部署） 5.到&lt;/code&gt;/etc/httpd/conf/httpd.conf&lt;code&gt;修改配置文件,启动服务&lt;/code&gt;service mysqld start&lt;code&gt;6.启动服务&lt;/code&gt;service httpd  start`&lt;br&gt;7.访问系统&lt;/p&gt;</summary>
     
     
-    
-    <category term="软件测试" scheme="http://example.com/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
     
     
     <category term="app性能测试" scheme="http://example.com/tags/app%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/"/>
@@ -340,7 +415,7 @@
     
     <category term="测试流程" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E6%B5%81%E7%A8%8B/"/>
     
-    <category term="报告内容" scheme="http://example.com/tags/%E6%8A%A5%E5%91%8A%E5%86%85%E5%AE%B9/"/>
+    <category term="弱网测试" scheme="http://example.com/tags/%E5%BC%B1%E7%BD%91%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   
@@ -461,7 +536,7 @@
     <link href="http://example.com/2021/10/19/softtest-listen/"/>
     <id>http://example.com/2021/10/19/softtest-listen/</id>
     <published>2021-10-18T16:00:00.000Z</published>
-    <updated>2022-05-09T04:00:48.482Z</updated>
+    <updated>2022-05-10T09:27:05.379Z</updated>
     
     
       
@@ -508,33 +583,6 @@
     <category term="npm WARN" scheme="http://example.com/tags/npm-WARN/"/>
     
     <category term="nodejs" scheme="http://example.com/tags/nodejs/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>typora-vue-theme 示例</title>
-    <link href="http://example.com/2018/09/07/hello-world/"/>
-    <id>http://example.com/2018/09/07/hello-world/</id>
-    <published>2018-09-07T01:25:00.000Z</published>
-    <updated>2022-05-09T04:01:30.493Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;这是一个示例&quot;&gt;&lt;a href=&quot;#这是一个示例&quot; class=&quot;headerlink&quot; title=&quot;这是一个示例&quot;&gt;&lt;/a&gt;这是一个示例&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-markdown&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Markdown" scheme="http://example.com/categories/Markdown/"/>
-    
-    
-    <category term="Typora" scheme="http://example.com/tags/Typora/"/>
-    
-    <category term="Markdown" scheme="http://example.com/tags/Markdown/"/>
     
   </entry>
   
