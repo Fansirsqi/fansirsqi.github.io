@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-05-13T10:25:51.003Z</updated>
+  <updated>2022-07-11T15:38:57.443Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>测试面试</title>
+    <link href="http://example.com/2022/07/11/ce-shi/"/>
+    <id>http://example.com/2022/07/11/ce-shi/</id>
+    <published>2022-07-10T16:00:00.000Z</published>
+    <updated>2022-07-11T15:38:57.443Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;如何定位分析bug：&quot;&gt;&lt;a href=&quot;#如何定位分析bug：&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="软件测试" scheme="http://example.com/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
+    
+    
+    <category term="测试理论" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    
+    <category term="面试" scheme="http://example.com/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
   
   <entry>
     <title>ubuntu修改root用户密码</title>
@@ -555,34 +582,6 @@
     <category term="测试理论" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
     
     <category term="软件测试" scheme="http://example.com/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>npm与nodejs版本不匹配,不支持</title>
-    <link href="http://example.com/2021/10/18/npm-warn/"/>
-    <id>http://example.com/2021/10/18/npm-warn/</id>
-    <published>2021-10-17T16:00:00.000Z</published>
-    <updated>2022-05-09T04:01:04.692Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;strong&gt;1、问题：&lt;/strong&gt;&lt;br&gt;今天在nodejs搞服务器应用的时候发现nodejs版本和npm版本不匹配&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;npm WARN npm does not support Node.js</summary>
-        
-      
-    
-    
-    
-    <category term="npm" scheme="http://example.com/categories/npm/"/>
-    
-    
-    <category term="npm WARN" scheme="http://example.com/tags/npm-WARN/"/>
-    
-    <category term="nodejs" scheme="http://example.com/tags/nodejs/"/>
     
   </entry>
   
