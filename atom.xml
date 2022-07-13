@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Byseven&#39;s Note</title>
+  <title>依旧归七</title>
   
   
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-07-11T15:38:57.443Z</updated>
+  <updated>2022-07-13T05:36:06.352Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -18,10 +18,36 @@
   
   <entry>
     <title>测试面试</title>
+    <link href="http://example.com/2022/07/13/qian-chuan-wang-luo-mian-shi/"/>
+    <id>http://example.com/2022/07/13/qian-chuan-wang-luo-mian-shi/</id>
+    <published>2022-07-12T16:00:00.000Z</published>
+    <updated>2022-07-13T05:36:06.352Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;仟传网络&lt;br&gt;1轮&lt;br&gt;大概45分钟&lt;/p&gt;
+&lt;h3 id=&quot;问题整理：&quot;&gt;&lt;a href=&quot;#问题整理：&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="面试" scheme="http://example.com/categories/%E9%9D%A2%E8%AF%95/"/>
+    
+    
+    <category term="面试" scheme="http://example.com/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>测试面试</title>
     <link href="http://example.com/2022/07/11/ce-shi/"/>
     <id>http://example.com/2022/07/11/ce-shi/</id>
     <published>2022-07-10T16:00:00.000Z</published>
-    <updated>2022-07-11T15:38:57.443Z</updated>
+    <updated>2022-07-12T14:42:11.077Z</updated>
     
     
       
@@ -39,7 +65,7 @@
     
     <category term="测试理论" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
     
-    <category term="面试" scheme="http://example.com/tags/%E9%9D%A2%E8%AF%95/"/>
+    <category term="面试题" scheme="http://example.com/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
     
   </entry>
   
@@ -555,33 +581,6 @@
     <category term="10061 &quot;Unknown error&quot;" scheme="http://example.com/tags/10061-Unknown-error/"/>
     
     <category term="使用Navicat等远程链接工具，提示2003" scheme="http://example.com/tags/%E4%BD%BF%E7%94%A8Navicat%E7%AD%89%E8%BF%9C%E7%A8%8B%E9%93%BE%E6%8E%A5%E5%B7%A5%E5%85%B7%EF%BC%8C%E6%8F%90%E7%A4%BA2003/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>软件测试理论</title>
-    <link href="http://example.com/2021/10/19/softtest-listen/"/>
-    <id>http://example.com/2021/10/19/softtest-listen/</id>
-    <published>2021-10-18T16:00:00.000Z</published>
-    <updated>2022-05-10T09:27:05.379Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;1-软件测试的定义&quot;&gt;&lt;a href=&quot;#1-软件测试的定义&quot; class=&quot;headerlink&quot; title=&quot;1. 软件测试的定义:&quot;&gt;&lt;/a&gt;1. 软件测试的定义:&lt;/h3&gt;&lt;p&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="软件测试" scheme="http://example.com/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
-    
-    
-    <category term="测试理论" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
-    
-    <category term="软件测试" scheme="http://example.com/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   
