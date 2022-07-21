@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-07-21T04:24:09.339Z</updated>
+  <updated>2022-07-21T02:52:07.688Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,31 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>软件测试面试题整理</title>
-    <link href="http://example.com/2022/07/13/ruan-jian-ce-shi-zheng-li-mian-shi-ti/"/>
-    <id>http://example.com/2022/07/13/ruan-jian-ce-shi-zheng-li-mian-shi-ti/</id>
-    <published>2022-07-12T16:00:00.000Z</published>
-    <updated>2022-07-21T04:24:09.339Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;写在前面,大部分是CP来的,希望对你有一点帮助,主要就是看你对这些东西的熟悉程度,面试造飞机,上班拧螺丝大多如此,其实我觉得吧实际工作中,能做到高效简单最好,那那面试官怎么去判断评定你呢,我想大概就这些了吧!&lt;br&gt;加油!&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="软件测试理论" scheme="http://example.com/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
-    
-    
-    <category term="测试理论" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
-    
-    <category term="面试题整理" scheme="http://example.com/tags/%E9%9D%A2%E8%AF%95%E9%A2%98%E6%95%B4%E7%90%86/"/>
-    
-    <category term="ADB命令" scheme="http://example.com/tags/ADB%E5%91%BD%E4%BB%A4/"/>
-    
-    <category term="Liunx命令" scheme="http://example.com/tags/Liunx%E5%91%BD%E4%BB%A4/"/>
-    
-  </entry>
   
   <entry>
     <title>面试</title>
@@ -64,6 +39,31 @@
     
     
     <category term="面试" scheme="http://example.com/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>软件测试面试题整理</title>
+    <link href="http://example.com/2022/07/13/ruan-jian-ce-shi-zheng-li-mian-shi-ti/"/>
+    <id>http://example.com/2022/07/13/ruan-jian-ce-shi-zheng-li-mian-shi-ti/</id>
+    <published>2022-07-12T16:00:00.000Z</published>
+    <updated>2022-07-21T04:24:09.339Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;写在前面,大部分是CP来的,希望对你有一点帮助,主要就是看你对这些东西的熟悉程度,面试造飞机,上班拧螺丝大多如此,其实我觉得吧实际工作中,能做到高效简单最好,那那面试官怎么去判断评定你呢,我想大概就这些了吧!&lt;br&gt;加油!&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="软件测试理论" scheme="http://example.com/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    
+    
+    <category term="面试题整理" scheme="http://example.com/tags/%E9%9D%A2%E8%AF%95%E9%A2%98%E6%95%B4%E7%90%86/"/>
+    
+    <category term="测试理论" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/"/>
+    
+    <category term="ADB命令" scheme="http://example.com/tags/ADB%E5%91%BD%E4%BB%A4/"/>
+    
+    <category term="Liunx命令" scheme="http://example.com/tags/Liunx%E5%91%BD%E4%BB%A4/"/>
     
   </entry>
   
@@ -93,6 +93,37 @@
   </entry>
   
   <entry>
+    <title>liunx set root user password</title>
+    <link href="http://example.com/2022/05/13/liunx-set-root-user-password/"/>
+    <id>http://example.com/2022/05/13/liunx-set-root-user-password/</id>
+    <published>2022-05-12T16:00:00.000Z</published>
+    <updated>2022-07-21T03:28:29.626Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;Liunx修改root用户密码&quot;&gt;&lt;a href=&quot;#Liunx修改root用户密码&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Liunx" scheme="http://example.com/categories/Liunx/"/>
+    
+    
+    <category term="Liunx" scheme="http://example.com/tags/Liunx/"/>
+    
+    <category term="修改初始root用户密码" scheme="http://example.com/tags/%E4%BF%AE%E6%94%B9%E5%88%9D%E5%A7%8Broot%E7%94%A8%E6%88%B7%E5%AF%86%E7%A0%81/"/>
+    
+    <category term="ununtu" scheme="http://example.com/tags/ununtu/"/>
+    
+    <category term="Deepin" scheme="http://example.com/tags/Deepin/"/>
+    
+  </entry>
+  
+  <entry>
     <title>宝塔登录面板重置密码</title>
     <link href="http://example.com/2022/05/13/bao-ta-deng-lu-mian-ban-chong-zhi-mi-ma/"/>
     <id>http://example.com/2022/05/13/bao-ta-deng-lu-mian-ban-chong-zhi-mi-ma/</id>
@@ -114,37 +145,6 @@
     
     
     <category term="宝塔密码重置" scheme="http://example.com/tags/%E5%AE%9D%E5%A1%94%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>liunx set root user password</title>
-    <link href="http://example.com/2022/05/13/liunx-set-root-user-password/"/>
-    <id>http://example.com/2022/05/13/liunx-set-root-user-password/</id>
-    <published>2022-05-12T16:00:00.000Z</published>
-    <updated>2022-07-21T03:28:29.626Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;Liunx修改root用户密码&quot;&gt;&lt;a href=&quot;#Liunx修改root用户密码&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Liunx" scheme="http://example.com/categories/Liunx/"/>
-    
-    
-    <category term="修改初始root用户密码" scheme="http://example.com/tags/%E4%BF%AE%E6%94%B9%E5%88%9D%E5%A7%8Broot%E7%94%A8%E6%88%B7%E5%AF%86%E7%A0%81/"/>
-    
-    <category term="Liunx" scheme="http://example.com/tags/Liunx/"/>
-    
-    <category term="ununtu" scheme="http://example.com/tags/ununtu/"/>
-    
-    <category term="Deepin" scheme="http://example.com/tags/Deepin/"/>
     
   </entry>
   
@@ -350,25 +350,6 @@
     
     
     <category term="浏览器扩展打包" scheme="http://example.com/tags/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%89%A9%E5%B1%95%E6%89%93%E5%8C%85/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ADB资料</title>
-    <link href="http://example.com/2021/10/26/adb-xiao-ji/"/>
-    <id>http://example.com/2021/10/26/adb-xiao-ji/</id>
-    <published>2021-10-25T16:00:00.000Z</published>
-    <updated>2022-07-21T04:01:44.017Z</updated>
-    
-    
-    
-    
-    <category term="安卓调试" scheme="http://example.com/categories/%E5%AE%89%E5%8D%93%E8%B0%83%E8%AF%95/"/>
-    
-    
-    <category term="Android" scheme="http://example.com/tags/Android/"/>
-    
-    <category term="ADB" scheme="http://example.com/tags/ADB/"/>
     
   </entry>
   
