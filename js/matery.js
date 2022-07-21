@@ -105,7 +105,10 @@ $(function () {
             // 启用字幕
             subHtmlSelectorRelative: true
         });
-
+// 由于图片惰性加载与图片galler插件冲突故添加3行
+$(document).find('img[data-original]').each(function(){
+    $(this).parent().attr("href", $(this).attr("data-original"));
+});
         // progress bar init
         const progressElement = window.document.querySelector('.progress-bar');
         if (progressElement) {
