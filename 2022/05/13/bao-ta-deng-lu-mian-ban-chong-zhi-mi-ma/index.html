@@ -5,8 +5,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="宝塔登录面板重置密码, 依旧归七">
-    <meta name="description" content="宝塔登录面板重置密码进入ssh输入以下命令重置密码（把命令最后面的  “**testpasswd**” 替换成你要改的新密码） 注：若是debian/ubuntu用户，请使用有root权限的账户去执行这条命令
-cd /www/server/">
+    <meta name="description" content="宝塔登录面板重置密码进入ssh输入以下命令重置密码（把命令最后面的testpasswd替换成你要改的新密码）
+注：若是debian/ubuntu用户，
+请使用有root权限的账户去执行这条命令
+cd /www/server/panel &amp;a">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -265,7 +267,7 @@ cd /www/server/">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://www.bt.cn/Public/new/file/bt_video.mp4')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/Fansirsqi/blog-Images@main/images/202207211816138.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -425,7 +427,7 @@ cd /www/server/">
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    155
+                    162
                 </div>
                 
 
@@ -455,16 +457,17 @@ cd /www/server/">
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="宝塔登录面板重置密码"><a href="#宝塔登录面板重置密码" class="headerlink" title="宝塔登录面板重置密码"></a>宝塔登录面板重置密码</h3><p>进入ssh输入以下命令重置密码（把命令最后面的  “<code>**testpasswd</code>**” <strong>替换</strong>成你要改的新密码） 注：若是<code>debian</code>/<code>ubuntu</code>用户，<br>请使用有root权限的账户去执行这条命令</p>
+                <h3 id="宝塔登录面板重置密码"><a href="#宝塔登录面板重置密码" class="headerlink" title="宝塔登录面板重置密码"></a>宝塔登录面板重置密码</h3><p>进入ssh输入以下命令重置密码（把命令最后面的<code>testpasswd</code>替换成你要改的新密码）</p>
+<p>注：若是<code>debian</code>/<code>ubuntu</code>用户，</p>
+<p>请使用有<code>root</code>权限的账户去执行这条命令</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">cd</span> /www/server/panel <span class="token operator">&amp;&amp;</span> python tools.py panel testpasswd<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>如果提示多次登录失败，暂时禁止登录 请输入以下命令 清除登录限制</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">rm</span> -f /www/server/panel/data/*.login<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-
 <p>新装面板用户获取默认账号密码命令：bt default</p>
 <p>6.x及以后版本可输入<code>bt</code>命令获取工具菜单来重置账户密码</p>
-<p><img src="/medias/loading.gif" data-original="https://gitee.com/fansirsqi/pic-img/raw/master/img/202205131818806.png"></p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">bt <span class="token comment">#即可呼出菜单</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
                 
             </div>
@@ -964,7 +967,7 @@ cd /www/server/">
             
                 <span id="year">2022</span>
             
-            <a href="/about" target="_blank">归七</a>
+            <a href="/about" target="_blank">Fansir</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
