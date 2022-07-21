@@ -250,6 +250,19 @@ npm WARN npm does not support Node.js v12.0.0
 </header>
 
     
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
 
 
 
@@ -408,12 +421,32 @@ npm WARN npm does not support Node.js v12.0.0
                 
 
                 
-
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2022-05-09
+                </div>
                 
 
                 
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    414
+                </div>
+                
 
                 
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    1 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
             </div>
         </div>
         <hr class="clearfix">
@@ -735,12 +768,12 @@ npm WARN npm does not support Node.js v12.0.0
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/10/19/softtest-listen/">
+                <a href="/2021/10/23/navicat-unknow-error-to-mysql/">
                     <div class="card-image">
                         
-                        <img src="/medias/images/05.jpg" class="responsive-img" alt="软件测试理论">
+                        <img src="/medias/images/04.jpg" class="responsive-img" alt="解决MySQL 使用Navicat等远程链接工具，提示2003 - Can&#39;t connect to MySQL server on (10061 &#34;Unknown error&#34;)问题">
                         
-                        <span class="card-title">软件测试理论</span>
+                        <span class="card-title">解决MySQL 使用Navicat等远程链接工具，提示2003 - Can&#39;t connect to MySQL server on (10061 &#34;Unknown error&#34;)问题</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -751,14 +784,14 @@ npm WARN npm does not support Node.js v12.0.0
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-10-19
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-10-23
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/" class="post-category">
-                                    软件测试
+                            <a href="/categories/Mysql/" class="post-category">
+                                    Mysql
                                 </a>
                             
                             
@@ -768,12 +801,16 @@ npm WARN npm does not support Node.js v12.0.0
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/">
-                        <span class="chip bg-color">测试理论</span>
+                    <a href="/tags/Mysql/">
+                        <span class="chip bg-color">Mysql</span>
                     </a>
                     
-                    <a href="/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/">
-                        <span class="chip bg-color">软件测试</span>
+                    <a href="/tags/10061-Unknown-error/">
+                        <span class="chip bg-color">10061 &#34;Unknown error&#34;</span>
+                    </a>
+                    
+                    <a href="/tags/%E4%BD%BF%E7%94%A8Navicat%E7%AD%89%E8%BF%9C%E7%A8%8B%E9%93%BE%E6%8E%A5%E5%B7%A5%E5%85%B7%EF%BC%8C%E6%8F%90%E7%A4%BA2003/">
+                        <span class="chip bg-color">使用Navicat等远程链接工具，提示2003</span>
                     </a>
                     
                 </div>
@@ -960,6 +997,9 @@ npm WARN npm does not support Node.js v12.0.0
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                        class="white-color">32.1k</span>
             
             
             
@@ -1222,6 +1262,14 @@ $(function () {
     
 
     <!-- 鼠标星星特效 -->
+     
+        <script type="text/javascript">
+            // 只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            if (windowWidth > 768) {
+                document.write('<script type="text/javascript" src="/libs/others/star.js"><\/script>');
+            }
+        </script>
     
 
      

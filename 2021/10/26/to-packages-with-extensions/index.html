@@ -246,6 +246,19 @@
 </header>
 
     
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
 
 
 
@@ -400,12 +413,32 @@
                 
 
                 
-
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2022-07-21
+                </div>
                 
 
                 
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    256
+                </div>
+                
 
                 
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    1 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
             </div>
         </div>
         <hr class="clearfix">
@@ -419,22 +452,22 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>如何打包自己浏览器已安装扩展<br>微软的EDGE为例<br>打开如下目录,是已安装扩展的id:<br><code>C:\Users\用户名\AppData\Local\Microsoft\Edge\User Data\Default\Extensions</code><br><img src="https://i.loli.net/2021/10/26/C5KHXbfiq37kzva.png"><br>对应可以打开浏览器扩展管理页面对应id:<br><img src="https://i.loli.net/2021/10/26/26YpEHskGLClriy.png"></p>
-<h4 id="例如我们现在打包一个ADGuard插件为例"><a href="#例如我们现在打包一个ADGuard插件为例" class="headerlink" title="例如我们现在打包一个ADGuard插件为例:"></a>例如我们现在打包一个ADGuard插件为例:</h4><ol>
+                <p>如何打包自己浏览器已安装扩展<br>微软的EDGE为例<br>打开如下目录,是已安装扩展的id:<br><code>C:\Users\用户名\AppData\Local\Microsoft\Edge\User Data\Default\Extensions</code><br><img src="https://i.loli.net/2021/10/26/C5KHXbfiq37kzva.png" alt="1"><br>对应可以打开浏览器扩展管理页面对应id:<br><img src="https://i.loli.net/2021/10/26/26YpEHskGLClriy.png" alt="2"></p>
+<h4 id="例如我们现在打包一个ADGuard插件为例"><a href="#例如我们现在打包一个ADGuard插件为例" class="headerlink" title="例如我们现在打包一个ADGuard插件为例"></a>例如我们现在打包一个ADGuard插件为例</h4><ol>
 <li>记住他的id大概是:<code>pdffkfellgipmhklpdmokmckkkfcopbh</code></li>
-<li><code>ctrl+c</code>复制一个路径:<br><img src="https://i.loli.net/2021/10/26/gmR85O7Tsqcohrn.png"></li>
-<li>点击扩展管理页面打包插件:<br><img src="https://i.loli.net/2021/10/26/bnYZMO9rJTtmKcq.png"></li>
-<li>点击浏览:<br><img src="https://i.loli.net/2021/10/26/ef8lHdTZvwzL2Qq.png"></li>
+<li><code>ctrl+c</code>复制一个路径:<br><img src="https://i.loli.net/2021/10/26/gmR85O7Tsqcohrn.png" alt="3"></li>
+<li>点击扩展管理页面打包插件:<br><img src="https://i.loli.net/2021/10/26/bnYZMO9rJTtmKcq.png" alt="4"></li>
+<li>点击浏览:<br><img src="https://i.loli.net/2021/10/26/ef8lHdTZvwzL2Qq.png" alt="5"></li>
 </ol>
-<p><img src="https://gitee.com/fansirsqi/pic-go-images/raw/master//images/202110261010445.png"></p>
+<p><img src="https://gitee.com/fansirsqi/pic-go-images/raw/master//images/202110261010445.png" alt="6"></p>
 <p>这里我们找到<code>pdffkfellgipmhklpdmokmckkkfcopbh</code>这个文件夹名称</p>
-<p><img src="https://gitee.com/fansirsqi/pic-go-images/raw/master//images/202110261014849.png"></p>
-<p>双击点进去<br>然后点选择文件夹:<br><img src="https://gitee.com/fansirsqi/pic-go-images/raw/master//images/202110261044773.png"><br>点击打包:<br><img src="https://gitee.com/fansirsqi/pic-go-images/raw/master//images/202110261046864.png"></p>
-<p>打包之后窗口会正常关闭,再打开刚刚的文件夹<br><img src="https://gitee.com/fansirsqi/pic-go-images/raw/master//images/202110261048212.png"></p>
-<p>可以看到一个密钥和一个扩展文件,文件名是版本号<br><img src="https://gitee.com/fansirsqi/pic-go-images/raw/master//images/202110261049632.png"></p>
-<p>为了方便辨识,重命名一下<br><img src="https://gitee.com/fansirsqi/pic-go-images/raw/master//images/202110261050705.png"></p>
+<p><img src="https://gitee.com/fansirsqi/pic-go-images/raw/master//images/202110261014849.png" alt="7"></p>
+<p>双击点进去<br>然后点选择文件夹:<br><img src="https://gitee.com/fansirsqi/pic-go-images/raw/master//images/202110261044773.png" alt="8"><br>点击打包:<br><img src="https://gitee.com/fansirsqi/pic-go-images/raw/master//images/202110261046864.png" alt="9"></p>
+<p>打包之后窗口会正常关闭,再打开刚刚的文件夹<br><img src="https://gitee.com/fansirsqi/pic-go-images/raw/master//images/202110261048212.png" alt="10"></p>
+<p>可以看到一个密钥和一个扩展文件,文件名是版本号<br><img src="https://gitee.com/fansirsqi/pic-go-images/raw/master//images/202110261049632.png" alt="11"></p>
+<p>为了方便辨识,重命名一下<br><img src="https://gitee.com/fansirsqi/pic-go-images/raw/master//images/202110261050705.png" alt="12"></p>
 <p>把这两个东西保存起来发给你要分享的人就行.</p>
-<p>这里是我整理的一些扩展,分享给大家食用✨<br><img src="https://gitee.com/fansirsqi/pic-go-images/raw/master//images/202110261055191.png"></p>
+<p>这里是我整理的一些扩展,分享给大家食用✨<br><img src="https://gitee.com/fansirsqi/pic-go-images/raw/master//images/202110261055191.png" alt="13"></p>
 <hr>
 <p><a target="_blank" rel="noopener" href="https://fansirs.lanzouw.com/inqCYvssolc">蓝凑云</a><br>访问密码:3zm5</p>
 <hr>
@@ -712,7 +745,59 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/10/26/adb-info/">
+                <a href="/2022/05/07/linux-xi-tong-tong-guo-openssl-ming-ling-sheng-cheng-ssl-zheng-shu/">
+                    <div class="card-image">
+                        
+                        <img src="/medias/images/05.jpg" class="responsive-img" alt="Linux 系统通过openssl命令生成ssl 证书">
+                        
+                        <span class="card-title">Linux 系统通过openssl命令生成ssl 证书</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            这是你自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-05-07
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Linux/" class="post-category">
+                                    Linux
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/SSL/">
+                        <span class="chip bg-color">SSL</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%94%9F%E6%88%90SSL%E8%AF%81%E4%B9%A6/">
+                        <span class="chip bg-color">生成SSL证书</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/10/26/adb-xiao-ji/">
                     <div class="card-image">
                         
                         <img src="/medias/images/04.jpg" class="responsive-img" alt="ADB资料">
@@ -727,9 +812,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-10-26
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-10-26
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -751,62 +836,6 @@
                     
                     <a href="/tags/ADB/">
                         <span class="chip bg-color">ADB</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2021/10/23/navicat-unknow-error-to-mysql/">
-                    <div class="card-image">
-                        
-                        <img src="/medias/images/04.jpg" class="responsive-img" alt="解决MySQL 使用Navicat等远程链接工具，提示2003 - Can&#39;t connect to MySQL server on (10061 &#34;Unknown error&#34;)问题">
-                        
-                        <span class="card-title">解决MySQL 使用Navicat等远程链接工具，提示2003 - Can&#39;t connect to MySQL server on (10061 &#34;Unknown error&#34;)问题</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-10-23
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Mysql/" class="post-category">
-                                    Mysql
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Mysql/">
-                        <span class="chip bg-color">Mysql</span>
-                    </a>
-                    
-                    <a href="/tags/10061-Unknown-error/">
-                        <span class="chip bg-color">10061 &#34;Unknown error&#34;</span>
-                    </a>
-                    
-                    <a href="/tags/%E4%BD%BF%E7%94%A8Navicat%E7%AD%89%E8%BF%9C%E7%A8%8B%E9%93%BE%E6%8E%A5%E5%B7%A5%E5%85%B7%EF%BC%8C%E6%8F%90%E7%A4%BA2003/">
-                        <span class="chip bg-color">使用Navicat等远程链接工具，提示2003</span>
                     </a>
                     
                 </div>
@@ -941,6 +970,9 @@
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                        class="white-color">32.1k</span>
             
             
             
@@ -1203,6 +1235,14 @@ $(function () {
     
 
     <!-- 鼠标星星特效 -->
+     
+        <script type="text/javascript">
+            // 只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            if (windowWidth > 768) {
+                document.write('<script type="text/javascript" src="/libs/others/star.js"><\/script>');
+            }
+        </script>
     
 
      

@@ -1,0 +1,1416 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="面试, 依旧归七">
+    <meta name="description" content="**网络1 轮大概 45 分钟
+问题整理1. 自我介绍直接唱一首歌,听我说,谢谢你…,没问题
+2. 你最近做的项目是怎样的重复上面唱歌的内容
+3. 软件测试流程是怎样的再唱一遍..
+4. 给你一支笔，你怎么测
+界面/UI 测试
+（1）外观是">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    
+
+    <title>面试 | 依旧归七</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+
+<meta name="generator" content="Hexo 6.1.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="依旧归七" type="application/atom+xml">
+</head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">依旧归七</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">依旧归七</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/images/01.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">面试</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E9%9D%A2%E8%AF%95/">
+                                <span class="chip bg-color">面试</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E9%9D%A2%E8%AF%95/" class="post-category">
+                                面试
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2022-07-13
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2022-07-21
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    2.3k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    8 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <p>**网络<br>1 轮<br>大概 45 分钟</p>
+<h2 id="问题整理"><a href="#问题整理" class="headerlink" title="问题整理"></a>问题整理</h2><h3 id="1-自我介绍"><a href="#1-自我介绍" class="headerlink" title="1. 自我介绍"></a>1. 自我介绍</h3><p>直接唱一首歌,听我说,谢谢你…,没问题</p>
+<h3 id="2-你最近做的项目是怎样的"><a href="#2-你最近做的项目是怎样的" class="headerlink" title="2. 你最近做的项目是怎样的"></a>2. 你最近做的项目是怎样的</h3><p>重复上面唱歌的内容</p>
+<h3 id="3-软件测试流程是怎样的"><a href="#3-软件测试流程是怎样的" class="headerlink" title="3. 软件测试流程是怎样的"></a>3. 软件测试流程是怎样的</h3><p>再唱一遍..</p>
+<h3 id="4-给你一支笔，你怎么测"><a href="#4-给你一支笔，你怎么测" class="headerlink" title="4. 给你一支笔，你怎么测"></a>4. 给你一支笔，你怎么测</h3><ol>
+<li><p>界面/UI 测试</p>
+<p>（1）外观是否美观<br>（2）笔壳上的标签是否容易脱落<br>（3）笔壳上的字是否有笔相关的信息提示<br>（4）笔壳上的字是否容易消失</p>
+</li>
+<li><p>功能测试</p>
+<p>（1）能否写字<br>（2）书写是否流畅<br>（3）携带是否漏水<br>（4）笔盖能否正常拔卡，合上<br>（5）笔尖的粗细对书写产生的影响<br>（6）写的字，遇水是否会晕开<br>（7）书写的字是否是速干的<br>（8）书写的字是否是可擦的<br>（9）在特殊的情况下，书写是否有影响，比如：高温，低温，干燥的书写介质，湿润的书写介质，长期不盖笔盖，对书写是否有影响，摔下是否能够正常使用。</p>
+</li>
+<li><p>性能测试</p>
+<p>（1）可写字数上限<br>（2）书写的字可以保存多长时间不褪色</p>
+</li>
+<li><p>兼容性测试</p>
+<p>（1）是否可以装不同类型的笔芯，比如不同大小，不同厂家<br>（2）是 否可以替换不同粗细的笔尖<br>（3）是否可以在不同介质上书写<br>（4）笔的尺寸大小是否满足不同人群的要求<br>（5）笔芯的颜色是否满足不同场合的要求</p>
+</li>
+<li><p>易用性</p>
+<p>（1）是否便携<br>（2）是否方便替换笔芯<br>（3）笔外壳是否有塑胶圈，减少磨损使用者手<br>（4）书写是否流畅</p>
+</li>
+<li><p>安全性</p>
+<p>（1）笔外壳材质的安全性<br>（2）笔芯是否含有毒物质<br>（3）笔芯过了保质期，是否会产生有毒物质<br>（4）零件是否易拆解，容易被小孩、老人误食<br>（5）笔尖是否尖锐，容易伤人</p>
+</li>
+<li><p>压力</p>
+<p>（1）笔尖在多大压力下会出墨<br>（2）笔尖在多大压力下会损坏<br>（3）笔壳在多大压力下会损耗</p>
+</li>
+</ol>
+<h3 id="5-你怎样进行接口测试"><a href="#5-你怎样进行接口测试" class="headerlink" title="5. 你怎样进行接口测试"></a>5. 你怎样进行接口测试</h3><ul>
+<li>拿到开发提供的接口文档后,着手编写测试用例</li>
+<li>用例写好了,进行用例评审,通过后用工具执行</li>
+<li>JMeter,添加线程组,Http 请求,在 http 请求当中设置对应的 url 地址,参数,以及要添加的请求头部信息之类的,添加查看结果树来查看相应的响应的结果</li>
+<li>对比用例实际结果是否符合预期</li>
+<li>校验数据库,接口测试的进行是否对应的数据库有相应提交</li>
+<li>部分数据,定义为用户变量来使用</li>
+<li>涉及到批量测试的话,使用 csv 测试元件读取数据,进行参数化的批量测试</li>
+<li>接口关联的话,用到的是 JMeter 的后置处理器,json 提取器或正则表达式提取器<br>eg: 把提取到的 token 的值赋给一个变量,在下一个接口调用该变量(参数化)</li>
+</ul>
+<h3 id="6-断言有什么作用"><a href="#6-断言有什么作用" class="headerlink" title="6. 断言有什么作用"></a>6. 断言有什么作用</h3><p>用于验证代码是否符合编码人员的预期(简单点,复杂点的话就扯)</p>
+<h3 id="7-你怎么判断这接口是好的"><a href="#7-你怎么判断这接口是好的" class="headerlink" title="7. 你怎么判断这接口是好的"></a>7. 你怎么判断这接口是好的</h3><p>按需求文档,正常的测,与接口文档对比是否一致</p>
+<h3 id="8-接口关联怎么做"><a href="#8-接口关联怎么做" class="headerlink" title="8. 接口关联怎么做"></a>8. 接口关联怎么做</h3><p>– JMeter:</p>
+<p>用到后置处理器 <img src="https://cdn.jsdelivr.net/gh/Fansirsqi/blog-Images@main/images/202207211006387.png" alt="后置处理器"></p>
+<p>将后置处理器提取到的值,在下一个接口赋值给变量,再在接口中调用变量即可</p>
+<p>– Postman:<br>方法一：设置全局变量 1.先请求登录接口，请求成功之后，返回对应的 token 2.在对应的第一步请求成功之后的 tests 下通过 js 来设置全局变量</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">#获取接口返回值
+<span class="token keyword">var</span> jsonData <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>responseBody<span class="token punctuation">)</span><span class="token punctuation">;</span>
+#根据自己的接口结果层级获取对应的值并设置为全局变量
+pm<span class="token punctuation">.</span>globals<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token template-punctuation string">`</span></span><span class="token string">'access_token'</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>jsonData<span class="token punctuation">.</span>access_token<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><img src="https://cdn.jsdelivr.net/gh/Fansirsqi/blog-Images@main/images/20220712234409.png" alt="postman"></p>
+<p>请求设置成功之后，可在这里查看全局变量的值</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Fansirsqi/blog-Images@main/images/20220712234500.png" alt="postman1"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Fansirsqi/blog-Images@main/images/20220712234524.png" alt="postman2"></p>
+<p>3.发送第二个接口请求，可通过引用设置的全局变量</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Fansirsqi/blog-Images@main/images/20220712234553.png" alt="postman3"></p>
+<p>方法二：环境变量</p>
+<p>1.添加环境变量</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Fansirsqi/blog-Images@main/images/20220713111351.png" alt="postman4"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Fansirsqi/blog-Images@main/images/20220713111526.png" alt="postman5"></p>
+<p>2.选择环境变量名称，发送获取 token 的请求</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">var</span> jsonData <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>responseBody<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//环境变量赋值，hh为我起的名称，可以随便起名</span>
+pm<span class="token punctuation">.</span>environment<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token template-punctuation string">`</span></span><span class="token string">"hh"</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>jsonData<span class="token punctuation">.</span>access_token<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p><img src="https://cdn.jsdelivr.net/gh/Fansirsqi/blog-Images@main/images/image-20220713111628832.png" alt="image-20220713111628832"></p>
+<p>3.发送成功之后可以看到 token 值已经设置成功</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Fansirsqi/blog-Images@main/images/image-20220713111658129.png" alt="image-20220713111658129"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Fansirsqi/blog-Images@main/images/image-20220713111727267.png" alt="image-20220713111727267"></p>
+<p>3.选择同一个环境变量名称，填写刚刚设置的参数名，发送请求即可</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Fansirsqi/blog-Images@main/images/image-20220713111803445.png" alt="image-20220713111803445"></p>
+<h3 id="9-linux常用命令有那些"><a href="#9-linux常用命令有那些" class="headerlink" title="9. linux常用命令有那些"></a>9. <code>linux</code>常用命令有那些</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">apt</span> <span class="token function">install</span> <span class="token punctuation">..</span>. <span class="token comment">#安装软件包</span>
+<span class="token function">tar</span> -zxvf <span class="token punctuation">..</span><span class="token comment">#解压缩,-zcvf压缩</span>
+<span class="token function">cat</span> <span class="token function">more</span> <span class="token function">less</span> <span class="token function">tail</span> <span class="token comment">#查看文件</span>
+<span class="token function">ssh</span> <span class="token function">ip</span> <span class="token comment"># ssh连接</span>
+<span class="token function">ps</span> -ef <span class="token operator">|</span><span class="token function">grep</span> ** <span class="token comment">#查找 grep -i 不区分大小写</span>
+<span class="token function">kill</span> -9 pid <span class="token comment">#杀死进程,一般肯能要用到sudo</span>
+<span class="token function">top</span> <span class="token comment">#查看进程占用情况</span>
+<span class="token builtin class-name">cd</span> <span class="token comment">#目录切换</span>
+<span class="token function">ls</span> <span class="token comment">#列出当前文件夹文件 -all包括隐藏文件夹 .开头的就是隐藏文件 -allh</span>
+<span class="token function">rm</span> <span class="token comment">#删除命令 -rf..</span>
+<span class="token function">mkdir</span> <span class="token comment">#创建文件夹</span>
+<span class="token function">cp</span> <span class="token comment">#复制</span>
+<span class="token function">mv</span> <span class="token comment">#移动,重命名</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="10-怎样实现app稳定性测试"><a href="#10-怎样实现app稳定性测试" class="headerlink" title="10. 怎样实现app稳定性测试"></a>10. 怎样实现<code>app</code>稳定性测试</h3><ul>
+<li><p>安卓APP的稳定性常常使用monkey命令进行测试，通过随机事件流模拟人的操作，对检查程序的内存溢出、空指针有很大的作用。</p>
+</li>
+<li><p>Monkey主要用来检测系统ANR及Crash等问题。</p>
+</li>
+<li><p>ANR的全称是application not responding，根据它的意思我们就能看出来是应用程序未响应，就像是我们在电脑上碰到的 程序未响应，一般电脑出现这种情况，可能是由于我们打开了很多应用程序，占用了大量的内存，或者CPU时间片被一个应用 程序长时间占用，不够分配，导致部分应用程序出现了无响应。</p>
+</li>
+</ul>
+<h3 id="11-三个MySQL数据库的问题"><a href="#11-三个MySQL数据库的问题" class="headerlink" title="11. 三个MySQL数据库的问题"></a>11. 三个<code>MySQL</code>数据库的问题</h3> <pre class="line-numbers language-mysql" data-language="mysql"><code class="language-mysql">select * from tableName
+##条件where xxx&gt;9
+#排序 order by 字段 ASC /desc 升/降
+--<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="12-你会自动化吗？"><a href="#12-你会自动化吗？" class="headerlink" title="12. 你会自动化吗？"></a>12. 你会自动化吗？</h3><h3 id="13-你用什么框架实现的自动化"><a href="#13-你用什么框架实现的自动化" class="headerlink" title="13. 你用什么框架实现的自动化"></a>13. 你用什么框架实现的自动化</h3><h3 id="14-了解-po-模式吗？"><a href="#14-了解-po-模式吗？" class="headerlink" title="14. 了解 po 模式吗？"></a>14. 了解 po 模式吗？</h3><p><strong>主要分三层：</strong><br><strong>1. base层（对象库层）：</strong>page页面一些公共的方法。如：初始化、元素定位、点击、输入、获取文本、截图等方法；<br><strong>2. page层（操作层）：</strong>封装对元素的操作。将每个涉及的元素操作单独封装一个操作方法，然后根据需求组装操作步骤，如登录方法=输入帐号+输入密码+点击登录三个操作进行组装；<br><strong>3. scripts层（业务层）：</strong>导包调用 page页面，将一个或多个操作组合起来完成一个业务功能。如：实现登录，直接调用page组装的登陆方法即可。<br><strong>三者的关系：</strong>page层继承base层，scripts层调用page层</p>
+<h3 id="15-po-模式有那些优点"><a href="#15-po-模式有那些优点" class="headerlink" title="15. po 模式有那些优点"></a>15. po 模式有那些优点</h3><ul>
+<li>提高测试用例的可读性</li>
+<li>使自动化测试脚本具备更高的可维护性；</li>
+<li>业务和页面分离解耦。</li>
+</ul>
+<h3 id="16-web-元素定位方式有几种"><a href="#16-web-元素定位方式有几种" class="headerlink" title="16. web 元素定位方式有几种?"></a>16. web 元素定位方式有几种?</h3><ul>
+<li><code>id</code></li>
+<li><code>name</code></li>
+<li><code>class</code></li>
+<li><code>TagName</code></li>
+<li><code>Xpath</code></li>
+<li><code>CSS selector</code></li>
+<li><code>LinkText</code></li>
+<li><code>PartiaLinkText</code></li>
+</ul>
+<h3 id="17-元素定位不到是因为那些原因"><a href="#17-元素定位不到是因为那些原因" class="headerlink" title="17. 元素定位不到是因为那些原因"></a>17. 元素定位不到是因为那些原因</h3><ol>
+<li>有可能定位的方式不是唯一的，比如：你用 id 定位，对应的元素不唯一；遇到的元素在运行时是动态加载的，这时也定位不到；</li>
+<li>代码是否写的不对：需要确认定位方式、定位信息、所在页面正确；</li>
+<li>没有加合理的等待，有时我们的网速不好、内存不够页面就会加载不出来；</li>
+<li>元素嵌套在了 frame 框架中，有时候我们定位元素时，换了几种方式都定位不到，注意可能嵌套在 frame 框架中了，这时我们需要切换到 frame 中；</li>
+<li>浏览器开了新窗体，如：你在 a 页面，打开了 b 页面，这时想操作 b 页面的元素，无法操作，原因就是元素的 driver 有指向，指向的就是 a 页面；这时采取切换窗体；</li>
+<li>定位到元素后无法操作，可能是遮挡和覆盖，可以利用鼠标悬浮到其他位置，这样遮挡就会消失；</li>
+<li>当你定位到元素后，提示了警告框、提示框，需要先处理这两个框；</li>
+<li>元素是否是可见的，如：元素中有个属性是不可见的，那我们无论如何都是定位不到。</li>
+<li>在当前页面并未展示到目标元素，我们可以利用边滚动边查找的方式。</li>
+</ol>
+<h3 id="18-你印象中使用-web-自动化出现过那些问题，怎么解决的"><a href="#18-你印象中使用-web-自动化出现过那些问题，怎么解决的" class="headerlink" title="18. 你印象中使用 web 自动化出现过那些问题，怎么解决的"></a>18. 你印象中使用 web 自动化出现过那些问题，怎么解决的</h3><p>–定位元素问题,切换框架</p>
+<p><code>browser.switch_to.frame(id)</code><br><code>browser.switch_to.frame(name)</code></p>
+<h3 id="19-会用-Python-吗？掌握到了那种程度"><a href="#19-会用-Python-吗？掌握到了那种程度" class="headerlink" title="19. 会用 Python 吗？掌握到了那种程度?"></a>19. 会用 Python 吗？掌握到了那种程度?</h3><p>–自己答–</p>
+<h3 id="20-测试报告包含那些内容"><a href="#20-测试报告包含那些内容" class="headerlink" title="20. 测试报告包含那些内容?"></a>20. 测试报告包含那些内容?</h3><p>测试的具体流程,本次测试涉及使用到的测试方法,测试工具,用例执行情况,发现的 bug 模块分布,类型,以及 bug 的修复,遗留情况,本次测试的优缺点,遇到的困难等等</p>
+<h3 id="21-你还有什么要问我的吗？"><a href="#21-你还有什么要问我的吗？" class="headerlink" title="21. 你还有什么要问我的吗？"></a>21. 你还有什么要问我的吗？</h3>
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">归七</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://example.com/2022/07/13/myhide/">http://example.com/2022/07/13/myhide/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">归七</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E9%9D%A2%E8%AF%95/">
+                                    <span class="chip bg-color">面试</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+        <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="/css/my-gitalk.css">
+
+<div class="card gitalk-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="gitalk-container" class="card-content"></div>
+</div>
+
+<script src="/libs/gitalk/gitalk.min.js"></script>
+<script>
+    let gitalk = new Gitalk({
+        clientID: 'e267578244d87f7da410',
+        clientSecret: '45a866fb31bbf7347b78ca3a6318202217fa63a9',
+        repo: 'blog-talk',
+        owner: 'Fansirsqi',
+        admin: "Fansirsqi",
+        id: '2022-07-13T00-00-00',
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+
+    gitalk.render('gitalk-container');
+</script>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2022/07/13/ruan-jian-ce-shi-zheng-li-mian-shi-ti/">
+                    <div class="card-image">
+                        
+                        <img src="/medias/images/01.jpg" class="responsive-img" alt="软件测试面试题整理">
+                        
+                        <span class="card-title">软件测试面试题整理</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            写在前面,大部分是CP来的,希望对你有一点帮助,主要就是看你对这些东西的熟悉程度,面试造飞机,上班拧螺丝大多如此,其实我觉得吧实际工作中,能做到高效简单最好,那那面试官怎么去判断评定你呢,我想大概就这些了吧!加油!
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-07-13
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/" class="post-category">
+                                    软件测试理论
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/">
+                        <span class="chip bg-color">测试理论</span>
+                    </a>
+                    
+                    <a href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98%E6%95%B4%E7%90%86/">
+                        <span class="chip bg-color">面试题整理</span>
+                    </a>
+                    
+                    <a href="/tags/ADB%E5%91%BD%E4%BB%A4/">
+                        <span class="chip bg-color">ADB命令</span>
+                    </a>
+                    
+                    <a href="/tags/Liunx%E5%91%BD%E4%BB%A4/">
+                        <span class="chip bg-color">Liunx命令</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/05/13/centos-kai-qi-ssh-fu-wu/">
+                    <div class="card-image">
+                        
+                        <img src="/medias/images/03.jpg" class="responsive-img" alt="Centos开启SSH服务">
+                        
+                        <span class="card-title">Centos开启SSH服务</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-13
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/SSH%E5%BC%80%E5%90%AF/" class="post-category">
+                                    SSH开启
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/ssh/">
+                        <span class="chip bg-color">ssh</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2022</span>
+            
+            <a href="/about" target="_blank">归七</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                        class="white-color">32.1k</span>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+                <span id="sitetime"> Loading ...</span>
+                <script>
+                    var calcSiteTime = function () {
+                        var seconds = 1000;
+                        var minutes = seconds * 60;
+                        var hours = minutes * 60;
+                        var days = hours * 24;
+                        var years = days * 365;
+                        var today = new Date();
+                        var startYear = "2022";
+                        var startMonth = "5";
+                        var startDate = "6";
+                        var startHour = "0";
+                        var startMinute = "0";
+                        var startSecond = "0";
+                        var todayYear = today.getFullYear();
+                        var todayMonth = today.getMonth() + 1;
+                        var todayDate = today.getDate();
+                        var todayHour = today.getHours();
+                        var todayMinute = today.getMinutes();
+                        var todaySecond = today.getSeconds();
+                        var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                        var diff = t2 - t1;
+                        var diffYears = Math.floor(diff / years);
+                        var diffDays = Math.floor((diff / days) - diffYears * 365);
+
+                        // 区分是否有年份.
+                        var language = 'zh-CN';
+                        if (startYear === String(todayYear)) {
+                            document.getElementById("year").innerHTML = todayYear;
+                            var daysTip = 'This site has been running for ' + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                daysTip = '本站已运行 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                daysTip = '本站已運行 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = daysTip;
+                        } else {
+                            document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                            var yearsAndDaysTip = 'This site has been running for ' + diffYears + ' years and '
+                                + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                yearsAndDaysTip = '本站已运行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                yearsAndDaysTip = '本站已運行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = yearsAndDaysTip;
+                        }
+                    }
+
+                    calcSiteTime();
+                </script>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/fansirsqi" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:2104898527@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2104898527" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2104898527" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+
+
+    <a href="https://space.bilibili.com/613155694" class="tooltipped" target="_blank" data-tooltip="访问我的Bilibili" data-position="top" data-delay="50">
+        <i class="fa-brands fa-bilibili"></i>
+    </a>
+
+
+    <a href="" class="tooltipped" target="_blank" data-tooltip="访问我的音乐主页" data-position="top" data-delay="50">
+        <i class="fa-solid fa-music"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    
+
+    
+
+    <!-- 雪花特效 -->
+     
+        <script type="text/javascript">
+            // 只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            if (windowWidth > 768) {
+                document.write('<script type="text/javascript" src="/libs/others/snow.js"><\/script>');
+            }
+        </script>
+    
+
+    <!-- 鼠标星星特效 -->
+     
+        <script type="text/javascript">
+            // 只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            if (windowWidth > 768) {
+                document.write('<script type="text/javascript" src="/libs/others/star.js"><\/script>');
+            }
+        </script>
+    
+
+     
+        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+        <script src="/libs/others/TencentCaptcha.js"></script>
+        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
+    
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+    <script type="text/javascript" color="0,0,255"
+        pointColor="0,0,255" opacity='0.7'
+        zIndex="-1" count="99"
+        src="/libs/background/canvas-nest.js"></script>
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
