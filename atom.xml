@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-07-21T05:35:19.579Z</updated>
+  <updated>2022-07-21T05:34:35.369Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,32 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>面试</title>
-    <link href="http://example.com/2022/07/13/myhide/"/>
-    <id>http://example.com/2022/07/13/myhide/</id>
-    <published>2022-07-12T16:00:00.000Z</published>
-    <updated>2022-07-21T05:35:19.579Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;**网络&lt;br&gt;1 轮&lt;br&gt;大概 45 分钟&lt;/p&gt;
-&lt;h2 id=&quot;问题整理&quot;&gt;&lt;a href=&quot;#问题整理&quot; class=&quot;headerlink&quot; title=&quot;问题整理&quot;&gt;&lt;/a&gt;问题整理&lt;/h2&gt;&lt;h3 id=&quot;1-自我介绍&quot;&gt;&lt;a href=&quot;#1-自我介绍&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="面试" scheme="http://example.com/categories/%E9%9D%A2%E8%AF%95/"/>
-    
-    
-    <category term="面试" scheme="http://example.com/tags/%E9%9D%A2%E8%AF%95/"/>
-    
-  </entry>
   
   <entry>
     <title>软件测试面试题整理</title>
@@ -354,19 +328,18 @@
   </entry>
   
   <entry>
-    <title>解决MySQL 使用Navicat等远程链接工具，提示2003 - Can&#39;t connect to MySQL server on (10061 &quot;Unknown error&quot;)问题</title>
+    <title>Can&#39;t connect to MySQL server on (10061 &quot;Unknown error&quot;)</title>
     <link href="http://example.com/2021/10/23/navicat-unknow-error-to-mysql/"/>
     <id>http://example.com/2021/10/23/navicat-unknow-error-to-mysql/</id>
     <published>2021-10-22T16:00:00.000Z</published>
-    <updated>2022-07-21T06:00:01.741Z</updated>
+    <updated>2022-07-22T02:10:20.835Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h3 id=&quot;系统配置&quot;&gt;&lt;a href=&quot;#系统配置&quot; class=&quot;headerlink&quot; title=&quot;系统配置&quot;&gt;&lt;/a&gt;系统配置&lt;/h3&gt;&lt;p&gt;OS: redhat5.0&lt;br&gt;DataBase: MySQL8.0.23&lt;/p&gt;
-&lt;h3</summary>
+    <summary type="html">&lt;h2 id=&quot;解决MySQL-使用Navicat等远程链接工具，提示2003-Can’t-connect-to-MySQL-server-on-10061-“Unknown-error”-问题&quot;&gt;&lt;a</summary>
         
       
     

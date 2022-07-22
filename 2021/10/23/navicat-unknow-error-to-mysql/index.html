@@ -4,14 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="解决MySQL 使用Navicat等远程链接工具，提示2003 - Can&#39;t connect to MySQL server on (10061 &#34;Unknown error&#34;)问题, 依旧归七">
-    <meta name="description" content="系统配置OS: redhat5.0DataBase: MySQL8.0.23
-修改MySQL配置修改配置文件
-su - root
-输入密码切换root用户
-vi /etc/mysql/mysql.conf.d/mysqld.cnf
-
-查找到">
+    <meta name="keywords" content="Can&#39;t connect to MySQL server on (10061 &#34;Unknown error&#34;), 依旧归七">
+    <meta name="description" content="解决MySQL 使用Navicat等远程链接工具，提示2003 - Can’t connect to MySQL server on (10061 “Unknown error”)问题系统配置OS: redhat5.0DataBase: M">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -25,18 +19,18 @@ vi /etc/mysql/mysql.conf.d/mysqld.cnf
 
     
 
-    <title>解决MySQL 使用Navicat等远程链接工具，提示2003 - Can&#39;t connect to MySQL server on (10061 &#34;Unknown error&#34;)问题 | 依旧归七</title>
-    <link rel="icon" type="image/png" href="/favicon.png">
+    <title>Can&#39;t connect to MySQL server on (10061 &#34;Unknown error&#34;) | 依旧归七</title>
+    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/Fansirsqi/fansirsqi.github.io/medias/logo.png">
 
-    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="/css/my.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Fansirsqi/fansirsqi.github.io/libs/awesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Fansirsqi/fansirsqi.github.io/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Fansirsqi/fansirsqi.github.io/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Fansirsqi/fansirsqi.github.io/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Fansirsqi/fansirsqi.github.io/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Fansirsqi/fansirsqi.github.io/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Fansirsqi/fansirsqi.github.io/css/my.css">
 
-    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Fansirsqi/fansirsqi.github.io/libs/jquery/jquery-3.6.0.min.js"></script>
 
 <meta name="generator" content="Hexo 6.1.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
@@ -52,7 +46,7 @@ vi /etc/mysql/mysql.conf.d/mysqld.cnf
                 <a href="/" class="waves-effect waves-light">
                     <div>
                         
-                        <img src="/medias/loading.gif" data-original="/medias/logo.png" class="logo-img" alt="LOGO">
+                        <img src="/medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Fansirsqi/fansirsqi.github.io/medias/logo.png" class="logo-img" alt="LOGO">
                         
                         <span class="logo-span">依旧归七</span>
                     </div>
@@ -152,7 +146,7 @@ vi /etc/mysql/mysql.conf.d/mysqld.cnf
 
     <div class="mobile-head bg-color">
         
-        <img src="/medias/loading.gif" data-original="/medias/logo.png" class="logo-img circle responsive-img">
+        <img src="/medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Fansirsqi/fansirsqi.github.io/medias/logo.png" class="logo-img circle responsive-img">
         
         <div class="logo-name">依旧归七</div>
         <div class="logo-desc">
@@ -254,7 +248,7 @@ vi /etc/mysql/mysql.conf.d/mysqld.cnf
 </header>
 
     
-<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/Fansirsqi/fansirsqi.github.io/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
         let pwd = '';
@@ -275,7 +269,7 @@ vi /etc/mysql/mysql.conf.d/mysqld.cnf
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">解决MySQL 使用Navicat等远程链接工具，提示2003 - Can&#39;t connect to MySQL server on (10061 &#34;Unknown error&#34;)问题</h1>
+                    <h1 class="description center-align post-title">Can&#39;t connect to MySQL server on (10061 &#34;Unknown error&#34;)</h1>
                 </div>
             </div>
         </div>
@@ -288,7 +282,7 @@ vi /etc/mysql/mysql.conf.d/mysqld.cnf
 <main class="post-container content">
 
     
-    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Fansirsqi/fansirsqi.github.io/libs/tocbot/tocbot.css">
 <style>
     #articleContent h1::before,
     #articleContent h2::before,
@@ -431,14 +425,14 @@ vi /etc/mysql/mysql.conf.d/mysqld.cnf
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-07-21
+                    2022-07-22
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    149
+                    176
                 </div>
                 
 
@@ -461,14 +455,14 @@ vi /etc/mysql/mysql.conf.d/mysqld.cnf
 
         
         <!-- 是否加载使用自带的 prismjs. -->
-        <link rel="stylesheet" href="/libs/prism/prism.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Fansirsqi/fansirsqi.github.io/libs/prism/prism.css">
         
 
         
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="系统配置"><a href="#系统配置" class="headerlink" title="系统配置"></a>系统配置</h3><p>OS: redhat5.0<br>DataBase: MySQL8.0.23</p>
+                <h2 id="解决MySQL-使用Navicat等远程链接工具，提示2003-Can’t-connect-to-MySQL-server-on-10061-“Unknown-error”-问题"><a href="#解决MySQL-使用Navicat等远程链接工具，提示2003-Can’t-connect-to-MySQL-server-on-10061-“Unknown-error”-问题" class="headerlink" title="解决MySQL 使用Navicat等远程链接工具，提示2003 - Can’t connect to MySQL server on (10061 “Unknown error”)问题"></a>解决MySQL 使用Navicat等远程链接工具，提示2003 - Can’t connect to MySQL server on (10061 “Unknown error”)问题</h2><h3 id="系统配置"><a href="#系统配置" class="headerlink" title="系统配置"></a>系统配置</h3><p>OS: redhat5.0<br>DataBase: MySQL8.0.23</p>
 <h3 id="修改MySQL配置"><a href="#修改MySQL配置" class="headerlink" title="修改MySQL配置"></a>修改MySQL配置</h3><p>修改配置文件</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">su</span> - root
 输入密码切换root用户
@@ -478,8 +472,7 @@ vi /etc/mysql/mysql.conf.d/mysqld.cnf
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">bind-address        <span class="token operator">=</span><span class="token number">0.0</span>.0.0
 mysqlx-bind-address <span class="token operator">=</span><span class="token number">0.0</span>.0.0<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<h3 id="添加远程用户root的访问权限"><a href="#添加远程用户root的访问权限" class="headerlink" title="添加远程用户root的访问权限"></a>添加远程用户root的访问权限</h3><p><strong>登入mysql</strong></p>
-<pre class="line-numbers language-mysql" data-language="mysql"><code class="language-mysql">mysql -uroot
+<h3 id="添加远程用户root的访问权限"><a href="#添加远程用户root的访问权限" class="headerlink" title="添加远程用户root的访问权限"></a>添加远程用户root的访问权限</h3><h3 id="登入mysql"><a href="#登入mysql" class="headerlink" title="登入mysql"></a>登入mysql</h3><pre class="line-numbers language-mysql" data-language="mysql"><code class="language-mysql">mysql -uroot
 use mysql
 
 # 8.0版本以上的mysql
@@ -491,6 +484,7 @@ GRANT ALL PRIVILEGES ON *.* TO root@'%' IDENTIFIED BY 'your password';
 
 # 刷新权限
 flush privileges;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
                 
             </div>
             <hr/>
@@ -570,12 +564,12 @@ flush privileges;<span aria-hidden="true" class="line-numbers-rows"><span></span
                     
                 </div>
                 <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
-                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+                    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Fansirsqi/fansirsqi.github.io/libs/share/css/share.min.css">
 <div id="article-share">
 
     
     <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
-    <script src="/libs/share/js/social-share.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Fansirsqi/fansirsqi.github.io/libs/share/js/social-share.min.js"></script>
     
 
     
@@ -693,10 +687,10 @@ flush privileges;<span aria-hidden="true" class="line-numbers-rows"><span></span
                         <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
                     </ul>
                     <div id="alipay">
-                        <img src="/medias/loading.gif" data-original="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                        <img src="/medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Fansirsqi/fansirsqi.github.io/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
                     </div>
                     <div id="wechat">
-                        <img src="/medias/loading.gif" data-original="/medias/reward/wechat.jpg" class="reward-img" alt="微信打赏二维码">
+                        <img src="/medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Fansirsqi/fansirsqi.github.io/medias/reward/wechat.jpg" class="reward-img" alt="微信打赏二维码">
                     </div>
                 </div>
             </div>
@@ -715,8 +709,8 @@ flush privileges;<span aria-hidden="true" class="line-numbers-rows"><span></span
     </div>
 
     
-        <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
-<link rel="stylesheet" href="/css/my-gitalk.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Fansirsqi/fansirsqi.github.io/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Fansirsqi/fansirsqi.github.io/css/my-gitalk.css">
 
 <div class="card gitalk-card" data-aos="fade-up">
     <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
@@ -726,7 +720,7 @@ flush privileges;<span aria-hidden="true" class="line-numbers-rows"><span></span
     <div id="gitalk-container" class="card-content"></div>
 </div>
 
-<script src="/libs/gitalk/gitalk.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/Fansirsqi/fansirsqi.github.io/libs/gitalk/gitalk.min.js"></script>
 <script>
     let gitalk = new Gitalk({
         clientID: 'e267578244d87f7da410',
@@ -870,21 +864,21 @@ flush privileges;<span aria-hidden="true" class="line-numbers-rows"><span></span
 
 
 <!-- 代码块功能依赖 -->
-<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Fansirsqi/fansirsqi.github.io/libs/codeBlock/codeBlockFuction.js"></script>
 
 <!-- 代码语言 -->
 
-<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Fansirsqi/fansirsqi.github.io/libs/codeBlock/codeLang.js"></script>
 
 
 <!-- 代码块复制 -->
 
-<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Fansirsqi/fansirsqi.github.io/libs/codeBlock/codeCopy.js"></script>
 
 
 <!-- 代码块收缩 -->
 
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Fansirsqi/fansirsqi.github.io/libs/codeBlock/codeShrink.js"></script>
 
 
     </div>
@@ -905,7 +899,7 @@ flush privileges;<span aria-hidden="true" class="line-numbers-rows"><span></span
 </div>
 
 
-<script src="/libs/tocbot/tocbot.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/Fansirsqi/fansirsqi.github.io/libs/tocbot/tocbot.min.js"></script>
 <script>
     $(function () {
         tocbot.init({
@@ -991,7 +985,7 @@ flush privileges;<span aria-hidden="true" class="line-numbers-rows"><span></span
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">32.1k</span>
+                        class="white-color">29.8k</span>
             
             
             
@@ -1231,12 +1225,12 @@ $(function () {
 </div>
 
 
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Fansirsqi/fansirsqi.github.io/libs/materialize/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Fansirsqi/fansirsqi.github.io/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Fansirsqi/fansirsqi.github.io/libs/aos/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Fansirsqi/fansirsqi.github.io/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Fansirsqi/fansirsqi.github.io/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Fansirsqi/fansirsqi.github.io/js/matery.js"></script>
 
     
 
@@ -1250,7 +1244,7 @@ $(function () {
 
      
         <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
-        <script src="/libs/others/TencentCaptcha.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/Fansirsqi/fansirsqi.github.io/libs/others/TencentCaptcha.js"></script>
         <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
     
 
@@ -1273,10 +1267,10 @@ $(function () {
 </script>
 
     
-    <script src="/libs/others/clicklove.js" async="async"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Fansirsqi/fansirsqi.github.io/libs/others/clicklove.js" async="async"></script>
     
     
-    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    <script async src="https://cdn.jsdelivr.net/gh/Fansirsqi/fansirsqi.github.io/libs/others/busuanzi.pure.mini.js"></script>
     
 
     
@@ -1289,7 +1283,7 @@ $(function () {
     <script type="text/javascript" color="0,0,255"
         pointColor="0,0,255" opacity='0.7'
         zIndex="-1" count="99"
-        src="/libs/background/canvas-nest.js"></script>
+        src="https://cdn.jsdelivr.net/gh/Fansirsqi/fansirsqi.github.io/libs/background/canvas-nest.js"></script>
     
 
     
@@ -1297,7 +1291,7 @@ $(function () {
     
 
     
-    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Fansirsqi/fansirsqi.github.io/libs/instantpage/instantpage.js" type="module"></script>
     
 
 <script>
