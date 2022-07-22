@@ -4,14 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="开启SSH服务, 依旧归七">
-    <meta name="description" content="Centos开启SSH服务首先确认是否安装openssh-server
-终端输入
-yum list installed |grep openssh-server
-
-或者输入以下命令，查看是否安装
-rpm -qa | grep ssh
-若没安">
+    <meta name="keywords" content="typora-vue-theme 示例, 依旧归七">
+    <meta name="description" content="这是你自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -25,7 +19,7 @@ rpm -qa | grep ssh
 
     
 
-    <title>开启SSH服务 | 依旧归七</title>
+    <title>typora-vue-theme 示例 | 依旧归七</title>
     <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/Fansirsqi/fansirsqi.github.io/medias/logo.png">
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Fansirsqi/fansirsqi.github.io/libs/awesome/css/all.min.css">
@@ -257,7 +251,7 @@ rpm -qa | grep ssh
 <script src="https://cdn.jsdelivr.net/gh/Fansirsqi/fansirsqi.github.io/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = '';
+        let pwd = '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，返回主页！');
@@ -270,12 +264,12 @@ rpm -qa | grep ssh
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/Fansirsqi/blog-Images@main/images/202207211430471.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/images/03.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">开启SSH服务</h1>
+                    <h1 class="description center-align post-title">typora-vue-theme 示例</h1>
                 </div>
             </div>
         </div>
@@ -391,8 +385,12 @@ rpm -qa | grep ssh
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/ssh/">
-                                <span class="chip bg-color">ssh</span>
+                            <a href="/tags/Typora/">
+                                <span class="chip bg-color">Typora</span>
+                            </a>
+                        
+                            <a href="/tags/Markdown/">
+                                <span class="chip bg-color">Markdown</span>
                             </a>
                         
                     </div>
@@ -403,8 +401,8 @@ rpm -qa | grep ssh
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/SSH%E5%BC%80%E5%90%AF/" class="post-category">
-                                SSH开启
+                            <a href="/categories/Markdown/" class="post-category">
+                                Markdown
                             </a>
                         
                     </div>
@@ -416,21 +414,21 @@ rpm -qa | grep ssh
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-05-13
+                    2018-09-07
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-07-21
+                    2022-07-22
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    189
+                    105
                 </div>
                 
 
@@ -460,17 +458,24 @@ rpm -qa | grep ssh
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="Centos开启SSH服务"><a href="#Centos开启SSH服务" class="headerlink" title="Centos开启SSH服务"></a><code>Centos</code>开启SSH服务</h3><p>首先确认是否安装<code>openssh-server</code></p>
-<p>终端输入</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">yum list installed <span class="token operator">|</span><span class="token function">grep</span> openssh-server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>或者输入以下命令，查看是否安装</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">rpm</span> -qa <span class="token operator">|</span> <span class="token function">grep</span> <span class="token function">ssh</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>若没安装SSH则可输入：<code>yum install openssh-server</code>安装。</p>
-<h4 id="启动SSH服务"><a href="#启动SSH服务" class="headerlink" title="启动SSH服务"></a>启动SSH服务</h4><p>输入命令：<code>systemctl restart  sshd</code> 重启SSH服务。<br>命令：<code>systemctl start sshd</code> 启动服务<br>命令：<code>systemctl stop sshd</code> 停止服务<br>重启后可输入：<code>netstat -antp | grep sshd</code> 查看是否启动22端口（可略）。<br>查看端口(用root权限用户)<code>netstat -ant |grep 22</code><br>查看进程<code>ps -e |grep sshd</code></p>
-<h4 id="设置SSH服务为开机启动"><a href="#设置SSH服务为开机启动" class="headerlink" title="设置SSH服务为开机启动"></a>设置SSH服务为开机启动</h4><p>输入命令：<code>systemctl enable sshd</code> 即可。<br>注：若是<code>systemctl disable sshd</code> 则禁止SSH开机启动。</p>
-<p><font color="red">输入执行某些命权限不够时需加sudo,或者切换root用户</font></p>
-
+                <h2 id="这是一个示例"><a href="#这是一个示例" class="headerlink" title="这是一个示例"></a>这是一个示例</h2><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">
+title: typora-vue-theme主题介绍
+date: 2018-09-07 09:25:00
+author: 赵奇
+img: /source/images/xxx.jpg
+top: true
+hide: false
+cover: true
+coverImg: /images/1.jpg
+password: 8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92
+toc: false
+mathjax: false
+summary: 这是你自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要
+categories: Markdown
+tags:
+  <span class="token list punctuation">-</span> Typora
+  <span class="token list punctuation">-</span> Markdown
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
                 
             </div>
             <hr/>
@@ -486,7 +491,7 @@ rpm -qa | grep ssh
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">归七</a>
+                    <a href="/about" rel="external nofollow noreferrer">赵奇</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -496,7 +501,7 @@ rpm -qa | grep ssh
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2022/05/13/centos-kai-qi-ssh-fu-wu/">http://example.com/2022/05/13/centos-kai-qi-ssh-fu-wu/</a>
+                    <a href="https://fansirsqi.github.io/posts/49776.html">https://fansirsqi.github.io/posts/49776.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -509,7 +514,7 @@ rpm -qa | grep ssh
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/about" target="_blank">归七</a>
+                    <a href="/about" target="_blank">赵奇</a>
                     !
                 </span>
             </div>
@@ -534,8 +539,12 @@ rpm -qa | grep ssh
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/ssh/">
-                                    <span class="chip bg-color">ssh</span>
+                                <a href="/tags/Typora/">
+                                    <span class="chip bg-color">Typora</span>
+                                </a>
+                            
+                                <a href="/tags/Markdown/">
+                                    <span class="chip bg-color">Markdown</span>
                                 </a>
                             
                         </div>
@@ -706,7 +715,7 @@ rpm -qa | grep ssh
         repo: 'blog-talk',
         owner: 'Fansirsqi',
         admin: "Fansirsqi",
-        id: '2022-05-13T00-00-00',
+        id: '2018-09-07T09-25-00',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -740,30 +749,30 @@ rpm -qa | grep ssh
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/07/13/ruan-jian-ce-shi-zheng-li-mian-shi-ti/">
+                <a href="/posts/49152.html">
                     <div class="card-image">
                         
-                        <img src="/medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Fansirsqi/blog-Images@main/images/202207211216557.png" class="responsive-img" alt="软件测试面试题整理">
+                        <img src="/medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Fansirsqi/blog-Images@main/images/202207211358937.png" class="responsive-img" alt="npm与nodejs版本不匹配,不支持">
                         
-                        <span class="card-title">软件测试面试题整理</span>
+                        <span class="card-title">npm与nodejs版本不匹配,不支持</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            写在前面,大部分是CP来的,希望对你有一点帮助,主要就是看你对这些东西的熟悉程度,面试造飞机,上班拧螺丝大多如此,其实我觉得吧实际工作中,能做到高效简单最好,那那面试官怎么去判断评定你呢,我想大概就这些了吧!加油!
+                            
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-07-13
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-10-18
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/" class="post-category">
-                                    软件测试理论
+                            <a href="/categories/npm/" class="post-category">
+                                    npm
                                 </a>
                             
                             
@@ -773,20 +782,12 @@ rpm -qa | grep ssh
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98%E6%95%B4%E7%90%86/">
-                        <span class="chip bg-color">面试题整理</span>
+                    <a href="/tags/npm-WARN/">
+                        <span class="chip bg-color">npm WARN</span>
                     </a>
                     
-                    <a href="/tags/%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/">
-                        <span class="chip bg-color">测试理论</span>
-                    </a>
-                    
-                    <a href="/tags/ADB%E5%91%BD%E4%BB%A4/">
-                        <span class="chip bg-color">ADB命令</span>
-                    </a>
-                    
-                    <a href="/tags/Liunx%E5%91%BD%E4%BB%A4/">
-                        <span class="chip bg-color">Liunx命令</span>
+                    <a href="/tags/nodejs/">
+                        <span class="chip bg-color">nodejs</span>
                     </a>
                     
                 </div>
@@ -797,56 +798,49 @@ rpm -qa | grep ssh
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+                本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/2022/05/13/liunx-set-root-user-password/">
+                <a href="/posts/49776.html">
                     <div class="card-image">
                         
-                        <img src="/medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Fansirsqi/blog-Images@main/images/202207211401950.png" class="responsive-img" alt="liunx set root user password">
+                        <img src="/medias/loading.gif" data-original="/medias/images/03.jpg" class="responsive-img" alt="typora-vue-theme 示例">
                         
-                        <span class="card-title">liunx set root user password</span>
+                        <span class="card-title">typora-vue-theme 示例</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            这是你自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-13
+                                <i class="far fa-clock fa-fw icon-date"></i>2018-09-07
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Liunx/" class="post-category">
-                                    Liunx
+                            <a href="/categories/Markdown/" class="post-category">
+                                    Markdown
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Liunx/">
-                        <span class="chip bg-color">Liunx</span>
+                    <a href="/tags/Typora/">
+                        <span class="chip bg-color">Typora</span>
                     </a>
                     
-                    <a href="/tags/%E4%BF%AE%E6%94%B9%E5%88%9D%E5%A7%8Broot%E7%94%A8%E6%88%B7%E5%AF%86%E7%A0%81/">
-                        <span class="chip bg-color">修改初始root用户密码</span>
-                    </a>
-                    
-                    <a href="/tags/ununtu/">
-                        <span class="chip bg-color">ununtu</span>
-                    </a>
-                    
-                    <a href="/tags/Deepin/">
-                        <span class="chip bg-color">Deepin</span>
+                    <a href="/tags/Markdown/">
+                        <span class="chip bg-color">Markdown</span>
                     </a>
                     
                 </div>
@@ -1298,6 +1292,6 @@ $(function () {
                 preloadRatio: 1,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var e=n.imageLazyLoadSetting.isSPA,i=n.imageLazyLoadSetting.preloadRatio||1,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=(n.imageLazyLoadSetting.preloadRatio,Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&t.top<=(n.innerHeight+240||document.documentElement.clientHeight+240)&&0<=t.left&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
 
 </html>

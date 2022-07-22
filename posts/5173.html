@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="typora-vue-theme 示例, 依旧归七">
-    <meta name="description" content="这是你自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要">
+    <meta name="keywords" content="Can&#39;t connect to MySQL server on (10061 &#34;Unknown error&#34;), 依旧归七">
+    <meta name="description" content="解决MySQL 使用Navicat等远程链接工具，提示2003 - Can’t connect to MySQL server on (10061 “Unknown error”)问题系统配置OS: redhat5.0DataBase: M">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,7 +19,7 @@
 
     
 
-    <title>typora-vue-theme 示例 | 依旧归七</title>
+    <title>Can&#39;t connect to MySQL server on (10061 &#34;Unknown error&#34;) | 依旧归七</title>
     <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/Fansirsqi/fansirsqi.github.io/medias/logo.png">
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Fansirsqi/fansirsqi.github.io/libs/awesome/css/all.min.css">
@@ -251,7 +251,7 @@
 <script src="https://cdn.jsdelivr.net/gh/Fansirsqi/fansirsqi.github.io/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92';
+        let pwd = '';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，返回主页！');
@@ -264,12 +264,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/images/03.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/Fansirsqi/blog-Images@main/images/202207211355490.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">typora-vue-theme 示例</h1>
+                    <h1 class="description center-align post-title">Can&#39;t connect to MySQL server on (10061 &#34;Unknown error&#34;)</h1>
                 </div>
             </div>
         </div>
@@ -385,12 +385,16 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Typora/">
-                                <span class="chip bg-color">Typora</span>
+                            <a href="/tags/Mysql/">
+                                <span class="chip bg-color">Mysql</span>
                             </a>
                         
-                            <a href="/tags/Markdown/">
-                                <span class="chip bg-color">Markdown</span>
+                            <a href="/tags/10061-Unknown-error/">
+                                <span class="chip bg-color">10061 &#34;Unknown error&#34;</span>
+                            </a>
+                        
+                            <a href="/tags/%E4%BD%BF%E7%94%A8Navicat%E7%AD%89%E8%BF%9C%E7%A8%8B%E9%93%BE%E6%8E%A5%E5%B7%A5%E5%85%B7%EF%BC%8C%E6%8F%90%E7%A4%BA2003/">
+                                <span class="chip bg-color">使用Navicat等远程链接工具，提示2003</span>
                             </a>
                         
                     </div>
@@ -401,8 +405,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Markdown/" class="post-category">
-                                Markdown
+                            <a href="/categories/Mysql/" class="post-category">
+                                Mysql
                             </a>
                         
                     </div>
@@ -414,21 +418,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2018-09-07
+                    2021-10-23
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-07-21
+                    2022-07-22
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    105
+                    176
                 </div>
                 
 
@@ -458,24 +462,29 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="这是一个示例"><a href="#这是一个示例" class="headerlink" title="这是一个示例"></a>这是一个示例</h2><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">
-title: typora-vue-theme主题介绍
-date: 2018-09-07 09:25:00
-author: 赵奇
-img: /source/images/xxx.jpg
-top: true
-hide: false
-cover: true
-coverImg: /images/1.jpg
-password: 8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92
-toc: false
-mathjax: false
-summary: 这是你自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要
-categories: Markdown
-tags:
-  <span class="token list punctuation">-</span> Typora
-  <span class="token list punctuation">-</span> Markdown
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+                <h2 id="解决MySQL-使用Navicat等远程链接工具，提示2003-Can’t-connect-to-MySQL-server-on-10061-“Unknown-error”-问题"><a href="#解决MySQL-使用Navicat等远程链接工具，提示2003-Can’t-connect-to-MySQL-server-on-10061-“Unknown-error”-问题" class="headerlink" title="解决MySQL 使用Navicat等远程链接工具，提示2003 - Can’t connect to MySQL server on (10061 “Unknown error”)问题"></a>解决MySQL 使用Navicat等远程链接工具，提示2003 - Can’t connect to MySQL server on (10061 “Unknown error”)问题</h2><h3 id="系统配置"><a href="#系统配置" class="headerlink" title="系统配置"></a>系统配置</h3><p>OS: redhat5.0<br>DataBase: MySQL8.0.23</p>
+<h3 id="修改MySQL配置"><a href="#修改MySQL配置" class="headerlink" title="修改MySQL配置"></a>修改MySQL配置</h3><p>修改配置文件</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">su</span> - root
+输入密码切换root用户
+<span class="token function">vi</span> /etc/mysql/mysql.conf.d/mysqld.cnf<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>查找到<code>bind-address</code><br>将后面的ip地址由127.0.0.1全部改为0.0.0.0</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">bind-address        <span class="token operator">=</span><span class="token number">0.0</span>.0.0
+mysqlx-bind-address <span class="token operator">=</span><span class="token number">0.0</span>.0.0<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h3 id="添加远程用户root的访问权限"><a href="#添加远程用户root的访问权限" class="headerlink" title="添加远程用户root的访问权限"></a>添加远程用户root的访问权限</h3><h3 id="登入mysql"><a href="#登入mysql" class="headerlink" title="登入mysql"></a>登入mysql</h3><pre class="line-numbers language-mysql" data-language="mysql"><code class="language-mysql">mysql -uroot
+use mysql
+
+# 8.0版本以上的mysql
+update mysql.user set host = '%' where user = 'root';
+ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY 'your password';
+
+# MySQL8.0以下版本使用语句 %表示多有机器。
+GRANT ALL PRIVILEGES ON *.* TO root@'%' IDENTIFIED BY 'your password';
+
+# 刷新权限
+flush privileges;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
                 
             </div>
             <hr/>
@@ -491,7 +500,7 @@ tags:
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">赵奇</a>
+                    <a href="/about" rel="external nofollow noreferrer">归七</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -501,7 +510,7 @@ tags:
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2018/09/07/hello-world/">http://example.com/2018/09/07/hello-world/</a>
+                    <a href="https://fansirsqi.github.io/posts/5173.html">https://fansirsqi.github.io/posts/5173.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -514,7 +523,7 @@ tags:
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/about" target="_blank">赵奇</a>
+                    <a href="/about" target="_blank">归七</a>
                     !
                 </span>
             </div>
@@ -539,12 +548,16 @@ tags:
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Typora/">
-                                    <span class="chip bg-color">Typora</span>
+                                <a href="/tags/Mysql/">
+                                    <span class="chip bg-color">Mysql</span>
                                 </a>
                             
-                                <a href="/tags/Markdown/">
-                                    <span class="chip bg-color">Markdown</span>
+                                <a href="/tags/10061-Unknown-error/">
+                                    <span class="chip bg-color">10061 &#34;Unknown error&#34;</span>
+                                </a>
+                            
+                                <a href="/tags/%E4%BD%BF%E7%94%A8Navicat%E7%AD%89%E8%BF%9C%E7%A8%8B%E9%93%BE%E6%8E%A5%E5%B7%A5%E5%85%B7%EF%BC%8C%E6%8F%90%E7%A4%BA2003/">
+                                    <span class="chip bg-color">使用Navicat等远程链接工具，提示2003</span>
                                 </a>
                             
                         </div>
@@ -715,7 +728,7 @@ tags:
         repo: 'blog-talk',
         owner: 'Fansirsqi',
         admin: "Fansirsqi",
-        id: '2018-09-07T09-25-00',
+        id: '2021-10-23T00-00-00',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -749,7 +762,55 @@ tags:
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/10/18/npm-warn/">
+                <a href="/posts/17734.html">
+                    <div class="card-image">
+                        
+                        <img src="/medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Fansirsqi/blog-Images@main/images/202207211354532.png" class="responsive-img" alt="打包浏览器扩展">
+                        
+                        <span class="card-title">打包浏览器扩展</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-10-26
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E8%BE%B9%E7%BC%98%E6%8A%80%E6%9C%AF/" class="post-category">
+                                    边缘技术
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%89%A9%E5%B1%95%E6%89%93%E5%8C%85/">
+                        <span class="chip bg-color">浏览器扩展打包</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/posts/49152.html">
                     <div class="card-image">
                         
                         <img src="/medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Fansirsqi/blog-Images@main/images/202207211358937.png" class="responsive-img" alt="npm与nodejs版本不匹配,不支持">
@@ -764,9 +825,9 @@ tags:
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-10-18
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-10-18
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -788,59 +849,6 @@ tags:
                     
                     <a href="/tags/nodejs/">
                         <span class="chip bg-color">nodejs</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/2018/09/07/hello-world/">
-                    <div class="card-image">
-                        
-                        <img src="/medias/loading.gif" data-original="/medias/images/03.jpg" class="responsive-img" alt="typora-vue-theme 示例">
-                        
-                        <span class="card-title">typora-vue-theme 示例</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            这是你自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2018-09-07
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Markdown/" class="post-category">
-                                    Markdown
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Typora/">
-                        <span class="chip bg-color">Typora</span>
-                    </a>
-                    
-                    <a href="/tags/Markdown/">
-                        <span class="chip bg-color">Markdown</span>
                     </a>
                     
                 </div>
@@ -1292,6 +1300,6 @@ $(function () {
                 preloadRatio: 1,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var e=n.imageLazyLoadSetting.isSPA,i=n.imageLazyLoadSetting.preloadRatio||1,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=(n.imageLazyLoadSetting.preloadRatio,Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&t.top<=(n.innerHeight+240||document.documentElement.clientHeight+240)&&0<=t.left&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
 
 </html>

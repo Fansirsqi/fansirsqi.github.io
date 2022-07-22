@@ -4,8 +4,18 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Linux 系统通过openssl命令生成ssl 证书, 依旧归七">
-    <meta name="description" content="这是你自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要">
+    <meta name="keywords" content="性能测试总体流程, 依旧归七">
+    <meta name="description" content="
+收集需求
+开发测试脚本
+执行测试
+分析及报告
+性能优化
+执行测试
+分析及报告
+重复以上步骤…
+
+收集需求性能测试和功能测试工作流程上没什么不同，必须要收集需求，比如功能测试登录输入框最多输入10个字符，那么放在性能测试中，就是一个请求，或">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,7 +29,7 @@
 
     
 
-    <title>Linux 系统通过openssl命令生成ssl 证书 | 依旧归七</title>
+    <title>性能测试总体流程 | 依旧归七</title>
     <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/Fansirsqi/fansirsqi.github.io/medias/logo.png">
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Fansirsqi/fansirsqi.github.io/libs/awesome/css/all.min.css">
@@ -264,12 +274,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/Fansirsqi/blog-Images@main/images/202207211402841.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/Fansirsqi/blog-Images@main/images/202207211357432.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Linux 系统通过openssl命令生成ssl 证书</h1>
+                    <h1 class="description center-align post-title">性能测试总体流程</h1>
                 </div>
             </div>
         </div>
@@ -385,12 +395,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/SSL/">
-                                <span class="chip bg-color">SSL</span>
+                            <a href="/tags/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/">
+                                <span class="chip bg-color">性能测试</span>
                             </a>
                         
-                            <a href="/tags/%E7%94%9F%E6%88%90SSL%E8%AF%81%E4%B9%A6/">
-                                <span class="chip bg-color">生成SSL证书</span>
+                            <a href="/tags/%E6%B5%8B%E8%AF%95%E6%80%A7%E8%83%BD%E6%B5%81%E7%A8%8B/">
+                                <span class="chip bg-color">测试性能流程</span>
                             </a>
                         
                     </div>
@@ -401,8 +411,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Linux/" class="post-category">
-                                Linux
+                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/" class="post-category">
+                                软件测试
                             </a>
                         
                     </div>
@@ -414,28 +424,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-05-07
+                    2022-05-10
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-07-21
+                    2022-07-22
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    340
+                    726
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -458,35 +468,23 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="Linux-系统通过openssl命令生成ssl-证书。"><a href="#Linux-系统通过openssl命令生成ssl-证书。" class="headerlink" title="Linux 系统通过openssl命令生成ssl 证书。"></a>Linux 系统通过openssl命令生成ssl 证书。</h3><p>首先执行如下命令生成一个key</p>
-<p><code>openssl genrsa -des3 -out ssl.key 1024</code></p>
-<p>然后他会要求你输入这个key文件的密码。不推荐输入。因为以后要给nginx使用。每次reload nginx配置时候都要你验证这个PAM密码的。<br>由于生成时候必须输入密码。你可以输入后 再删掉。</p>
-<p><code>mv ssl.key xxx.key openssl rsa -in xxx.key -out ssl.key rm xxx.key</code></p>
-<p>然后根据这个key文件生成证书请求文件</p>
-<p><code>openssl req -new -key ssl.key -out ssl.csr</code></p>
-<p>以上命令生成时候要填很多东西 一个个看着写吧（可以随便，毕竟这是自己生成的证书）</p>
-<p>最后根据这2个文件生成crt证书文件</p>
-<p><code>openssl x509 -req -days 365 -in ssl.csr -signkey ssl.key -out ssl.crt</code></p>
-<p>这里365是证书有效期 。这个大家随意。最后使用到的文件是key和crt文件。</p>
-<p>如果需要用pfx 可以用以下命令生成</p>
-<p><code>openssl pkcs12 -export -inkey ssl.key -in ssl.crt -out ssl.pfx</code></p>
-<p>在需要使用证书的nginx配置文件的server节点里加入以下配置就可以了。</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">server <span class="token punctuation">{</span>
-listen <span class="token number">443</span><span class="token punctuation">;</span>
-server_name bbs.nau.edu.cn<span class="token punctuation">;</span>
-
-<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token variable">$uri</span> <span class="token operator">!</span>~ *<span class="token string">"/logging.php$"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-rewrite ^/<span class="token punctuation">(</span>.*<span class="token punctuation">)</span>$ <span class="token punctuation">[</span>http://<span class="token variable">$host</span>/<span class="token variable">$1</span><span class="token punctuation">]</span><span class="token punctuation">(</span>http://%24host/%241<span class="token punctuation">)</span> redirect<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-ssl on<span class="token punctuation">;</span>
-ssl_certificate /home/ssl.crt<span class="token punctuation">;</span>
-ssl_certificate_key /home/ssl.key<span class="token punctuation">;</span>
-ssl_session_timeout 5m<span class="token punctuation">;</span>
-ssl_protocols SSLv2 SSLv3 TLSv1<span class="token punctuation">;</span>
-ssl_ciphers ALL:<span class="token operator">!</span>ADH:<span class="token operator">!</span>EXPORT56:RC4+RSA:+HIGH:+MEDIUM:+LOW:+SSLv2:+EXP<span class="token punctuation">;</span>
-ssl_prefer_server_ciphers on<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
+                <ul>
+<li>收集需求</li>
+<li>开发测试脚本</li>
+<li>执行测试</li>
+<li>分析及报告</li>
+<li>性能优化</li>
+<li>执行测试</li>
+<li>分析及报告</li>
+<li>重复以上步骤…</li>
+</ul>
+<h3 id="收集需求"><a href="#收集需求" class="headerlink" title="收集需求"></a>收集需求</h3><p>性能测试和功能测试工作流程上没什么不同，必须要收集需求，比如功能测试登录输入框最多输入10个字符，那么放在性能测试中，就是一个请求，或者一个事务响应时间是多少，或者CPU占用率保持多少以下。就是说我们必须要拿到项目经理或者产品经理强调的数值，强调的场景，有了场景后，才可以开发我们的脚本，可能有的人会问，如果没有需求，怎么测试，笔者建议以下2点：第一就是判断哪些场景是用户常使用的，第二就是看日志，一般系统都会收集用户行为，也就是我们常说的埋点，可以通过埋点看哪个时间段数值较多。</p>
+<h3 id="开发测试脚本"><a href="#开发测试脚本" class="headerlink" title="开发测试脚本"></a>开发测试脚本</h3><p>我们讲了那么多Jmeter，绝大部分是介绍了Jmeter组件的使用，并没有实战的案例。这里举个例子，比如我们登录事务，产品经理要求100并发，响应时间是3s。那么我们怎么设计脚本呢？其实很简单，不需要设计，直接录制就好了，然后把录制下来的请求，不需要的删除，线程组改成100，然后添加监听器，比如说我们可以添加聚合报告，或者使用Jmeter NON GUI模式，去查看响应时间。</p>
+<h3 id="执行测试"><a href="#执行测试" class="headerlink" title="执行测试"></a>执行测试</h3><p>脚本我们已经开发好了，那么我们是不是直接测试就行了呢？当然不是，我们必须要确定性能环境是隔离的，不能说我这边还在测试，那边还有人操作，那么测试出来的数据也是不准的，所以一定要保证环境隔离。</p>
+<h3 id="分析及报告"><a href="#分析及报告" class="headerlink" title="分析及报告"></a>分析及报告</h3><p>怎么分析呢？当然是根据响应时间进行判断，比如登录并发100要求是3s，那么实际上是5s，这个就不符合要求了，我们就需要到服务器去看哪些地方出现了瓶颈，这里就可以用到Nmon，<br>当然Nmon只是众多性能监控工具中一个，还有很多其他工具，这里就不展开介绍。</p>
+<h3 id="性能优化"><a href="#性能优化" class="headerlink" title="性能优化"></a>性能优化</h3><p>如果性能出现了瓶颈，那么我们肯定要优化，优化完了就完了吗？当然不是，我们根据优化后的系统再保持性能测试脚本不变，继续测试，查看优化是否符合预期。</p>
+<p>好了以上就是性能测试总体流程，其实还有很多东西没说，我这里特别想讲讲性能监控.</p>
+<p>就是我们的CPU、内存、磁盘、网络。</p>
 
                 
             </div>
@@ -513,7 +511,7 @@ ssl_prefer_server_ciphers on<span class="token punctuation">;</span><span aria-h
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2022/05/07/linux-xi-tong-tong-guo-openssl-ming-ling-sheng-cheng-ssl-zheng-shu/">http://example.com/2022/05/07/linux-xi-tong-tong-guo-openssl-ming-ling-sheng-cheng-ssl-zheng-shu/</a>
+                    <a href="https://fansirsqi.github.io/posts/7801.html">https://fansirsqi.github.io/posts/7801.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -551,12 +549,12 @@ ssl_prefer_server_ciphers on<span class="token punctuation">;</span><span aria-h
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/SSL/">
-                                    <span class="chip bg-color">SSL</span>
+                                <a href="/tags/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/">
+                                    <span class="chip bg-color">性能测试</span>
                                 </a>
                             
-                                <a href="/tags/%E7%94%9F%E6%88%90SSL%E8%AF%81%E4%B9%A6/">
-                                    <span class="chip bg-color">生成SSL证书</span>
+                                <a href="/tags/%E6%B5%8B%E8%AF%95%E6%80%A7%E8%83%BD%E6%B5%81%E7%A8%8B/">
+                                    <span class="chip bg-color">测试性能流程</span>
                                 </a>
                             
                         </div>
@@ -727,7 +725,7 @@ ssl_prefer_server_ciphers on<span class="token punctuation">;</span><span aria-h
         repo: 'blog-talk',
         owner: 'Fansirsqi',
         admin: "Fansirsqi",
-        id: '2022-05-07T23-57-08',
+        id: '2022-05-10T16-48-03',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -761,12 +759,12 @@ ssl_prefer_server_ciphers on<span class="token punctuation">;</span><span aria-h
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/05/09/how-to-use-git/">
+                <a href="/posts/56963.html">
                     <div class="card-image">
                         
-                        <img src="/medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Fansirsqi/blog-Images@main/images/202207211402294.png" class="responsive-img" alt="Git 的安装使用">
+                        <img src="/medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Fansirsqi/blog-Images@main/images/202207211355490.png" class="responsive-img" alt="SQL Server命令以Mac OS，MySQL为例">
                         
-                        <span class="card-title">Git 的安装使用</span>
+                        <span class="card-title">SQL Server命令以Mac OS，MySQL为例</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -777,14 +775,14 @@ ssl_prefer_server_ciphers on<span class="token punctuation">;</span><span aria-h
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-05-09
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-05-10
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Git/" class="post-category">
-                                    Git
+                            <a href="/categories/MYSQL/" class="post-category">
+                                    MYSQL
                                 </a>
                             
                             
@@ -794,8 +792,12 @@ ssl_prefer_server_ciphers on<span class="token punctuation">;</span><span aria-h
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Git/">
-                        <span class="chip bg-color">Git</span>
+                    <a href="/tags/MYSQL/">
+                        <span class="chip bg-color">MYSQL</span>
+                    </a>
+                    
+                    <a href="/tags/SQL%E5%91%BD%E4%BB%A4/">
+                        <span class="chip bg-color">SQL命令</span>
                     </a>
                     
                 </div>
@@ -809,12 +811,12 @@ ssl_prefer_server_ciphers on<span class="token punctuation">;</span><span aria-h
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/10/26/to-packages-with-extensions/">
+                <a href="/posts/31933.html">
                     <div class="card-image">
                         
-                        <img src="/medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Fansirsqi/blog-Images@main/images/202207211354532.png" class="responsive-img" alt="打包浏览器扩展">
+                        <img src="/medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Fansirsqi/blog-Images@main/images/202207211355490.png" class="responsive-img" alt="SQL 入门小记">
                         
-                        <span class="card-title">打包浏览器扩展</span>
+                        <span class="card-title">SQL 入门小记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -825,14 +827,14 @@ ssl_prefer_server_ciphers on<span class="token punctuation">;</span><span aria-h
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-10-26
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-09
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E8%BE%B9%E7%BC%98%E6%8A%80%E6%9C%AF/" class="post-category">
-                                    边缘技术
+                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/" class="post-category">
+                                    软件测试
                                 </a>
                             
                             
@@ -842,8 +844,12 @@ ssl_prefer_server_ciphers on<span class="token punctuation">;</span><span aria-h
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%89%A9%E5%B1%95%E6%89%93%E5%8C%85/">
-                        <span class="chip bg-color">浏览器扩展打包</span>
+                    <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">
+                        <span class="chip bg-color">数据库</span>
+                    </a>
+                    
+                    <a href="/tags/SQL/">
+                        <span class="chip bg-color">SQL</span>
                     </a>
                     
                 </div>
@@ -1295,6 +1301,6 @@ $(function () {
                 preloadRatio: 1,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var e=n.imageLazyLoadSetting.isSPA,i=n.imageLazyLoadSetting.preloadRatio||1,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=(n.imageLazyLoadSetting.preloadRatio,Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&t.top<=(n.innerHeight+240||document.documentElement.clientHeight+240)&&0<=t.left&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
 
 </html>

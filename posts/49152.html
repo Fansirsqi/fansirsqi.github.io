@@ -4,11 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="宝塔登录面板重置密码, 依旧归七">
-    <meta name="description" content="宝塔登录面板重置密码进入ssh输入以下命令重置密码（把命令最后面的testpasswd替换成你要改的新密码）
-注：若是debian/ubuntu用户，
-请使用有root权限的账户去执行这条命令
-cd /www/server/panel &amp;a">
+    <meta name="keywords" content="npm与nodejs版本不匹配,不支持, 依旧归七">
+    <meta name="description" content="1、问题：今天在nodejs搞服务器应用的时候发现nodejs版本和npm版本不匹配
+npm WARN npm does not support Node.js v12.0.0
+2、解决办法：
+
+在cmd命令窗口 查看node,npm版本,">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -22,7 +23,7 @@ cd /www/server/panel &amp;a">
 
     
 
-    <title>宝塔登录面板重置密码 | 依旧归七</title>
+    <title>npm与nodejs版本不匹配,不支持 | 依旧归七</title>
     <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/Fansirsqi/fansirsqi.github.io/medias/logo.png">
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Fansirsqi/fansirsqi.github.io/libs/awesome/css/all.min.css">
@@ -267,12 +268,12 @@ cd /www/server/panel &amp;a">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/Fansirsqi/blog-Images@main/images/202207211816138.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/Fansirsqi/blog-Images@main/images/202207211358937.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">宝塔登录面板重置密码</h1>
+                    <h1 class="description center-align post-title">npm与nodejs版本不匹配,不支持</h1>
                 </div>
             </div>
         </div>
@@ -388,8 +389,12 @@ cd /www/server/panel &amp;a">
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%AE%9D%E5%A1%94%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE/">
-                                <span class="chip bg-color">宝塔密码重置</span>
+                            <a href="/tags/npm-WARN/">
+                                <span class="chip bg-color">npm WARN</span>
+                            </a>
+                        
+                            <a href="/tags/nodejs/">
+                                <span class="chip bg-color">nodejs</span>
                             </a>
                         
                     </div>
@@ -400,8 +405,8 @@ cd /www/server/panel &amp;a">
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF/" class="post-category">
-                                宝塔面板
+                            <a href="/categories/npm/" class="post-category">
+                                npm
                             </a>
                         
                     </div>
@@ -413,21 +418,21 @@ cd /www/server/panel &amp;a">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-05-13
+                    2021-10-18
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-07-21
+                    2022-07-22
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    162
+                    414
                 </div>
                 
 
@@ -457,17 +462,40 @@ cd /www/server/panel &amp;a">
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="宝塔登录面板重置密码"><a href="#宝塔登录面板重置密码" class="headerlink" title="宝塔登录面板重置密码"></a>宝塔登录面板重置密码</h3><p>进入ssh输入以下命令重置密码（把命令最后面的<code>testpasswd</code>替换成你要改的新密码）</p>
-<p>注：若是<code>debian</code>/<code>ubuntu</code>用户，</p>
-<p>请使用有<code>root</code>权限的账户去执行这条命令</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">cd</span> /www/server/panel <span class="token operator">&amp;&amp;</span> python tools.py panel testpasswd<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+                <p><strong>1、问题：</strong><br>今天在nodejs搞服务器应用的时候发现nodejs版本和npm版本不匹配</p>
+<p><code>npm WARN npm does not support Node.js v12.0.0</code></p>
+<p><strong>2、解决办法：</strong></p>
+<ol>
+<li><p>在cmd命令窗口 查看node,npm版本,分别使用 <code>node -v</code>，<code>npm -v</code></p>
+</li>
+<li><p>npm与node版本对照<a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/download/releases/">以往的版本 | Node.js</a>，根据自己的node版本来更新npm 版本：</p>
+</li>
+<li><p>查找到对应的版本,运行<code>npm -g install npm@6.9.0</code>此时仍然报错，</p>
+<p>依旧显示npm 不支持这个版本 ，这说明npm存在旧的npm缓存，还是旧的npm 环境。</p>
+</li>
+<li><p>在<code>C:\Users\administrater\AppData\Roaming</code> 根目录下删除<code>npm</code>，<code>npm-cache</code>两个文件夹(如找不到roaming这个文件夹，可以在此电脑中搜索npm，根据路径删除掉这俩文件夹)</p>
+</li>
+<li><p>在命令行工具中执行<code>npm install npm@6.9.0 -g</code>安装npm版本，之后就可以使用<code>npm install </code>安装依赖了.(降级升级同理)</p>
+</li>
+</ol>
+<blockquote>
+<p>查看npm的镜像源</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> config get registry<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>如果提示多次登录失败，暂时禁止登录 请输入以下命令 清除登录限制</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">rm</span> -f /www/server/panel/data/*.login<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p> 查看cnpm的镜像源</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">cnpm config get registry<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>新装面板用户获取默认账号密码命令：bt default</p>
-<p>6.x及以后版本可输入<code>bt</code>命令获取工具菜单来重置账户密码</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">bt <span class="token comment">#即可呼出菜单</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>我们在安装时都会装一个淘宝镜像，如果cnpm没有设置或者两个都没包含<br><a target="_blank" rel="noopener" href="https://registry.npm.taobao.org/">https://registry.npm.taobao.org</a><br>那就是没有安装淘宝镜像。<br>设置npm为淘宝镜像源</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">npm install <span class="token operator">-</span>g cnpm <span class="token operator">--</span>registry<span class="token operator">=</span>https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>registry<span class="token punctuation">.</span>npm<span class="token punctuation">.</span>taobao<span class="token punctuation">.</span>org<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>设置cnpm为淘宝镜像</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">npm config set registry https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>registry<span class="token punctuation">.</span>npm<span class="token punctuation">.</span>taobao<span class="token punctuation">.</span>org<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>这是设置npm的镜像，无推荐意见。可不装不影响降级<br><strong>3.进行降级</strong><br>先检查一下自己的镜像，确认一下那个对应的淘宝镜像<br>例如：<code>cnpm</code></p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token operator">&gt;</span>cnpm install npm@版本号 <span class="token operator">-</span>g<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>需使用淘宝镜像进行降级操作。@6.9.0是版本！</p>
+</blockquote>
 
                 
             </div>
@@ -494,7 +522,7 @@ cd /www/server/panel &amp;a">
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2022/05/13/bao-ta-deng-lu-mian-ban-chong-zhi-mi-ma/">http://example.com/2022/05/13/bao-ta-deng-lu-mian-ban-chong-zhi-mi-ma/</a>
+                    <a href="https://fansirsqi.github.io/posts/49152.html">https://fansirsqi.github.io/posts/49152.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -532,8 +560,12 @@ cd /www/server/panel &amp;a">
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E5%AE%9D%E5%A1%94%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE/">
-                                    <span class="chip bg-color">宝塔密码重置</span>
+                                <a href="/tags/npm-WARN/">
+                                    <span class="chip bg-color">npm WARN</span>
+                                </a>
+                            
+                                <a href="/tags/nodejs/">
+                                    <span class="chip bg-color">nodejs</span>
                                 </a>
                             
                         </div>
@@ -704,7 +736,7 @@ cd /www/server/panel &amp;a">
         repo: 'blog-talk',
         owner: 'Fansirsqi',
         admin: "Fansirsqi",
-        id: '2022-05-13T00-00-00',
+        id: '2021-10-18T00-00-00',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -738,12 +770,12 @@ cd /www/server/panel &amp;a">
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/05/13/liunx-set-root-user-password/">
+                <a href="/posts/5173.html">
                     <div class="card-image">
                         
-                        <img src="/medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Fansirsqi/blog-Images@main/images/202207211401950.png" class="responsive-img" alt="liunx set root user password">
+                        <img src="/medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Fansirsqi/blog-Images@main/images/202207211355490.png" class="responsive-img" alt="Can&#39;t connect to MySQL server on (10061 &#34;Unknown error&#34;)">
                         
-                        <span class="card-title">liunx set root user password</span>
+                        <span class="card-title">Can&#39;t connect to MySQL server on (10061 &#34;Unknown error&#34;)</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -754,14 +786,14 @@ cd /www/server/panel &amp;a">
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-05-13
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-10-23
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Liunx/" class="post-category">
-                                    Liunx
+                            <a href="/categories/Mysql/" class="post-category">
+                                    Mysql
                                 </a>
                             
                             
@@ -771,20 +803,16 @@ cd /www/server/panel &amp;a">
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Liunx/">
-                        <span class="chip bg-color">Liunx</span>
+                    <a href="/tags/Mysql/">
+                        <span class="chip bg-color">Mysql</span>
                     </a>
                     
-                    <a href="/tags/%E4%BF%AE%E6%94%B9%E5%88%9D%E5%A7%8Broot%E7%94%A8%E6%88%B7%E5%AF%86%E7%A0%81/">
-                        <span class="chip bg-color">修改初始root用户密码</span>
+                    <a href="/tags/10061-Unknown-error/">
+                        <span class="chip bg-color">10061 &#34;Unknown error&#34;</span>
                     </a>
                     
-                    <a href="/tags/ununtu/">
-                        <span class="chip bg-color">ununtu</span>
-                    </a>
-                    
-                    <a href="/tags/Deepin/">
-                        <span class="chip bg-color">Deepin</span>
+                    <a href="/tags/%E4%BD%BF%E7%94%A8Navicat%E7%AD%89%E8%BF%9C%E7%A8%8B%E9%93%BE%E6%8E%A5%E5%B7%A5%E5%85%B7%EF%BC%8C%E6%8F%90%E7%A4%BA2003/">
+                        <span class="chip bg-color">使用Navicat等远程链接工具，提示2003</span>
                     </a>
                     
                 </div>
@@ -798,30 +826,30 @@ cd /www/server/panel &amp;a">
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/05/10/sql-ming-ling-su-cha/">
+                <a href="/posts/49776.html">
                     <div class="card-image">
                         
-                        <img src="/medias/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Fansirsqi/blog-Images@main/images/202207211355490.png" class="responsive-img" alt="SQL Server命令以Mac OS，MySQL为例">
+                        <img src="/medias/loading.gif" data-original="/medias/images/03.jpg" class="responsive-img" alt="typora-vue-theme 示例">
                         
-                        <span class="card-title">SQL Server命令以Mac OS，MySQL为例</span>
+                        <span class="card-title">typora-vue-theme 示例</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            这是你自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-10
+                                <i class="far fa-clock fa-fw icon-date"></i>2018-09-07
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/MYSQL/" class="post-category">
-                                    MYSQL
+                            <a href="/categories/Markdown/" class="post-category">
+                                    Markdown
                                 </a>
                             
                             
@@ -831,12 +859,12 @@ cd /www/server/panel &amp;a">
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/MYSQL/">
-                        <span class="chip bg-color">MYSQL</span>
+                    <a href="/tags/Typora/">
+                        <span class="chip bg-color">Typora</span>
                     </a>
                     
-                    <a href="/tags/SQL%E5%91%BD%E4%BB%A4/">
-                        <span class="chip bg-color">SQL命令</span>
+                    <a href="/tags/Markdown/">
+                        <span class="chip bg-color">Markdown</span>
                     </a>
                     
                 </div>
@@ -1288,6 +1316,6 @@ $(function () {
                 preloadRatio: 1,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var e=n.imageLazyLoadSetting.isSPA,i=n.imageLazyLoadSetting.preloadRatio||1,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=(n.imageLazyLoadSetting.preloadRatio,Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&t.top<=(n.innerHeight+240||document.documentElement.clientHeight+240)&&0<=t.left&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
 
 </html>
