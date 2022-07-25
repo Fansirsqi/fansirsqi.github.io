@@ -6,7 +6,7 @@
   <link href="https://fansirsqi.github.io/atom.xml" rel="self"/>
   
   <link href="https://fansirsqi.github.io/"/>
-  <updated>2022-07-22T04:17:54.910Z</updated>
+  <updated>2022-07-25T03:14:24.244Z</updated>
   <id>https://fansirsqi.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>自定义设置Pycharm文件头</title>
+    <link href="https://fansirsqi.github.io/posts/56184.html"/>
+    <id>https://fansirsqi.github.io/posts/56184.html</id>
+    <published>2022-07-25T03:03:14.000Z</published>
+    <updated>2022-07-25T03:14:24.244Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;1-打开设置&quot;&gt;&lt;a href=&quot;#1-打开设置&quot; class=&quot;headerlink&quot; title=&quot;1. 打开设置&quot;&gt;&lt;/a&gt;1. 打开设置&lt;/h4&gt;&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="Pycharm" scheme="https://fansirsqi.github.io/categories/Pycharm/"/>
+    
+    
+    <category term="py签名" scheme="https://fansirsqi.github.io/tags/py%E7%AD%BE%E5%90%8D/"/>
+    
+    <category term="Pycharm" scheme="https://fansirsqi.github.io/tags/Pycharm/"/>
+    
+  </entry>
   
   <entry>
     <title>软件测试面试题整理</title>
