@@ -3575,10 +3575,13 @@ test<span class="token punctuation">.</span>test3<span class="token punctuation"
 <p><code>dd</code>删除当前行</p>
 <p><code>x</code>删除光标处字符</p>
 <p><code>yy</code>复制当前行</p>
+<p><code>v</code> 选中光标所在字符</p>
 <p><code>p</code>粘贴至下一行<br><code>P</code>粘贴至上一行<br><code>:20</code>跳转至20行</p>
 <p><code>/搜索内容</code>向下搜索 <code>-n</code>切换一下一个,上一个 <code>shift+n</code><br><code>?搜索内容</code>向上搜索 <code>-n</code>切换一下一个,上一个 <code>shift+n</code></p>
 <p><code>:set hlsearch</code> 搜索高亮</p>
-]]></content>
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE5NzU2NDY4ODBdfQ==
+-->]]></content>
       <categories>
         <category>Linux</category>
       </categories>
@@ -5467,7 +5470,7 @@ CODE &#x3D; fucktencent,fuckbaidu,fuckali,fucking,open<span aria-hidden="true" c
   </entry>
   <entry>
     <title>记录一下经典音乐</title>
-    <url>/2023/11/16/yin-le-ji-lu/</url>
+    <url>/2023/11/21/yin-le-ji-lu/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="2002"><a href="#2002" class="headerlink" title="2002"></a>2002</h2><p>小微 - 黄品源	练习 - 刘德华	蓝莲花 -许巍</p>
 <p>断点 - 张敬轩	痴心绝对 - 李圣杰	你是我的眼 - 萧煌奇</p>
 <p>从开始到现在 - 张信哲	无所谓 - 杨坤	拯救 - 孙楠<br>死了都要爱 - 信乐团	相信自己 - 零点乐队	永远永远 - 李翊君<br>太多 - 陈冠浦	蓝眼泪 - 陈冠浦	分手快乐 - 梁静茹<br>爱的主打歌 - 萧亚轩	当爱在靠近 - 刘若英	你的背包 - 陈奕迅<br>谢谢侬 - 陈奕迅	半岛铁盒 - 周杰伦	他一定很爱你 - 阿杜</p>
