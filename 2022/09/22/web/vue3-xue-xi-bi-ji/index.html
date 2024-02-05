@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.3.0">
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha256-CTSx/A06dm1B063156EVh15m6Y67pAjZZaQc89LLSrU=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.24/fancybox/fancybox.css" integrity="sha256-vQkngPS8jiHHH0I6ABTZroZk8NPZ7b+MUReOFE9UsXQ=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/pink/pace-theme-flash.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"fansirsqi.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.18.2","exturl":true,"sidebar":{"position":"left","width":210,"display":"always","padding":3,"offset":36},"copycode":{"enable":true,"style":"mac"},"fold":{"enable":true,"height":500},"bookmark":{"enable":false,"color":"#b94242","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+
+
+<link rel="canonical" href="http://fansirsqi.github.io/2022/09/22/web/vue3-xue-xi-bi-ji/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://fansirsqi.github.io/2022/09/22/web/vue3-xue-xi-bi-ji/","path":"2022/09/22/web/vue3-xue-xi-bi-ji/","title":"Vue3学习"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Vue3学习 | 依旧归七</title>
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-webfont@1.1.0/lxgwwenkai-regular.css"/>
+
+
+
+<script src="https://fastly.jsdelivr.net/gh/Fansirsqi/live2d-widget/autoload.js"></script>
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="依旧归七" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">依旧归七</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Byseven</p>
+      <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
+      <p id="hitokoto">
+        <a href="#" id="hitokoto_text">✨...✨</a>
+      </p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">25</span></a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">84</span></a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">49</span></a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%8C%E5%85%A5%E9%97%A8"><span class="nav-text">第一章，入门</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E5%88%9B%E5%BB%BA%E5%B7%A5%E7%A8%8B"><span class="nav-text">1. 创建工程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E8%84%9A%E6%89%8B%E6%9E%B6-vue-cli%E5%88%9B%E5%BB%BA"><span class="nav-text">使用脚手架 vue-cli创建</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E8%84%9A%E6%89%8B%E6%9E%B6-vue-cli"><span class="nav-text">安装脚手架 vue-cli</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8-Vite%E5%88%9B%E5%BB%BA"><span class="nav-text">使用 Vite创建</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-vue-cil%E5%88%9B%E5%BB%BA%E7%9A%84%E5%B7%A5%E7%A8%8B%E5%88%86%E6%9E%90"><span class="nav-text">2. vue-cil创建的工程分析</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%B8%BB%E6%96%87%E4%BB%B6-main-js"><span class="nav-text">主文件 main.js</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%84%9A%E6%89%8B%E6%9E%B6%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6-vue-config-js"><span class="nav-text">脚手架配置文件 vue.config.js</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#App-vue%E6%A8%A1%E6%9D%BF"><span class="nav-text">App.vue模板</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0%E3%80%81%E5%B8%B8%E7%94%A8CompositionAPI-%E7%BB%84%E5%90%88%E5%BC%8FAPI"><span class="nav-text">第二章、常用CompositionAPI(组合式API)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E6%8B%89%E5%BC%80%E5%BA%8F%E5%B9%95%E7%9A%84-setup"><span class="nav-text">1. 拉开序幕的 setup()</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#setup-%E7%9A%84%E4%B8%A4%E4%B8%AA%E6%B3%A8%E6%84%8F%E7%82%B9"><span class="nav-text">setup()的两个注意点</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-ref%E5%87%BD%E6%95%B0"><span class="nav-text">2. ref函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-reactive%E5%87%BD%E6%95%B0"><span class="nav-text">3. reactive函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-Vue3%E4%B8%AD%E7%9A%84%E5%93%8D%E5%BA%94%E5%BC%8F%E5%8E%9F%E7%90%86"><span class="nav-text">4. Vue3中的响应式原理</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Vue2-x%E7%9A%84%E5%93%8D%E5%BA%94%E5%BC%8F"><span class="nav-text">Vue2.x的响应式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Vue3-0%E7%9A%84%E5%93%8D%E5%BA%94%E5%BC%8F"><span class="nav-text">Vue3.0的响应式</span></a></li></ol></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Fansir"
+      src="/images/cavatar.gif">
+  <p class="site-author-name" itemprop="name">Fansir</p>
+  <div class="site-description" itemprop="description">一个小博客</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">49</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">25</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">84</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2ZhbnNpcnNxaQ==" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;fansirsqi"><i class="fab fa-github fa-fw"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="bWFpbHRvOmZhbnNpcmxpdUAxNjMuY29t" title="163-Mail → mailto:fansirliu@163.com"><i class="fa fa-regular fa-envelope fa-fw"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9zcGFjZS5iaWxpYmlsaS5jb20vNjEzMTU1Njk0" title="bilibili → https:&#x2F;&#x2F;space.bilibili.com&#x2F;613155694"><i class="fab fa-bilibili fa-fw"></i></span>
+      </span>
+  </div>
+  <div class="cc-license animated" itemprop="license">
+    <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpoLUNO"><img src="https://cdnjs.cloudflare.com/ajax/libs/creativecommons-vocabulary/2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="sidebar-inner sidebar-blogroll">
+      <div class="links-of-blogroll animated">
+        <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+          ✨魔法链接✨
+        </div>
+        <ul class="links-of-blogroll-list">
+            <li class="links-of-blogroll-item">
+              <span class="exturl" data-url="aHR0cHM6Ly9nZWVrLnJyYWJpdHMuY29tLyMvcmVnaXN0ZXI/Y29kZT1hQ3B3VUpoRQ==" title="https:&#x2F;&#x2F;geek.rrabits.com&#x2F;#&#x2F;register?code&#x3D;aCpwUJhE">Rrabits-Cloudgeek</span>
+            </li>
+            <li class="links-of-blogroll-item">
+              <span class="exturl" data-url="aHR0cHM6Ly9zYWt1cmFjYXQud29ybGQvIy9yZWdpc3Rlcj9jb2RlPWFXQVVZblhy" title="https:&#x2F;&#x2F;sakuracat.world&#x2F;#&#x2F;register?code&#x3D;aWAUYnXr">SakuraCat</span>
+            </li>
+            <li class="links-of-blogroll-item">
+              <span class="exturl" data-url="aHR0cHM6Ly9zb2NrYm9vbS5sb3ZlL2F1dGgvcmVnaXN0ZXI/YWZmaWQ9MTEwNTMz" title="https:&#x2F;&#x2F;sockboom.love&#x2F;auth&#x2F;register?affid&#x3D;110533">SockBoom</span>
+            </li>
+            <li class="links-of-blogroll-item">
+              <span class="exturl" data-url="aHR0cHM6Ly9zYXVydXJ1cy5pbmsvIy9yZWdpc3Rlcj9jb2RlPW5Ka2ROQldy" title="https:&#x2F;&#x2F;saururus.ink&#x2F;#&#x2F;register?code&#x3D;nJkdNBWr">Saururus</span>
+            </li>
+            <li class="links-of-blogroll-item">
+              <span class="exturl" data-url="aHR0cHM6Ly9ndW9saWNoZW5nLmNjL2luZGV4LnBocCMvcmVnaXN0ZXI/Y29kZT16c21ZSUpudg==" title="https:&#x2F;&#x2F;guolicheng.cc&#x2F;index.php#&#x2F;register?code&#x3D;zsmYIJnv">果粒橙</span>
+            </li>
+            <li class="links-of-blogroll-item">
+              <span class="exturl" data-url="aHR0cHM6Ly94bi0tbWVzcjhiMzZ4LmNvbS8jL3JlZ2lzdGVyP2NvZGU9RG9OSnhkbWk=" title="https:&#x2F;&#x2F;xn--mesr8b36x.com&#x2F;#&#x2F;register?code&#x3D;DoNJxdmi">Big-Airport</span>
+            </li>
+            <li class="links-of-blogroll-item">
+              <span class="exturl" data-url="aHR0cHM6Ly94bi0tbWVzMzU4YWJ5MmFwZmcuY29tLyMvcmVnaXN0ZXI/Y29kZT10aENJNnMxWQ==" title="https:&#x2F;&#x2F;xn--mes358aby2apfg.com&#x2F;#&#x2F;register?code&#x3D;thCI6s1Y">赔钱机场</span>
+            </li>
+            <li class="links-of-blogroll-item">
+              <span class="exturl" data-url="aHR0cHM6Ly93d3cuZWVqc3EubmV0LyMvcmVnaXN0ZXI/Y29kZT1qcWFkR05MMg==" title="https:&#x2F;&#x2F;www.eejsq.net&#x2F;#&#x2F;register?code&#x3D;jqadGNL2">EEVPN</span>
+            </li>
+        </ul>
+      </div>
+    </div>
+        <div class="pjax">
+        <div class="sidebar-inner sidebar-post-related">
+          <div class="animated">
+              <div class="links-of-blogroll-title"><i class="fa fa-signs-post fa-fw"></i>
+    相关文章
+  </div>
+  <ul class="popular-posts">
+    <li class="popular-posts-item">
+      <a class="popular-posts-link" href="/2020/12/31/test/unittest-dan-yuan-ce-shi-kuang-jia-xue-xi/" rel="bookmark">
+        <time class="popular-posts-time">2021-01-01</time>
+        <br>
+      unitTest框架学习
+      </a>
+    </li>
+  </ul>
+
+          </div>
+        </div>
+        </div>
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://fansirsqi.github.io/2022/09/22/web/vue3-xue-xi-bi-ji/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/cavatar.gif">
+      <meta itemprop="name" content="Fansir">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="依旧归七">
+      <meta itemprop="description" content="一个小博客">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Vue3学习 | 依旧归七">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Vue3学习
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-09-23 00:00:00" itemprop="dateCreated datePublished" datetime="2022-09-23T00:00:00+08:00">2022-09-23</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2024-02-05 18:37:28" itemprop="dateModified" datetime="2024-02-05T18:37:28+08:00">2024-02-05</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>7 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h2 id="第一章，入门"><a href="#第一章，入门" class="headerlink" title="第一章，入门"></a>第一章，入门</h2><h3 id="1-创建工程"><a href="#1-创建工程" class="headerlink" title="1. 创建工程"></a>1. 创建工程</h3><h4 id="使用脚手架-vue-cli创建"><a href="#使用脚手架-vue-cli创建" class="headerlink" title="使用脚手架 vue-cli创建"></a>使用脚手架 <code>vue-cli</code>创建</h4><h5 id="安装脚手架-vue-cli"><a href="#安装脚手架-vue-cli" class="headerlink" title="安装脚手架 vue-cli"></a>安装脚手架 <code>vue-cli</code></h5><ul>
+<li>Node 版本要求<br>Vue CLI 4.x 需要 <span class="exturl" data-url="aHR0cHM6Ly9ub2RlanMub3JnLw==">Node.js<i class="fa fa-external-link-alt"></i></span> v8.9 或更高版本 (推荐 v10 以上)。你可以使用 <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RqL24=">n<i class="fa fa-external-link-alt"></i></span>，<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2NyZWF0aW9uaXgvbnZt">nvm<i class="fa fa-external-link-alt"></i></span> 或 <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2NvcmV5YnV0bGVyL252bS13aW5kb3dz">nvm-windows<i class="fa fa-external-link-alt"></i></span> 在同一台电脑中管理多个 Node 版本。</li>
+</ul>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install -g @vue/cli</span><br><span class="line"><span class="comment"># 或者下面这行</span></span><br><span class="line">yarn global add @vue/cli</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>升级</li>
+</ul>
+<span id="more"></span>
+
+<p>如需升级全局的 Vue CLI 包，请运行：</p>
+<figure class="highlight autoit"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm update -g <span class="symbol">@vue</span>/cli</span><br><span class="line"><span class="meta"># 或者</span></span><br><span class="line">yarn <span class="keyword">global</span> upgrade --latest <span class="symbol">@vue</span>/cli</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>查看本地脚手架版本<br><code>vue -V</code>&#x2F;<code>vue --version</code><br>版本应大于5.1.0 可以创建vue3项目–具体没试过</li>
+<li>坑：</li>
+</ul>
+<figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">vue : 无法加载文件 <span class="type">xxxxx</span>\nodejs\vue.ps1。未对文件 xxxxx\nodejs\vue.ps1 进行数字签名。无法在当前系统上运行该脚本。有关运行脚本和设置执行策略的详细信息，请参阅 https:/go.microsoft.com/fwlin</span><br><span class="line">k/?LinkID=<span class="number">135170</span> 中的 about_Execution_Policies。</span><br><span class="line">所在位置 行:<span class="number">1</span> 字符: <span class="number">1</span></span><br><span class="line">+ vue <span class="comment">--version</span></span><br><span class="line">+ ~~~</span><br><span class="line">    + CategoryInfo          : <span class="type">SecurityError</span>: (:) []，PSSecurityException</span><br><span class="line">    + FullyQualifiedErrorId : <span class="type">UnauthorizedAccess</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>原因：<br><strong>由于使用的是powershell，存在powershell不能或禁止执行脚本</strong><br>powershell无疑是对安全充分考虑，把脚本的执行分成几种策略<br><strong>4种常见的策略：</strong></li>
+<li><code>Restricted</code>： （默认策略）禁止运行任何脚本和配置文件。</li>
+<li><code>AllSigned</code> ：可以运行脚本，但要求所有脚本和配置文件由可信发布者签名，包括在本地计算机上编写的脚本。</li>
+<li><code>RemoteSigned</code> ：可以运行脚本，但要求从网络上下载的脚本和配置文件由可信发布者签名； 不要求对已经运行和已在本地计算机编写的脚本进行数字签名。</li>
+<li><code>Unrestricted</code> ：可以运行未签名脚本。（危险！）<br><strong>解决办法：</strong><br>获取当前的执行策略 <code>Get-ExecutionPolicy</code>命令不区分大小写<br>在命令框输入 <code>set-ExecutionPolicy RemoteSigned</code><br>在 <code>PowerShell</code>中输入会出现如下图，选择 <code>y</code>或者 <code>a</code>即可</li>
+<li><strong>创建工程</strong></li>
+</ul>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vue create hello-world</span><br></pre></td></tr></table></figure>
+
+<h4 id="使用-Vite创建"><a href="#使用-Vite创建" class="headerlink" title="使用 Vite创建"></a>使用 <code>Vite</code>创建</h4><p><code>Vite</code>新一代前端构建工具-老的是 <code>webpak</code><br>优势：</p>
+<ul>
+<li>开发环境中，无需打包，快速冷启动</li>
+<li>轻量，快速的热重载（HMR）</li>
+<li>按需编译，不再等待整个应用编译完成</li>
+<li><strong>创建工程</strong></li>
+</ul>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm init vite-app project-name</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">PS C:\Users\admin&gt; npm init vite-app vue3_study_vite</span><br><span class="line">Need to install the following packages:</span><br><span class="line">  create-vite-app</span><br><span class="line">Ok to proceed? (y) y</span><br><span class="line">npm WARN deprecated create-vite-app@1.21.0: create-vite-app has been deprecated. run `npm init @vitejs/app` or `yarn create @vitejs/app` instead.</span><br><span class="line">Scaffolding project in C:\Users\admin\vue3_study_vite...</span><br><span class="line"></span><br><span class="line">Done. Now run:</span><br><span class="line"></span><br><span class="line">  cd vue3_study_vite</span><br><span class="line">  npm install (or `yarn`)</span><br><span class="line">  npm run dev (or `yarn dev`)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> &lt;project-name&gt;</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-vue-cil创建的工程分析"><a href="#2-vue-cil创建的工程分析" class="headerlink" title="2. vue-cil创建的工程分析"></a>2. <code>vue-cil</code>创建的工程分析</h3><p><img src="https://cdn.jsdelivr.net/gh/Fansirsqi/blog-Images/images/202303021601301.png"></p>
+<h5 id="主文件-main-js"><a href="#主文件-main-js" class="headerlink" title="主文件 main.js"></a>主文件 <code>main.js</code></h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 引入的不再是2.0的 Vue构造函数（首字母大写，通过new调用）了，而是一个名为creataApp的工厂函数（无需new调用）</span></span><br><span class="line"><span class="keyword">import</span> &#123; createApp &#125; <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span></span><br><span class="line"><span class="keyword">import</span> <span class="title class_">App</span> <span class="keyword">from</span> <span class="string">&#x27;./App.vue&#x27;</span></span><br><span class="line"><span class="comment">// createApp(App).mount(&#x27;#app&#x27;) //拆解一下</span></span><br><span class="line"><span class="comment">//以上拆解</span></span><br><span class="line"><span class="keyword">const</span> app = <span class="title function_">createApp</span>(<span class="title class_">App</span>) <span class="comment">//创建应用实例对象，app类似于vue2中的 vm 但比vm更‘轻’</span></span><br><span class="line"><span class="comment">// 挂载</span></span><br><span class="line">app.<span class="title function_">mount</span>(<span class="string">&#x27;#app&#x27;</span>)</span><br><span class="line"><span class="built_in">setTimeout</span>(<span class="function">()=&gt;</span>&#123;</span><br><span class="line">    <span class="comment">//定时器，间隔一秒钟，卸载</span></span><br><span class="line">    app.<span class="title function_">unmount</span>(<span class="string">&#x27;#app&#x27;</span>)</span><br><span class="line">&#125;,<span class="number">1000</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">// Vue2写法</span></span><br><span class="line"><span class="comment">// new Vue(&#123;</span></span><br><span class="line"><span class="comment">//     render:h =&gt; h(App)</span></span><br><span class="line"><span class="comment">// &#125;).mount(&#x27;#app&#x27;)</span></span><br><span class="line"><span class="comment">// //上面拆解一下</span></span><br><span class="line"><span class="comment">// const vm = new Vue(&#123;</span></span><br><span class="line"><span class="comment">//     render:h =&gt; h(App)</span></span><br><span class="line"><span class="comment">// &#125;)</span></span><br><span class="line"><span class="comment">// vmm.mount(&#x27;#app&#x27;)</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="脚手架配置文件-vue-config-js"><a href="#脚手架配置文件-vue-config-js" class="headerlink" title="脚手架配置文件 vue.config.js"></a>脚手架配置文件 <code>vue.config.js</code></h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">module</span>.<span class="property">exports</span> = &#123;</span><br><span class="line">  <span class="comment">// 选项</span></span><br><span class="line">  <span class="attr">lintOnSave</span>: <span class="literal">false</span>, <span class="comment">//关闭语法检查</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h5 id="App-vue模板"><a href="#App-vue模板" class="headerlink" title="App.vue模板"></a>App.vue模板</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;!-- vue3组件中的模板结构可以没有根标签 --&gt;</span><br><span class="line">  &lt;img alt=&quot;Vue logo&quot; src=&quot;./assets/logo.png&quot;&gt;</span><br><span class="line">  &lt;HelloWorld msg=&quot;Welcome to Your Vue.js App&quot; /&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">import HelloWorld from &#x27;./components/HelloWorld.vue&#x27;//引入 HellWorld组件</span><br><span class="line">export default &#123;</span><br><span class="line">  name: &#x27;App&#x27;,//给组件命名，</span><br><span class="line">  components: &#123;//注册组件</span><br><span class="line">    HelloWorld</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;style&gt;</span><br><span class="line">#app &#123;</span><br><span class="line">  font-family: Avenir, Helvetica, Arial, sans-serif;</span><br><span class="line">  -webkit-font-smoothing: antialiased;</span><br><span class="line">  -moz-osx-font-smoothing: grayscale;</span><br><span class="line">  text-align: center;</span><br><span class="line">  color: #2c3e50;</span><br><span class="line">  margin-top: 60px;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="第二章、常用CompositionAPI-组合式API"><a href="#第二章、常用CompositionAPI-组合式API" class="headerlink" title="第二章、常用CompositionAPI(组合式API)"></a>第二章、常用CompositionAPI(组合式API)</h2><h3 id="1-拉开序幕的-setup"><a href="#1-拉开序幕的-setup" class="headerlink" title="1. 拉开序幕的 setup()"></a>1. 拉开序幕的 <code>setup()</code></h3><ol>
+<li><code>vue3</code>中的一个新的配置项，值为一个函数</li>
+<li><code>setup</code>是所有组合式 <code>API</code>表演的舞台</li>
+<li>组件中所有用到的数据、方法等待，均要配置在 <code>setup</code>中</li>
+<li>两种返回值：</li>
+</ol>
+<ul>
+<li><ol>
+<li>一个对象，，对象中的属性，方法，在模板中可以直接使用！！</li>
+</ol>
+</li>
+<li><ol start="2">
+<li>渲染函数，可以自定义渲染内容（了解）</li>
+</ol>
+</li>
+</ul>
+<ol start="5">
+<li><code>&lt;font color=&#39;red&#39;&gt;</code>注意点<code>&lt;/font&gt;</code>:</li>
+<li>不建议 <code>vue2</code>,<code>vue3</code>混用<ul>
+<li><code>Vue2.x</code>配置的（<code>data</code>，<code>methods</code>，<code>computed</code>…）中可以访问到setup中的属性，方法</li>
+<li>但是在 <code>setup</code>中不能访问 <code>vue2</code>的配置（<code>data</code>，<code>methods</code>，<code>computed</code>…）</li>
+<li>如果有混合定义，那么 <code>vue3</code>的优先级高</li>
+</ul>
+</li>
+<li><code>setup</code>不是一个 <code>async</code>函数，因为返回值不再是 <code>return</code>的对象，而是 <code>promise</code>，模板看不到 <code>return</code>对象中的属性</li>
+</ol>
+<h4 id="setup-的两个注意点"><a href="#setup-的两个注意点" class="headerlink" title="setup()的两个注意点"></a><code>setup()</code>的两个注意点</h4><ol>
+<li>执行时机</li>
+</ol>
+<ul>
+<li>在 <code>beforeCreate</code>之前执行一次，<code>this</code>是 <code>undefined</code><br><code>Demo.vue</code></li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"> &lt;template&gt;</span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">h1</span>&gt;</span>一个人的信息<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">h2</span>&gt;</span>姓名：&#123;&#123; person.name &#125;&#125;<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        <span class="tag">&lt;<span class="name">h2</span>&gt;</span>年龄：&#123;&#123; person.age &#125;&#125;<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">&lt;/template&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line"><span class="keyword">import</span> &#123; reactive &#125; <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&#x27;components-demo&#x27;</span>,</span><br><span class="line">    <span class="title function_">beforeCreate</span>(<span class="params"></span>) &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;-beforeCreate-&#x27;</span>)</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="title function_">setup</span>(<span class="params"></span>) &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;--setup--&#x27;</span>,<span class="variable language_">this</span>)</span><br><span class="line">        <span class="keyword">let</span> person = <span class="title function_">reactive</span>(&#123;</span><br><span class="line">            <span class="attr">name</span>: <span class="string">&#x27;Susan&#x27;</span>,</span><br><span class="line">            <span class="attr">age</span>: <span class="number">16</span></span><br><span class="line">        &#125;)</span><br><span class="line">        <span class="keyword">return</span> &#123;</span><br><span class="line">            person</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/Fansirsqi/blog-Images/images/202303161600875.png"></p>
+<ol>
+<li><code>setup()</code>的参数</li>
+</ol>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">setup</span>(props,context)</span><br></pre></td></tr></table></figure>
+
+<p><code>props</code>:值为对象，包含：组件外部传递过来，且内部声明接受了的属性<br><code>context</code>:上下文对象</p>
+<ul>
+<li><code>attrs</code>:值为对象，包含组件外部传递过来，但是没有在props配置中声明的属性，相当于 <code>this.$attrs</code>.</li>
+<li><code>slots</code>:收到的插槽内容，相当于 <code>this.$slots</code>.</li>
+<li><code>emit</code>:分发自定义事件的函数，相当于 <code>this.$emit</code>.</li>
+</ul>
+<p>内容代码<br><code>App.vue</code></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  <span class="language-xml"><span class="tag">&lt;<span class="name">Demo</span> @<span class="attr">hello</span>=<span class="string">&quot;showHelloMsg&quot;</span> <span class="attr">msg</span>=<span class="string">&quot;你好&quot;</span> <span class="attr">school</span>=<span class="string">&quot;依旧归七学院&quot;</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;<span class="name">template</span> <span class="attr">v-slot:qwe</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;<span class="name">span</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">        测试卡槽</span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;/<span class="name">template</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">  <span class="tag">&lt;/<span class="name">Demo</span>&gt;</span></span></span><br><span class="line">  <span class="language-xml"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>以上是demo组件<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line">&lt;/template&gt;</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="keyword">import</span> <span class="title class_">Demo</span> <span class="keyword">from</span> <span class="string">&#x27;./components/Demo&#x27;</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="attr">name</span>: <span class="string">&#x27;app&#x27;</span>,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="attr">components</span>: &#123; <span class="title class_">Demo</span> &#125;,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  <span class="title function_">setup</span>(<span class="params"></span>) &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="keyword">function</span> <span class="title function_">showHelloMsg</span>(<span class="params">value</span>) &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      <span class="title function_">alert</span>(<span class="string">`出发了hello时间，收到的参数是:<span class="subst">$&#123;value&#125;</span>`</span>)</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    &#125;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="keyword">return</span> &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">      showHelloMsg</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    &#125;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">  &#125;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">&#125;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<p><code>Demo.vue</code></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>一个人的信息<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>姓名：&#123;&#123; person.name &#125;&#125;<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span></span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>年龄：&#123;&#123; person.age &#125;&#125;<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span></span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;<span class="name">button</span> @<span class="attr">click</span>=<span class="string">&quot;test&quot;</span>&gt;</span>测试demo组件的触发事件<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line">&lt;/template&gt;</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="keyword">import</span> &#123; reactive &#125; <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="attr">name</span>: <span class="string">&#x27;components-Demo&#x27;</span>,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="attr">props</span>: [<span class="string">&#x27;msg&#x27;</span>, <span class="string">&#x27;school&#x27;</span>],<span class="comment">//</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="attr">emits</span>: [<span class="string">&#x27;hello&#x27;</span>],</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="title function_">beforeCreate</span>(<span class="params"></span>) &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;-beforeCreate-&#x27;</span>)</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    &#125;,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    <span class="title function_">setup</span>(<span class="params">props, context</span>) &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;--setup--\n[props]&#x27;</span>, props)</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;--setup--\n[context]&#x27;</span>, context)</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="comment">// console.log(&#x27;-setup--\n[context.attrs]用于捕获最前面定义的msg,school,但是未在后面声明的key--&#x27;, context.attrs)//相当于vue2中的$attrs,用于捕获最前面定义的msg,school,但是未在后面声明的key，</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="comment">// console.log(&#x27;-setup--\n[context.emit]&#x27;, context.emit)//触发自定义事件的</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;--setup--\n[context.slots]:&#x27;</span>, context.<span class="property">slots</span>)</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="keyword">let</span> person = <span class="title function_">reactive</span>(&#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">            <span class="attr">name</span>: <span class="string">&#x27;Susan&#x27;</span>,</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">            <span class="attr">age</span>: <span class="number">16</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        &#125;)</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="keyword">function</span> <span class="title function_">test</span>(<span class="params"></span>) &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">            context.<span class="title function_">emit</span>(<span class="string">&#x27;hello&#x27;</span>, <span class="number">666</span>)</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        &#125;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        <span class="keyword">return</span> &#123;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">            person, test</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">        &#125;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">    &#125;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml">&#125;</span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="comment">// import HelloWorld from &#x27;./HelloWorld&#x27;</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="comment">// export default &#123;</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="comment">//     name: &#x27;app&#x27;,</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="comment">//     components: &#123;</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="comment">//         HelloWorld</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="comment">//     &#125;</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"><span class="comment">// &#125;</span></span></span></span><br><span class="line"><span class="language-javascript"><span class="language-xml"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span></span><br><span class="line"><span class="language-css"><span class="language-xml"><span class="selector-id">#app</span> &#123;</span></span></span><br><span class="line"><span class="language-css"><span class="language-xml">    <span class="attribute">font-family</span>: <span class="string">&#x27;Avenir&#x27;</span>, Helvetica, Arial, sans-serif;</span></span></span><br><span class="line"><span class="language-css"><span class="language-xml">    -webkit-<span class="attribute">font-smoothing</span>: antialiased;</span></span></span><br><span class="line"><span class="language-css"><span class="language-xml">    -moz-osx-<span class="attribute">font-smoothing</span>: grayscale;</span></span></span><br><span class="line"><span class="language-css"><span class="language-xml">    <span class="attribute">text-align</span>: center;</span></span></span><br><span class="line"><span class="language-css"><span class="language-xml">    <span class="attribute">color</span>: <span class="number">#2c3e50</span>;</span></span></span><br><span class="line"><span class="language-css"><span class="language-xml">    <span class="attribute">margin-top</span>: <span class="number">60px</span>;</span></span></span><br><span class="line"><span class="language-css"><span class="language-xml">&#125;</span></span></span><br><span class="line"><span class="language-css"><span class="language-xml"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<h3 id="2-ref函数"><a href="#2-ref函数" class="headerlink" title="2. ref函数"></a>2. <code>ref</code>函数</h3><ul>
+<li>定义一个响应式数据</li>
+</ul>
+<blockquote>
+<p>接受一个参数值并返回一个响应式且可改变的 ref 对象。ref 对象拥有一个指向内部值的单一属性 .value。</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> count = <span class="title function_">ref</span>(<span class="number">0</span>)</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(count.<span class="property">value</span>) <span class="comment">// 0</span></span><br><span class="line">count.<span class="property">value</span>++</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(count.<span class="property">value</span>) <span class="comment">// 1</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="3-reactive函数"><a href="#3-reactive函数" class="headerlink" title="3. reactive函数"></a>3. <code>reactive</code>函数</h3><ul>
+<li>作用，定义一个<strong>对象类型</strong>的响应式数据（基本类型用 <code>ref</code>）</li>
+<li>语法，<code>const 代理对象 = reactive(源对象)</code>接收一个对象，或数组，返回一个代理对象，（proxy对象）</li>
+<li><code>reactive</code>定义的响应式数据是”深层次的”</li>
+<li>内部基于ES6的porxy实现，通过代理对象操作源对象内部数据进行操作</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line"><span class="keyword">import</span> <span class="title class_">HelloWorld</span> <span class="keyword">from</span> <span class="string">&#x27;./components/HelloWorld.vue&#x27;</span><span class="comment">//引入 HellWorld组件</span></span><br><span class="line"><span class="keyword">import</span> &#123; ref, reactive &#125; <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&#x27;App&#x27;</span>,<span class="comment">//给组件命名，</span></span><br><span class="line">  <span class="title function_">setup</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="comment">//数据</span></span><br><span class="line">    <span class="keyword">const</span> refvalue = <span class="title function_">ref</span>(<span class="number">666</span>)<span class="comment">//基本类型数据实例对象示例</span></span><br><span class="line">    <span class="keyword">const</span> person = <span class="title function_">reactive</span>(&#123;</span><br><span class="line">      <span class="attr">name</span>: <span class="string">&#x27;姓名&#x27;</span>,</span><br><span class="line">      <span class="attr">age</span>: <span class="number">18</span>,</span><br><span class="line">      <span class="attr">job</span>: <span class="string">&#x27;会计&#x27;</span>,</span><br><span class="line">      <span class="attr">salary</span>: <span class="string">&#x27;10k&#x27;</span>,</span><br><span class="line">      <span class="attr">hobby</span>: [<span class="string">&#x27;study&#x27;</span>, <span class="string">&#x27;lol&#x27;</span>, <span class="string">&#x27;csgo&#x27;</span>]</span><br><span class="line">    &#125;)</span><br><span class="line">    <span class="comment">// 方法</span></span><br><span class="line">    <span class="keyword">function</span> <span class="title function_">changeInfo</span>(<span class="params"></span>) &#123;</span><br><span class="line">      person.<span class="property">name</span> = <span class="string">&#x27;Jack&#x27;</span></span><br><span class="line">      person.<span class="property">age</span> = <span class="number">23</span></span><br><span class="line">      person.<span class="property">job</span> = <span class="string">&#x27;睡觉&#x27;</span></span><br><span class="line">      person.<span class="property">salary</span> = <span class="string">&#x27;1元&#x27;</span></span><br><span class="line">      person.<span class="property">hobby</span>[<span class="number">1</span>] = <span class="string">&#x27;pubg&#x27;</span></span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">log</span>(person)</span><br><span class="line">      <span class="built_in">setTimeout</span>(<span class="function">()=&gt;</span>&#123;</span><br><span class="line">        person.<span class="property">salary</span> = refvalue.<span class="property">value</span></span><br><span class="line">      &#125;,<span class="number">2000</span>)</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">      person,</span><br><span class="line">      changeInfo</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-Vue3中的响应式原理"><a href="#4-Vue3中的响应式原理" class="headerlink" title="4. Vue3中的响应式原理"></a>4. <code>Vue3</code>中的响应式原理</h3><h4 id="Vue2-x的响应式"><a href="#Vue2-x的响应式" class="headerlink" title="Vue2.x的响应式"></a><code>Vue2.x</code>的响应式</h4><ul>
+<li>实现原理：<ul>
+<li>对象类型：通过 <code>Object.defineProperty()</code>对属性读取修改拦截（数据劫持，响应式根基）</li>
+<li>数组类型：通过重写更新数组的一系列方法，来实现的拦截。（对数组的变更方法进行了包裹）</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">Object</span>.<span class="title function_">defineProperty</span>(data, <span class="string">&#x27;count&#x27;</span>,&#123;</span><br><span class="line">  <span class="title function_">get</span>(<span class="params"></span>)&#123;&#125;,</span><br><span class="line">  <span class="title function_">set</span>(<span class="params"></span>)&#123;&#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>存在问题：<ul>
+<li>新增属性，删除属性，界面不会更新</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">export default &#123;</span><br><span class="line">  name: &#x27;App&#x27;,//给组件命名，</span><br><span class="line">  data() &#123;</span><br><span class="line">    return&#123;</span><br><span class="line">      person &#123;</span><br><span class="line">        name: &#x27;姓名&#x27;,</span><br><span class="line">        age: 18,</span><br><span class="line">        job: &#x27;会计&#x27;,</span><br><span class="line">        salary: &#x27;10k&#x27;,</span><br><span class="line">        hobby: [&#x27;study&#x27;, &#x27;lol&#x27;, &#x27;csgo&#x27;]</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  methods:&#123;</span><br><span class="line">   addSex()&#123;</span><br><span class="line">  </span><br><span class="line">   &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>直接通过数组下标修改数组里的元素，界面不会自动更新</li>
+</ul>
+<h4 id="Vue3-0的响应式"><a href="#Vue3-0的响应式" class="headerlink" title="Vue3.0的响应式"></a><code>Vue3.0</code>的响应式</h4>
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>原作者： </strong>归七
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="http://fansirsqi.github.io/2022/09/22/web/vue3-xue-xi-bi-ji/" title="Vue3学习">http://fansirsqi.github.io/2022/09/22/web/vue3-xue-xi-bi-ji/</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpoLUNO"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/Vue/" rel="tag"><i class="fa fa-tag"></i> Vue</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/07/25/other/zi-ding-yi-she-zhi-pycharm-wen-jian-tou/" rel="prev" title="自定义设置Pycharm文件头">
+                  <i class="fa fa-angle-left"></i> 自定义设置Pycharm文件头
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2022/09/22/web/vite-admin/" rel="next" title="Vite-admin学习">
+                  Vite-admin学习 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments gitalk-container"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2021 – 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Fansir</span>
+  </div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+      <span>站点总字数：</span>
+    <span title="站点总字数">55k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span>站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">3:21</span>
+  </span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+  <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZw==">NexT.Gemini</span> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.24/fancybox/fancybox.umd.js" integrity="sha256-oyhjPiYRWGXaAt+ny/mTMWOnN1GBoZDUQnzzgC7FRI4=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+  <script src="/js/third-party/fancybox.js"></script>
+
+  <script src="/js/third-party/pace.js"></script>
+
+
+  
+  <script data-pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/2.3.0/quicklink.umd.js" integrity="sha256-yvJQOINiH9fWemHn0vCA5lsHWJaHs6/ZmO+1Ft04SvM=" crossorigin="anonymous"></script>
+  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"url":"http://fansirsqi.github.io/2022/09/22/web/vue3-xue-xi-bi-ji/"}</script>
+  <script src="/js/third-party/quicklink.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.css" integrity="sha256-AJnUHL7dBv6PGaeyPQJcgQPDjt/Hn/PvYZde1iqfp8U=" crossorigin="anonymous">
+
+<script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"Fansirsqi","repo":"fansirsqi.github.io","client_id":"242426985831ab7a182d","client_secret":"9f722c40bb448adfa5a0562d4c86eb49aedb4505","admin_user":"Fansirsqi","distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","language":["zh-CN"],"js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.min.js","integrity":"sha256-MVK9MGD/XJaGyIghSVrONSnoXoGh3IFxLw0zfvzpxR4="},"path_md5":"cbf21ee79746ed51540676fdb5a56ceb"}</script>
+<script src="/js/third-party/comments/gitalk.js"></script>
+
+</body>
+</html>

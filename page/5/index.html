@@ -41,7 +41,11 @@
 
 
 
+<link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-webfont@1.1.0/lxgwwenkai-regular.css"/>
 
+
+
+<script src="https://fastly.jsdelivr.net/gh/Fansirsqi/live2d-widget/autoload.js"></script>
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
@@ -86,7 +90,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">25</span></a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">85</span></a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">49</span></a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">25</span></a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">84</span></a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">49</span></a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -162,7 +166,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">85</span>
+        <span class="site-state-item-count">84</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -237,7 +241,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://fansirsqi.github.io/2020/09/30/linux-chang-yong-ming-ling/">
+    <link itemprop="mainEntityOfPage" href="http://fansirsqi.github.io/2020/09/30/linux/vi-ming-ling-xue-xi/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/cavatar.gif">
@@ -255,7 +259,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2020/09/30/linux-chang-yong-ming-ling/" class="post-title-link" itemprop="url">linux 命令小记</a>
+          <a href="/2020/09/30/linux/vi-ming-ling-xue-xi/" class="post-title-link" itemprop="url">linux vi 命令学习</a>
         </h2>
 
         <div class="post-meta-container">
@@ -273,112 +277,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-11-21 17:20:10" itemprop="dateModified" datetime="2023-11-21T17:20:10+08:00">2023-11-21</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Linux/" itemprop="url" rel="index"><span itemprop="name">Linux</span></a>
-        </span>
-    </span>
-
-  
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>13 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="解压缩"><a href="#解压缩" class="headerlink" title="解压缩"></a>解压缩</h2><h3 id="1-tar包和gz包"><a href="#1-tar包和gz包" class="headerlink" title="1.tar包和gz包"></a>1.tar包和gz包</h3><p>tar包和gz包是两个不同的文件包，有三种不同后缀。.tar   .gz    .tar.gz</p>
-<ul>
-<li>tar包：使用tar命令，打包文件或者文件夹，只打包，不压缩</li>
-<li>gz包：使用gzip命令，只压缩文件，不打包，所以gz包操作不能对文件夹直接操作，如果要对文件夹下所有文件进行压缩，使用-r参数，gzip -r 文件夹路径</li>
-</ul>
-<p><strong>tar.gz：使用 <code>tar</code>加 <code>-z</code>参数，<code>tar -zcvf filename.tar.gz dir/file</code>  打包压缩文件或者文件夹</strong></p>
-<p><code>tar</code>参数有 <code>z</code>，<code>c</code>，<code>x</code>，<code>v</code>，<code>f</code></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/09/30/linux-chang-yong-ming-ling/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://fansirsqi.github.io/2020/09/30/vi-ming-ling-xue-xi/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/cavatar.gif">
-      <meta itemprop="name" content="Fansir">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="依旧归七">
-      <meta itemprop="description" content="一个小博客">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 依旧归七">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2020/09/30/vi-ming-ling-xue-xi/" class="post-title-link" itemprop="url">linux vi 命令学习</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2020-10-01 00:00:00" itemprop="dateCreated datePublished" datetime="2020-10-01T00:00:00+08:00">2020-10-01</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-11-21 17:20:10" itemprop="dateModified" datetime="2023-11-21T17:20:10+08:00">2023-11-21</time>
+      <time title="修改时间：2024-02-05 18:37:28" itemprop="dateModified" datetime="2024-02-05T18:37:28+08:00">2024-02-05</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -414,7 +313,7 @@
 <p><code>o</code>在当前行后插入 <code>[小写]</code>,</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2020/09/30/vi-ming-ling-xue-xi/#more" rel="contents">
+              <a class="btn" href="/2020/09/30/linux/vi-ming-ling-xue-xi/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -445,7 +344,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://fansirsqi.github.io/2020/09/30/nei-wang-chuan-tou/">
+    <link itemprop="mainEntityOfPage" href="http://fansirsqi.github.io/2020/09/30/other/centos-an-zhuang-docker/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/cavatar.gif">
@@ -463,7 +362,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2020/09/30/nei-wang-chuan-tou/" class="post-title-link" itemprop="url">内网穿透配置指南</a>
+          <a href="/2020/09/30/other/centos-an-zhuang-docker/" class="post-title-link" itemprop="url">Centos 安装docker</a>
         </h2>
 
         <div class="post-meta-container">
@@ -481,7 +380,109 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-11-21 17:20:10" itemprop="dateModified" datetime="2023-11-21T17:20:10+08:00">2023-11-21</time>
+      <time title="修改时间：2024-02-05 18:37:28" itemprop="dateModified" datetime="2024-02-05T18:37:28+08:00">2024-02-05</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Linux/" itemprop="url" rel="index"><span itemprop="name">Linux</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>卸载旧版本</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">sudo yum remove docker \</span><br><span class="line">                 docker-client \</span><br><span class="line">                 docker-client-latest \</span><br><span class="line">                 docker-common \</span><br><span class="line">                 docker-latest \</span><br><span class="line">                 docker-latest-logrotate \</span><br><span class="line">                 docker-logrotate \</span><br><span class="line">                 docker-engine</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/09/30/other/centos-an-zhuang-docker/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://fansirsqi.github.io/2020/09/30/other/nei-wang-chuan-tou/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/cavatar.gif">
+      <meta itemprop="name" content="Fansir">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="依旧归七">
+      <meta itemprop="description" content="一个小博客">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 依旧归七">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2020/09/30/other/nei-wang-chuan-tou/" class="post-title-link" itemprop="url">内网穿透配置指南</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-10-01 00:00:00" itemprop="dateCreated datePublished" datetime="2020-10-01T00:00:00+08:00">2020-10-01</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2024-02-05 18:37:28" itemprop="dateModified" datetime="2024-02-05T18:37:28+08:00">2024-02-05</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -514,7 +515,7 @@
 <h2 id="客户端-frpc"><a href="#客户端-frpc" class="headerlink" title="客户端 frpc"></a>客户端 <code>frpc</code></h2>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2020/09/30/nei-wang-chuan-tou/#more" rel="contents">
+              <a class="btn" href="/2020/09/30/other/nei-wang-chuan-tou/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -545,7 +546,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://fansirsqi.github.io/2020/09/30/fu-wu-qi-xue-xi-mo-fa/">
+    <link itemprop="mainEntityOfPage" href="http://fansirsqi.github.io/2020/09/30/other/fu-wu-qi-xue-xi-mo-fa/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/cavatar.gif">
@@ -563,7 +564,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2020/09/30/fu-wu-qi-xue-xi-mo-fa/" class="post-title-link" itemprop="url">服务器实现魔法上网</a>
+          <a href="/2020/09/30/other/fu-wu-qi-xue-xi-mo-fa/" class="post-title-link" itemprop="url">服务器实现魔法上网</a>
         </h2>
 
         <div class="post-meta-container">
@@ -581,7 +582,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-11-21 17:20:10" itemprop="dateModified" datetime="2023-11-21T17:20:10+08:00">2023-11-21</time>
+      <time title="修改时间：2024-02-05 18:37:28" itemprop="dateModified" datetime="2024-02-05T18:37:28+08:00">2024-02-05</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -622,7 +623,7 @@
 <p>在opt目录下新建clash文件夹，将刚刚解压的放进去</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2020/09/30/fu-wu-qi-xue-xi-mo-fa/#more" rel="contents">
+              <a class="btn" href="/2020/09/30/other/fu-wu-qi-xue-xi-mo-fa/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -653,7 +654,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://fansirsqi.github.io/2020/09/30/fu-wu-qi-da-jian-leanote/">
+    <link itemprop="mainEntityOfPage" href="http://fansirsqi.github.io/2020/09/30/other/fu-wu-qi-da-jian-leanote/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/cavatar.gif">
@@ -671,7 +672,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2020/09/30/fu-wu-qi-da-jian-leanote/" class="post-title-link" itemprop="url">服务器自建蚂蚁笔记</a>
+          <a href="/2020/09/30/other/fu-wu-qi-da-jian-leanote/" class="post-title-link" itemprop="url">服务器自建蚂蚁笔记</a>
         </h2>
 
         <div class="post-meta-container">
@@ -689,7 +690,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-11-21 17:20:10" itemprop="dateModified" datetime="2023-11-21T17:20:10+08:00">2023-11-21</time>
+      <time title="修改时间：2024-02-05 18:37:28" itemprop="dateModified" datetime="2024-02-05T18:37:28+08:00">2024-02-05</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -726,7 +727,7 @@
 <p><code>mongorestore -h localhost -d leanote --dir leanote_install_data/</code></p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2020/09/30/fu-wu-qi-da-jian-leanote/#more" rel="contents">
+              <a class="btn" href="/2020/09/30/other/fu-wu-qi-da-jian-leanote/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -757,7 +758,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://fansirsqi.github.io/2019/03/03/excel-xiang-guan/">
+    <link itemprop="mainEntityOfPage" href="http://fansirsqi.github.io/2019/03/03/cook/xiao-zhu-gai-bei/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/cavatar.gif">
@@ -775,7 +776,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2019/03/03/excel-xiang-guan/" class="post-title-link" itemprop="url">Excel 学习</a>
+          <a href="/2019/03/03/cook/xiao-zhu-gai-bei/" class="post-title-link" itemprop="url">小猪盖被</a>
         </h2>
 
         <div class="post-meta-container">
@@ -793,319 +794,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-11-21 17:20:10" itemprop="dateModified" datetime="2023-11-21T17:20:10+08:00">2023-11-21</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Excel/" itemprop="url" rel="index"><span itemprop="name">Excel</span></a>
-        </span>
-    </span>
-
-  
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h3 id="Excel提取批注（宏命令）"><a href="#Excel提取批注（宏命令）" class="headerlink" title="Excel提取批注（宏命令）"></a>Excel提取批注（宏命令）</h3><p><code>Alt+F11</code>点击对应sheet创建模块，在相应的引用公式即可，看不到请调整字体颜色</p>
-<pre class="line-numbers language-visual-basic" data-language="visual-basic"><code class="language-visual-basic"><span class="token keyword">Function</span> pz<span class="token punctuation">(</span>X <span class="token keyword">As</span> Range<span class="token punctuation">)</span>
-Application<span class="token punctuation">.</span>Volatile <span class="token boolean">True</span>
-pz <span class="token operator">=</span> X<span class="token punctuation">.</span>Comment<span class="token punctuation">.</span>Text
-<span class="token keyword">End</span> <span class="token keyword">Function</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h3 id="计算区域内-不重复字段个数"><a href="#计算区域内-不重复字段个数" class="headerlink" title="计算区域内,不重复字段个数"></a>计算区域内,不重复字段个数</h3><p><code>=SUMPRODUCT(1/COUNTIF(A1:A5997,A1:A5997))</code></p>
-<h3 id="时间格式时间戳互转"><a href="#时间格式时间戳互转" class="headerlink" title="时间格式时间戳互转"></a>时间格式时间戳互转</h3>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2019/03/03/excel-xiang-guan/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://fansirsqi.github.io/2019/03/03/git-de-an-zhuang-shi-yong/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/cavatar.gif">
-      <meta itemprop="name" content="Fansir">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="依旧归七">
-      <meta itemprop="description" content="一个小博客">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 依旧归七">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2019/03/03/git-de-an-zhuang-shi-yong/" class="post-title-link" itemprop="url">Git 的安装使用</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2019-03-04 00:00:00" itemprop="dateCreated datePublished" datetime="2019-03-04T00:00:00+08:00">2019-03-04</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-11-21 17:20:10" itemprop="dateModified" datetime="2023-11-21T17:20:10+08:00">2023-11-21</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Git/" itemprop="url" rel="index"><span itemprop="name">Git</span></a>
-        </span>
-    </span>
-
-  
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>5 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="Git的安装"><a href="#Git的安装" class="headerlink" title="Git的安装"></a>Git的安装</h2><p>通过 <span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbS9kb3dubG9hZHM=">https://git-scm.com/downloads<i class="fa fa-external-link-alt"></i></span> ，git官网下载需要的版本，一路下一步安装即可</p>
-<p>装好后，在电脑文件夹的任意位置右键，即可看到git相关的命令。</p>
-<p>git bash是命令行工具</p>
-<p>git gui是图形化工具</p>
-<p>打开git bash后，输入git –version ，能正确输出版本号，则证明安装成功。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2019/03/03/git-de-an-zhuang-shi-yong/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://fansirsqi.github.io/2019/03/03/zai-docker-zhong-bu-shu-shan-dao/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/cavatar.gif">
-      <meta itemprop="name" content="Fansir">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="依旧归七">
-      <meta itemprop="description" content="一个小博客">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 依旧归七">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2019/03/03/zai-docker-zhong-bu-shu-shan-dao/" class="post-title-link" itemprop="url">在Docker中部署禅道示例</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2019-03-04 00:00:00" itemprop="dateCreated datePublished" datetime="2019-03-04T00:00:00+08:00">2019-03-04</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-11-21 17:20:10" itemprop="dateModified" datetime="2023-11-21T17:20:10+08:00">2023-11-21</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Linux/" itemprop="url" rel="index"><span itemprop="name">Linux</span></a>
-        </span>
-    </span>
-
-  
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>2 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">docker</span> run <span class="token parameter variable">--name</span> zentao <span class="token parameter variable">-p</span> <span class="token number">80</span>:80 <span class="token parameter variable">-v</span> /data/www/zentao:/www/zentaopms <span class="token parameter variable">-v</span> /data/www/zentao_sql:/var/lib/mysql <span class="token parameter variable">-e</span> <span class="token assign-left variable">MYSQL_ROOT_PASSWORD</span><span class="token operator">=</span><span class="token number">123456</span> <span class="token parameter variable">-d</span> easysoft/zentao:Testing<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h3 id="在Docker中部署禅道示例"><a href="#在Docker中部署禅道示例" class="headerlink" title="在Docker中部署禅道示例"></a>在Docker中部署禅道示例</h3><p>1、确保安装docker</p>
-<p>检查方式：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">docker</span> <span class="token parameter variable">-v</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2019/03/03/zai-docker-zhong-bu-shu-shan-dao/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://fansirsqi.github.io/2019/03/03/xiao-zhu-gai-bei/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/cavatar.gif">
-      <meta itemprop="name" content="Fansir">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="依旧归七">
-      <meta itemprop="description" content="一个小博客">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 依旧归七">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2019/03/03/xiao-zhu-gai-bei/" class="post-title-link" itemprop="url">小猪盖被</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2019-03-04 00:00:00" itemprop="dateCreated datePublished" datetime="2019-03-04T00:00:00+08:00">2019-03-04</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-11-21 17:20:10" itemprop="dateModified" datetime="2023-11-21T17:20:10+08:00">2023-11-21</time>
+      <time title="修改时间：2024-02-05 18:37:28" itemprop="dateModified" datetime="2024-02-05T18:37:28+08:00">2024-02-05</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -1146,7 +835,316 @@ pz <span class="token operator">=</span> X<span class="token punctuation">.</spa
 </ul>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2019/03/03/xiao-zhu-gai-bei/#more" rel="contents">
+              <a class="btn" href="/2019/03/03/cook/xiao-zhu-gai-bei/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://fansirsqi.github.io/2019/03/03/linux/git-de-an-zhuang-shi-yong/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/cavatar.gif">
+      <meta itemprop="name" content="Fansir">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="依旧归七">
+      <meta itemprop="description" content="一个小博客">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 依旧归七">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2019/03/03/linux/git-de-an-zhuang-shi-yong/" class="post-title-link" itemprop="url">Git 的安装使用</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-03-04 00:00:00" itemprop="dateCreated datePublished" datetime="2019-03-04T00:00:00+08:00">2019-03-04</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2024-02-05 18:37:28" itemprop="dateModified" datetime="2024-02-05T18:37:28+08:00">2024-02-05</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Git/" itemprop="url" rel="index"><span itemprop="name">Git</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>5 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="Git的安装"><a href="#Git的安装" class="headerlink" title="Git的安装"></a>Git的安装</h2><p>通过 <span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbS9kb3dubG9hZHM=">https://git-scm.com/downloads<i class="fa fa-external-link-alt"></i></span> ，git官网下载需要的版本，一路下一步安装即可</p>
+<p>装好后，在电脑文件夹的任意位置右键，即可看到git相关的命令。</p>
+<p>git bash是命令行工具</p>
+<p>git gui是图形化工具</p>
+<p>打开git bash后，输入git –version ，能正确输出版本号，则证明安装成功。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/03/03/linux/git-de-an-zhuang-shi-yong/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://fansirsqi.github.io/2019/03/03/other/zai-docker-zhong-bu-shu-shan-dao/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/cavatar.gif">
+      <meta itemprop="name" content="Fansir">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="依旧归七">
+      <meta itemprop="description" content="一个小博客">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 依旧归七">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2019/03/03/other/zai-docker-zhong-bu-shu-shan-dao/" class="post-title-link" itemprop="url">在Docker中部署禅道示例</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-03-04 00:00:00" itemprop="dateCreated datePublished" datetime="2019-03-04T00:00:00+08:00">2019-03-04</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2024-02-05 18:37:28" itemprop="dateModified" datetime="2024-02-05T18:37:28+08:00">2024-02-05</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Linux/" itemprop="url" rel="index"><span itemprop="name">Linux</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>2 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run --name zentao -p 80:80 -v /data/www/zentao:/www/zentaopms -v /data/www/zentao_sql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123456 -d easysoft/zentao:Testing</span><br></pre></td></tr></table></figure>
+
+<h3 id="在Docker中部署禅道示例"><a href="#在Docker中部署禅道示例" class="headerlink" title="在Docker中部署禅道示例"></a>在Docker中部署禅道示例</h3><p>1、确保安装docker</p>
+<p>检查方式：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker -v</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/03/03/other/zai-docker-zhong-bu-shu-shan-dao/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://fansirsqi.github.io/2019/03/03/win/excel-xiang-guan/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/cavatar.gif">
+      <meta itemprop="name" content="Fansir">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="依旧归七">
+      <meta itemprop="description" content="一个小博客">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 依旧归七">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2019/03/03/win/excel-xiang-guan/" class="post-title-link" itemprop="url">Excel 学习</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-03-04 00:00:00" itemprop="dateCreated datePublished" datetime="2019-03-04T00:00:00+08:00">2019-03-04</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2024-02-05 18:37:28" itemprop="dateModified" datetime="2024-02-05T18:37:28+08:00">2024-02-05</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Excel/" itemprop="url" rel="index"><span itemprop="name">Excel</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h3 id="Excel提取批注（宏命令）"><a href="#Excel提取批注（宏命令）" class="headerlink" title="Excel提取批注（宏命令）"></a>Excel提取批注（宏命令）</h3><p><code>Alt+F11</code>点击对应sheet创建模块，在相应的引用公式即可，看不到请调整字体颜色</p>
+<figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Function</span> pz(X <span class="keyword">As</span> Range)</span><br><span class="line">Application.Volatile <span class="literal">True</span></span><br><span class="line">pz = X.Comment.<span class="keyword">Text</span></span><br><span class="line"><span class="keyword">End</span> <span class="keyword">Function</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="计算区域内-不重复字段个数"><a href="#计算区域内-不重复字段个数" class="headerlink" title="计算区域内,不重复字段个数"></a>计算区域内,不重复字段个数</h3><p><code>=SUMPRODUCT(1/COUNTIF(A1:A5997,A1:A5997))</code></p>
+<h3 id="时间格式时间戳互转"><a href="#时间格式时间戳互转" class="headerlink" title="时间格式时间戳互转"></a>时间格式时间戳互转</h3>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/03/03/win/excel-xiang-guan/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -1181,7 +1179,7 @@ pz <span class="token operator">=</span> X<span class="token punctuation">.</spa
 
   <div class="copyright">
     &copy; 2021 – 
-    <span itemprop="copyrightYear">2023</span>
+    <span itemprop="copyrightYear">2024</span>
     <span class="with-love">
       <i class="fa fa-heart"></i>
     </span>
@@ -1200,7 +1198,7 @@ pz <span class="token operator">=</span> X<span class="token punctuation">.</spa
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">3:20</span>
+    <span title="站点阅读时长">3:21</span>
   </span>
 </div>
 <div class="busuanzi-count">
