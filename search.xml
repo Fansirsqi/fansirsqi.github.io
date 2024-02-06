@@ -2211,6 +2211,29 @@ eyJoaXN0b3J5IjpbLTE5NzU2NDY4ODBdfQ==
       </tags>
   </entry>
   <entry>
+    <title>Gemini Pro 代理搭建</title>
+    <url>/cloudflare/other/da-jian-geminipro-proxy/</url>
+    <content><![CDATA[<h2 id="直接在cloudflare-创建worker并部署"><a href="#直接在cloudflare-创建worker并部署" class="headerlink" title="直接在cloudflare 创建worker并部署"></a>直接在cloudflare 创建worker并部署</h2><p><img src="https://cdn.jsdelivr.net/gh/Fansirsqi/blog-Images@main/images/image.png"></p>
+<h2 id="再套个域名"><a href="#再套个域名" class="headerlink" title="再套个域名"></a>再套个域名</h2><p><img src="https://jsd.cdn.zzko.cn/gh/Fansirsqi/blog-Images@main/images/image.1lpsy9zly6ao.webp"></p>
+<h2 id="DNS解析记录操作完毕之后，点击左侧菜单Workers路由来让我们设置的域名和worker的路由关系。"><a href="#DNS解析记录操作完毕之后，点击左侧菜单Workers路由来让我们设置的域名和worker的路由关系。" class="headerlink" title="DNS解析记录操作完毕之后，点击左侧菜单Workers路由来让我们设置的域名和worker的路由关系。"></a>DNS解析记录操作完毕之后，点击左侧菜单Workers路由来让我们设置的域名和worker的路由关系。</h2><p><img src="https://jsd.cdn.zzko.cn/gh/Fansirsqi/blog-Images@main/images/image.2ul0a1nb16y0.webp"></p>
+<p>完成这一步你就可以用你自己的域名来请求gemini了。比如我这个域名：</p>
+<p>Gemini官方给的例子是：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">curl \</span><br><span class="line">  -H &#x27;Content-Type: application/json&#x27; \</span><br><span class="line">  -d &#x27;&#123;&quot;contents&quot;:[&#123;&quot;parts&quot;:[&#123;&quot;text&quot;:&quot;Write a story about a magic backpack&quot;&#125;]&#125;]&#125;&#x27; \</span><br><span class="line">  -X POST https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=YOUR_API_KEY</span><br><span class="line">````</span><br><span class="line"></span><br><span class="line">我们替换generativelanguage.googleapis.com部分到我们的域名gemini.baipiao.io</span><br><span class="line"></span><br><span class="line">```curl</span><br><span class="line">curl \</span><br><span class="line">  -H &#x27;Content-Type: application/json&#x27; \</span><br><span class="line">  -d &#x27;&#123;&quot;contents&quot;:[&#123;&quot;parts&quot;:[&#123;&quot;text&quot;:&quot;Write a story about a magic backpack&quot;&#125;]&#125;]&#125;&#x27; \</span><br><span class="line">  -X POST https://gemini.fansirai.top/v1beta/models/gemini-pro:generateContent?key=YOUR_API_KEY</span><br></pre></td></tr></table></figure>
+
+<p>对了，附一下Gemini Pro的api key获取地址：<code>https://makersuite.google.com/app/apikey</code></p>
+<p>看下效果</p>
+<p><img src="https://jsd.cdn.zzko.cn/gh/Fansirsqi/blog-Images@main/images/image.5b1bx8t6reg.webp"></p>
+<p>让我们感谢大善人<code>cloudflare</code></p>
+<h2 id="用在插件沉浸式翻译中的效果"><a href="#用在插件沉浸式翻译中的效果" class="headerlink" title="用在插件沉浸式翻译中的效果"></a>用在插件<span class="exturl" data-url="aHR0cHM6Ly9pbW1lcnNpdmV0cmFuc2xhdGUuY29tLw==">沉浸式翻译<i class="fa fa-external-link-alt"></i></span>中的效果</h2><p><img src="https://jsd.cdn.zzko.cn/gh/Fansirsqi/blog-Images@main/images/image.6bp1oimjwro0.webp"></p>
+]]></content>
+      <categories>
+        <category>cloudflare</category>
+      </categories>
+      <tags>
+        <tag>Gemini</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>博客搭建</title>
     <url>/hexo/other/wu-fu-wu-qi-da-jian-ge-ren-blog-hexo/</url>
     <content><![CDATA[<h2 id="1，安装nvm工具"><a href="#1，安装nvm工具" class="headerlink" title="1，安装nvm工具"></a>1，安装nvm工具</h2><p><code>nvm</code>命令使用，为了确保命令能正确执行<br><code>&lt;font color=&#39;Red&#39;&gt;</code>请所有命令在管理员权限下执行<code>&lt;/font&gt;</code></p>

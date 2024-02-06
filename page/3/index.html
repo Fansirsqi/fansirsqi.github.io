@@ -88,7 +88,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">25</span></a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">84</span></a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">49</span></a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">26</span></a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">85</span></a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">50</span></a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -156,18 +156,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">49</span>
+          <span class="site-state-item-count">50</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">25</span>
+        <span class="site-state-item-count">26</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">84</span>
+        <span class="site-state-item-count">85</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -242,6 +242,110 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://fansirsqi.github.io/linux/linux/docker-xue-xi/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/cavatar.gif">
+      <meta itemprop="name" content="Fansir">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="依旧归七">
+      <meta itemprop="description" content="一个小博客">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 依旧归七">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/linux/linux/docker-xue-xi/" class="post-title-link" itemprop="url">Docker学习</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-05-07 23:57:08" itemprop="dateCreated datePublished" datetime="2022-05-07T23:57:08+08:00">2022-05-07</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2024-02-06 18:53:42" itemprop="dateModified" datetime="2024-02-06T18:53:42+08:00">2024-02-06</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Linux/" itemprop="url" rel="index"><span itemprop="name">Linux</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>2 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h3 id="如何同时运行多个容器"><a href="#如何同时运行多个容器" class="headerlink" title="如何同时运行多个容器"></a>如何同时运行多个容器</h3><h3 id="Docker-Compose"><a href="#Docker-Compose" class="headerlink" title="Docker Compose"></a>Docker Compose</h3><p>如果您已经完成了如何运行容器？指南中，您看到必须单独启动每个容器。想象一下，如果一个工具可以用一个命令启动多个容器，那该有多好。这个工具就是 <code>Docker Compose</code>。</p>
+<p>如果您查看示例应用程序的代码，您会注意到它有一个 <code>compose.yaml</code>文件。这个文件告诉 <code>Docker</code>如何运行应用程序。在文本编辑器中打开 <code>compose.yaml</code>文件以浏览说明。</p>
+<p>我们将在您的项目目录中使用 <code>docker compose-up</code>命令运行此应用程序。此命令构建并运行compose文件中列出的所有服务。</p>
+<p>在 <code>DockerDesktop</code>中，现在应该有两个容器在运行（<code>todo</code>应用程序和 <code>todo</code>数据库）。要查看前端，请在 <code>Containers</code>中展开应用程序堆栈，然后选择指向 <code>localhost:3000</code>的链接⁠. 在前端添加一些任务，然后在新选项卡中打开应用程序。请注意，这些任务仍然可见。</p>
+<p>将配置存储在 <code>Compose</code>文件中还有另一个优点，您可以轻松地删除所有内容并重新启动。只需选择应用程序堆栈，然后在 <code>Docker Desktop</code>上选择 <code>Delete</code>。当您想重新启动时，请再次在项目文件夹中运行 <code>docker compose up</code>。这将重新启动您的应用程序。请注意，当数据库容器被删除时，创建的任何 <code>todo</code>也会丢失。</p>
+<h4 id="数据持久"><a href="#数据持久" class="headerlink" title="数据持久"></a>数据持久</h4>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/linux/linux/docker-xue-xi/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="http://fansirsqi.github.io/linux/linux/shell-ming-ling-xue-xi/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -278,7 +382,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-02-06 13:28:45" itemprop="dateModified" datetime="2024-02-06T13:28:45+08:00">2024-02-06</time>
+      <time title="修改时间：2024-02-06 18:53:42" itemprop="dateModified" datetime="2024-02-06T18:53:42+08:00">2024-02-06</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -378,7 +482,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-02-06 13:28:45" itemprop="dateModified" datetime="2024-02-06T13:28:45+08:00">2024-02-06</time>
+      <time title="修改时间：2024-02-06 18:53:42" itemprop="dateModified" datetime="2024-02-06T18:53:42+08:00">2024-02-06</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -481,7 +585,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-02-06 13:28:45" itemprop="dateModified" datetime="2024-02-06T13:28:45+08:00">2024-02-06</time>
+      <time title="修改时间：2024-02-06 18:53:42" itemprop="dateModified" datetime="2024-02-06T18:53:42+08:00">2024-02-06</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -580,7 +684,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-02-06 13:28:45" itemprop="dateModified" datetime="2024-02-06T13:28:45+08:00">2024-02-06</time>
+      <time title="修改时间：2024-02-06 18:53:42" itemprop="dateModified" datetime="2024-02-06T18:53:42+08:00">2024-02-06</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -680,7 +784,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-02-06 13:28:45" itemprop="dateModified" datetime="2024-02-06T13:28:45+08:00">2024-02-06</time>
+      <time title="修改时间：2024-02-06 18:53:42" itemprop="dateModified" datetime="2024-02-06T18:53:42+08:00">2024-02-06</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -807,7 +911,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-02-06 13:28:45" itemprop="dateModified" datetime="2024-02-06T13:28:45+08:00">2024-02-06</time>
+      <time title="修改时间：2024-02-06 18:53:42" itemprop="dateModified" datetime="2024-02-06T18:53:42+08:00">2024-02-06</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -911,7 +1015,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-02-06 13:28:45" itemprop="dateModified" datetime="2024-02-06T13:28:45+08:00">2024-02-06</time>
+      <time title="修改时间：2024-02-06 18:53:42" itemprop="dateModified" datetime="2024-02-06T18:53:42+08:00">2024-02-06</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -1016,7 +1120,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-02-06 13:28:45" itemprop="dateModified" datetime="2024-02-06T13:28:45+08:00">2024-02-06</time>
+      <time title="修改时间：2024-02-06 18:53:42" itemprop="dateModified" datetime="2024-02-06T18:53:42+08:00">2024-02-06</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -1119,7 +1223,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-02-06 13:28:45" itemprop="dateModified" datetime="2024-02-06T13:28:45+08:00">2024-02-06</time>
+      <time title="修改时间：2024-02-06 18:53:42" itemprop="dateModified" datetime="2024-02-06T18:53:42+08:00">2024-02-06</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -1175,110 +1279,6 @@
 
 
 
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://fansirsqi.github.io/ide/other/vs2019-kuai-jie-jian/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/cavatar.gif">
-      <meta itemprop="name" content="Fansir">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="依旧归七">
-      <meta itemprop="description" content="一个小博客">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 依旧归七">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/ide/other/vs2019-kuai-jie-jian/" class="post-title-link" itemprop="url">VS2019 较常用快捷键</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2021-10-23 00:00:00" itemprop="dateCreated datePublished" datetime="2021-10-23T00:00:00+08:00">2021-10-23</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-02-06 13:28:45" itemprop="dateModified" datetime="2024-02-06T13:28:45+08:00">2024-02-06</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/IDE/" itemprop="url" rel="index"><span itemprop="name">IDE</span></a>
-        </span>
-    </span>
-
-  
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>7 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="较常用快捷键"><a href="#较常用快捷键" class="headerlink" title="较常用快捷键"></a>较常用快捷键</h2><p><code>Ctrl + K + F</code> 格式化代码</p>
-<p><code>Ctrl + K + C </code> 注释代码</p>
-<p><code>Ctrl + K + U</code>取消注释</p>
-<p>Tab + Tab &#x3D; 代码联想</p>
-<p>Alt + Enter &#x3D; 快速引用</p>
-<p>Ctrl + Shift + C 新建类</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/ide/other/vs2019-kuai-jie-jian/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
   <nav class="pagination">
     <a class="extend prev" rel="prev" title="上一页" aria-label="上一页" href="/page/2/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" title="下一页" aria-label="下一页" href="/page/4/"><i class="fa fa-angle-right"></i></a>
   </nav>
@@ -1310,7 +1310,7 @@
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">3:21</span>
+    <span title="站点阅读时长">3:22</span>
   </span>
 </div>
 <div class="busuanzi-count">
