@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.3.0">
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha256-CTSx/A06dm1B063156EVh15m6Y67pAjZZaQc89LLSrU=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.24/fancybox/fancybox.css" integrity="sha256-vQkngPS8jiHHH0I6ABTZroZk8NPZ7b+MUReOFE9UsXQ=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/pink/pace-theme-bounce.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"fansirsqi.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.18.2","exturl":true,"sidebar":{"position":"left","width":210,"display":"always","padding":3,"offset":36},"copycode":{"enable":true,"style":"mac"},"fold":{"enable":true,"height":500},"bookmark":{"enable":false,"color":"#b94242","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+
+
+<link rel="canonical" href="http://fansirsqi.github.io/linux/linux/linux-chang-yong-ming-ling/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://fansirsqi.github.io/linux/linux/linux-chang-yong-ming-ling/","path":"linux/linux/linux-chang-yong-ming-ling/","title":"linux 命令小记"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>linux 命令小记 | 依旧归七</title>
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-webfont@1.1.0/lxgwwenkai-regular.css"/>
+
+<script src="https://fastly.jsdelivr.net/gh/Fansirsqi/live2d-widget/autoload.js"></script>
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="依旧归七" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">依旧归七</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Byseven</p>
+      <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
+      <p id="hitokoto">
+        <a href="#" id="hitokoto_text">✨...✨</a>
+      </p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">25</span></a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">84</span></a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">49</span></a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+<link rel="stylesheet" href="https://npm.elemecdn.com/aplayer@1.10.1/dist/APlayer.min.css">
+<script src="https://npm.elemecdn.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
+<script src="https://npm.elemecdn.com/meting@2.0.1/dist/Meting.min.js"></script>
+<meting-js server="netease" fixed="true" autoplay="false" theme="#409EFF" list-folded="true" type="playlist" id="799311034"></meting-js>
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A7%A3%E5%8E%8B%E7%BC%A9"><span class="nav-text">解压缩</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-tar%E5%8C%85%E5%92%8Cgz%E5%8C%85"><span class="nav-text">1.tar包和gz包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-zip%E5%8C%85"><span class="nav-text">2.zip包</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%9B%AE%E5%BD%95%E6%93%8D%E4%BD%9C"><span class="nav-text">目录操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E3%80%81%E7%9B%AE%E5%BD%95"><span class="nav-text">删除文件、目录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%A0%E9%99%A4%E7%94%A8%E6%88%B7"><span class="nav-text">删除用户</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E7%94%A8%E6%88%B7"><span class="nav-text">添加用户</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E5%AF%86%E7%A0%81"><span class="nav-text">修改密码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%87%E6%8D%A2%E7%94%A8%E6%88%B7"><span class="nav-text">切换用户</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%8D%E5%88%B6%E3%80%81%E7%A7%BB%E5%8A%A8-mv-cp"><span class="nav-text">复制、移动 - mv,cp</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B3%BB%E7%BB%9F%E6%97%B6%E9%97%B4"><span class="nav-text">系统时间</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA%E6%83%85%E5%86%B5"><span class="nav-text">磁盘分区情况</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9D%83%E9%99%90"><span class="nav-text">权限</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#vi%E7%BC%96%E8%BE%91%E5%99%A8"><span class="nav-text">vi编辑器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B%E6%96%87%E4%BB%B6%E4%BF%A1%E6%81%AF"><span class="nav-text">查看文件信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E4%BB%B6%E5%AF%B9%E6%AF%94"><span class="nav-text">文件对比</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE-find"><span class="nav-text">文件查找 - find</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%AD%E6%B3%95"><span class="nav-text">语法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9E%E4%BE%8B"><span class="nav-text">实例</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ipX%E7%9B%B8%E5%85%B3"><span class="nav-text">ipX相关</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ssh%E7%9B%B8%E5%85%B3"><span class="nav-text">ssh相关</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8E%86%E5%8F%B2%E8%AE%B0%E5%BD%95"><span class="nav-text">历史记录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B%E7%AB%AF%E5%8F%A3%E5%8F%B7"><span class="nav-text">查看端口号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8C%82%E8%BD%BD%E7%A3%81%E7%9B%98%EF%BC%8CUSB%E7%AD%89%E8%AE%BE%E5%A4%87"><span class="nav-text">挂载磁盘，USB等设备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B%E6%96%87%E4%BB%B6%E4%BD%BF%E7%94%A8%E7%A9%BA%E9%97%B4"><span class="nav-text">查看文件使用空间</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E5%8C%85%E6%93%8D%E4%BD%9Crpm-RedHat"><span class="nav-text">软件安装包操作rpm - [RedHat]</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E9%93%BE%E6%8E%A5-ln"><span class="nav-text">创建链接 - ln</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%AD%E6%B3%95-1"><span class="nav-text">语法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%91%BD%E4%BB%A4%E5%8F%82%E6%95%B0"><span class="nav-text">命令参数</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9E%E4%BE%8B-1"><span class="nav-text">实例</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux%E6%9F%A5%E7%9C%8B%E7%89%88%E6%9C%AC%E5%BD%93%E5%89%8D%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8F%91%E8%A1%8C%E7%89%88%E4%BF%A1%E6%81%AF"><span class="nav-text">Linux查看版本当前操作系统发行版信息</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Fansir"
+      src="/images/cavatar.gif">
+  <p class="site-author-name" itemprop="name">Fansir</p>
+  <div class="site-description" itemprop="description">一个小博客</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">49</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">25</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">84</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2ZhbnNpcnNxaQ==" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;fansirsqi"><i class="fab fa-github fa-fw"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="bWFpbHRvOmZhbnNpcmxpdUAxNjMuY29t" title="163-Mail → mailto:fansirliu@163.com"><i class="fa fa-regular fa-envelope fa-fw"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9zcGFjZS5iaWxpYmlsaS5jb20vNjEzMTU1Njk0" title="bilibili → https:&#x2F;&#x2F;space.bilibili.com&#x2F;613155694"><i class="fab fa-bilibili fa-fw"></i></span>
+      </span>
+  </div>
+  <div class="cc-license animated" itemprop="license">
+    <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpoLUNO"><img src="https://cdnjs.cloudflare.com/ajax/libs/creativecommons-vocabulary/2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="sidebar-inner sidebar-blogroll">
+      <div class="links-of-blogroll animated">
+        <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+          ✨魔法链接✨
+        </div>
+        <ul class="links-of-blogroll-list">
+            <li class="links-of-blogroll-item">
+              <span class="exturl" data-url="aHR0cHM6Ly9nZWVrLnJyYWJpdHMuY29tLyMvcmVnaXN0ZXI/Y29kZT1hQ3B3VUpoRQ==" title="https:&#x2F;&#x2F;geek.rrabits.com&#x2F;#&#x2F;register?code&#x3D;aCpwUJhE">Rrabits-Cloudgeek</span>
+            </li>
+            <li class="links-of-blogroll-item">
+              <span class="exturl" data-url="aHR0cHM6Ly9zYWt1cmFjYXQud29ybGQvIy9yZWdpc3Rlcj9jb2RlPWFXQVVZblhy" title="https:&#x2F;&#x2F;sakuracat.world&#x2F;#&#x2F;register?code&#x3D;aWAUYnXr">SakuraCat</span>
+            </li>
+            <li class="links-of-blogroll-item">
+              <span class="exturl" data-url="aHR0cHM6Ly9zb2NrYm9vbS5sb3ZlL2F1dGgvcmVnaXN0ZXI/YWZmaWQ9MTEwNTMz" title="https:&#x2F;&#x2F;sockboom.love&#x2F;auth&#x2F;register?affid&#x3D;110533">SockBoom</span>
+            </li>
+            <li class="links-of-blogroll-item">
+              <span class="exturl" data-url="aHR0cHM6Ly9zYXVydXJ1cy5pbmsvIy9yZWdpc3Rlcj9jb2RlPW5Ka2ROQldy" title="https:&#x2F;&#x2F;saururus.ink&#x2F;#&#x2F;register?code&#x3D;nJkdNBWr">Saururus</span>
+            </li>
+            <li class="links-of-blogroll-item">
+              <span class="exturl" data-url="aHR0cHM6Ly9ndW9saWNoZW5nLmNjL2luZGV4LnBocCMvcmVnaXN0ZXI/Y29kZT16c21ZSUpudg==" title="https:&#x2F;&#x2F;guolicheng.cc&#x2F;index.php#&#x2F;register?code&#x3D;zsmYIJnv">果粒橙</span>
+            </li>
+            <li class="links-of-blogroll-item">
+              <span class="exturl" data-url="aHR0cHM6Ly94bi0tbWVzcjhiMzZ4LmNvbS8jL3JlZ2lzdGVyP2NvZGU9RG9OSnhkbWk=" title="https:&#x2F;&#x2F;xn--mesr8b36x.com&#x2F;#&#x2F;register?code&#x3D;DoNJxdmi">Big-Airport</span>
+            </li>
+            <li class="links-of-blogroll-item">
+              <span class="exturl" data-url="aHR0cHM6Ly94bi0tbWVzMzU4YWJ5MmFwZmcuY29tLyMvcmVnaXN0ZXI/Y29kZT10aENJNnMxWQ==" title="https:&#x2F;&#x2F;xn--mes358aby2apfg.com&#x2F;#&#x2F;register?code&#x3D;thCI6s1Y">赔钱机场</span>
+            </li>
+            <li class="links-of-blogroll-item">
+              <span class="exturl" data-url="aHR0cHM6Ly93d3cuZWVqc3EubmV0LyMvcmVnaXN0ZXI/Y29kZT1qcWFkR05MMg==" title="https:&#x2F;&#x2F;www.eejsq.net&#x2F;#&#x2F;register?code&#x3D;jqadGNL2">EEVPN</span>
+            </li>
+        </ul>
+      </div>
+    </div>
+        <div class="pjax">
+        <div class="sidebar-inner sidebar-post-related">
+          <div class="animated">
+              <div class="links-of-blogroll-title"><i class="fa fa-signs-post fa-fw"></i>
+    相关文章
+  </div>
+  <ul class="popular-posts">
+    <li class="popular-posts-item">
+      <a class="popular-posts-link" href="/linux/other/fu-wu-qi-da-jian-leanote/" rel="bookmark">
+        <time class="popular-posts-time">2020-10-01</time>
+        <br>
+      服务器自建蚂蚁笔记
+      </a>
+    </li>
+  </ul>
+
+          </div>
+        </div>
+        </div>
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://fansirsqi.github.io/linux/linux/linux-chang-yong-ming-ling/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/cavatar.gif">
+      <meta itemprop="name" content="Fansir">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="依旧归七">
+      <meta itemprop="description" content="一个小博客">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="linux 命令小记 | 依旧归七">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          linux 命令小记
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-10-01 00:00:00" itemprop="dateCreated datePublished" datetime="2020-10-01T00:00:00+08:00">2020-10-01</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2024-02-06 13:28:45" itemprop="dateModified" datetime="2024-02-06T13:28:45+08:00">2024-02-06</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Linux/" itemprop="url" rel="index"><span itemprop="name">Linux</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>13 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h2 id="解压缩"><a href="#解压缩" class="headerlink" title="解压缩"></a>解压缩</h2><h3 id="1-tar包和gz包"><a href="#1-tar包和gz包" class="headerlink" title="1.tar包和gz包"></a>1.tar包和gz包</h3><p>tar包和gz包是两个不同的文件包，有三种不同后缀。.tar   .gz    .tar.gz</p>
+<ul>
+<li>tar包：使用tar命令，打包文件或者文件夹，只打包，不压缩</li>
+<li>gz包：使用gzip命令，只压缩文件，不打包，所以gz包操作不能对文件夹直接操作，如果要对文件夹下所有文件进行压缩，使用-r参数，gzip -r 文件夹路径</li>
+</ul>
+<p><strong>tar.gz：使用 <code>tar</code>加 <code>-z</code>参数，<code>tar -zcvf filename.tar.gz dir/file</code>  打包压缩文件或者文件夹</strong></p>
+<p><code>tar</code>参数有 <code>z</code>，<code>c</code>，<code>x</code>，<code>v</code>，<code>f</code></p>
+<span id="more"></span>
+
+<p><code>-z </code>表示压缩操作类型是 .tar.gz</p>
+<p><code>-c </code>表示当前行为是打包</p>
+<p><code>-x </code>表示当前行为是解压文件包</p>
+<p><code>-v</code> 参数要求显示命令执行过程</p>
+<p><code>-f</code> 指定打包后文件名</p>
+<p><code>-C</code> 解压到指定路径</p>
+<p>&#x3D;&#x3D;常用<strong>压缩</strong>打包命令：&#x3D;&#x3D;</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tar -zcvf xxxx.tar.gz dir/xxxx</span><br><span class="line">tar -jcvf  xxxx.tar.bz2  dir/xxxx</span><br></pre></td></tr></table></figure>
+
+<p>&#x3D;&#x3D;常用<strong>解压缩</strong>命令：&#x3D;&#x3D;</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf xxxx.tar.gz -C /dir   ----gz</span><br><span class="line">tar -jxvf  xxxx.tar.bz2 /dir    ----bz2</span><br></pre></td></tr></table></figure>
+
+<p><strong>gzip常用参数有 d，c，t，v</strong></p>
+<p><code>-d</code> 解压gz压缩包</p>
+<p><code>-c</code> 控制台窗口打印压缩后文件内容，源文件不变，执行后不生成压缩包</p>
+<p><code>-v</code> 显示压缩百分比</p>
+<p><code>-t</code> 测试已压缩文件是否正确，需要文件压缩成压缩文件后执行</p>
+<p>&#x3D;&#x3D;直接压缩文件命令：&#x3D;&#x3D;</p>
+<p><code>gzip fileName</code></p>
+<p>&#x3D;&#x3D;解压缩文件：&#x3D;&#x3D;</p>
+<p><code>gzip -d fileName.gz</code></p>
+<p><code>&lt;font color=&#39;red&#39;&gt;</code>注意：gzip命令默认是直接改变源文件，也就是执行gzip filename后，当前路径只有压缩后的文件，文件名是 原文件名.gz <code>&lt;/font&gt;</code></p>
+<p>要同时保留原文件和压缩文件，需要手动将写入压缩文件：</p>
+<p><code>gzip -c fileName &gt; fileName.gz</code></p>
+<p>解压操作保留原文件：</p>
+<p><code>gzip -dc fileName.gz &gt; fileName</code></p>
+<h3 id="2-zip包"><a href="#2-zip包" class="headerlink" title="2.zip包"></a>2.zip包</h3><p>从本地打包上传到服务器的压缩包，一般都是zip或者rar格式，而不是tar包格式。</p>
+<p>zip包上传到服务器后，使用unzip命令解压，压缩成zip包使用zip命令</p>
+<p>zip和unzip命令需要安装，使用yum直接安装：</p>
+<p><code>yum install zip -y</code></p>
+<p><code>yum install unzip -y</code></p>
+<p><strong>zip常用参数有 r，q，d</strong></p>
+<p><code>-r </code>压缩文件夹，递归执行，压缩文件夹下所有文件</p>
+<p><code>-q </code>不显示压缩过程，默认会在控制台打印压缩文件过程</p>
+<p><code>-d </code>压缩过程中剔除指定文件， -d参数后跟随的文件不打包到压缩包里</p>
+<p>压缩文件夹且排除指定文件不压缩：</p>
+<p><code>ip -r dirpath/ -d a.txt b.text</code></p>
+<p><strong>unzip常用参数有 n，v，d</strong></p>
+<p><code>-n</code> 解压后不覆盖已存在文件，如果压缩包文件中与解压路径有同名文件，跳过该文件</p>
+<p><code>-v</code> 控制台打印显示压缩包内容，但是不解压，-v参数只进行查看</p>
+<p><code>-d</code> 指定解压后文件存放路径</p>
+<p>&#x3D;&#x3D;unzip常直接使用，解压到当前路径，覆盖同名文件：&#x3D;&#x3D;</p>
+<p><code>unzip file.zip</code></p>
+<p>解压到指定路径，不覆盖已有同名文件：</p>
+<p><code>unzip -n file.zip -d dir/</code></p>
+<h2 id="目录操作"><a href="#目录操作" class="headerlink" title="目录操作"></a>目录操作</h2><ul>
+<li><code>pwd</code>显示当前位置目录</li>
+<li><code>cd</code>回到用户 <code>home</code>目录</li>
+<li>返回上次进入的目录 <code>cd ~</code></li>
+<li><code>ls</code>显示当前或指定目录下的内容</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ls</span><br><span class="line">ls dirname</span><br><span class="line">ls /home</span><br><span class="line">ls -l 可简写成 ll</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="删除文件、目录"><a href="#删除文件、目录" class="headerlink" title="删除文件、目录"></a>删除文件、目录</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">rm</span> file</span><br><span class="line"><span class="built_in">rm</span> -rf /tmpdir/</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="删除用户"><a href="#删除用户" class="headerlink" title="删除用户"></a>删除用户</h2><ul>
+<li><code>userdel</code>删除用户</li>
+</ul>
+<p>强制删除用户并删除用户的主目录</p>
+<figure class="highlight gcode"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">userdel -rf admi<span class="symbol">n1</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="添加用户"><a href="#添加用户" class="headerlink" title="添加用户"></a>添加用户</h2><ul>
+<li><code>useradd</code>添加或者更新账户信息</li>
+</ul>
+<p>增加 <code>admin1</code>用户,主目录为 <code>/home/admin1</code></p>
+<figure class="highlight gcode"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">useradd -d /home/admi<span class="symbol">n1</span> admi<span class="symbol">n1</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="修改密码"><a href="#修改密码" class="headerlink" title="修改密码"></a>修改密码</h2><ul>
+<li><code>passwd</code>修改用户密码</li>
+</ul>
+<p>设定admin1的密码</p>
+<figure class="highlight gcode"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">passwd admi<span class="symbol">n1</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="切换用户"><a href="#切换用户" class="headerlink" title="切换用户"></a>切换用户</h2><ul>
+<li><p><code>su</code>切换到其他用户</p>
+<p>切换到用户admin1</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">su - admin1</span><br></pre></td></tr></table></figure></li>
+</ul>
+<figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">## 创建文件、文件夹 - `touch` `mkdir`</span><br><span class="line"></span><br><span class="line">- `touch`创建文件</span><br><span class="line"></span><br><span class="line">```shell</span><br><span class="line">touch <span class="number">123</span>.txt</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>mkdir</code>创建文件夹</li>
+</ul>
+<p>批量创建 file1,file2,…,file10</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir file&#123;1..10&#125;</span><br></pre></td></tr></table></figure>
+
+<p>按照路径分层级创建文件夹</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p file1/file2</span><br></pre></td></tr></table></figure>
+
+<h2 id="复制、移动-mv-cp"><a href="#复制、移动-mv-cp" class="headerlink" title="复制、移动 - mv,cp"></a>复制、移动 - <code>mv</code>,<code>cp</code></h2><ul>
+<li><code>mv</code>重命名&#x2F;移动</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mv 123.txt 456.txt //重命名</span><br><span class="line">mv 123.txt /home  //移动到绝对路径下的home目录</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>cp</code>复制</li>
+</ul>
+<p>将文件 <code>file1</code>复制到 <code>/dir1</code>并重命名为 <code>file2</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cp</span> file1 /dir1/file2</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>复制目录 <code>/dir1</code>的所有文件到目录 <code>/dir2</code></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cp -rf /dir1 dir2</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="系统时间"><a href="#系统时间" class="headerlink" title="系统时间"></a>系统时间</h2><ul>
+<li><p><code>date</code>显示或者设置当前的系统时间</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">date</span><br><span class="line">date MMDDhhmmYYYY 设置时间月日时分年 要root权限</span><br><span class="line">date &quot;+%Y-%m-%d %H: %M %S&quot; 按指定格式输出时间+有点关键 自由发挥</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+<li><p><strong><code>hwclock</code> bios硬件内的时间</strong></p>
+</li>
+</ul>
+<p>系统同步硬件的数据内容</p>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">hwclock -w</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>与上面相反</p>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">hwclock -s</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>&#96;使用date命令修改系统时间后，必须用hwclock -w命令将其同步到硬件时钟&#96;&#96;</p>
+</blockquote>
+<ul>
+<li><p><code>uptime</code>显示系统运行的时间</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">uptime</span><br><span class="line">02:28:21 up  7:04,  1 user,  load average: 0.00, 0.00, 0.00</span><br><span class="line">当前时间, 系统运行了多久时间, 当前登陆的用户有多少, 以及前1,5和15分钟系统的平均负载，和使用w命令给出的第一行内容相同</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="磁盘分区情况"><a href="#磁盘分区情况" class="headerlink" title="磁盘分区情况"></a>磁盘分区情况</h2><p><code>fdisk -l</code> 查看磁盘分区情况</p>
+<p><code>df -h</code>  查看磁盘使用情况</p>
+<pre><code>hda1        并行通信   串行通信
+
+sda1   sd SCSI接口的硬盘， a1 第一块物理硬盘的第一个分区
+</code></pre>
+<p><code>free</code>  查看系统内存占用情况</p>
+<p><code>sleep 800</code>  休眠800秒</p>
+<p><code>sleep 800</code>&amp; 休眠800秒放后台运行</p>
+<p><code>jobs</code> 查看后台运行的任务</p>
+<p><code>bg 任务序号</code>  将任务放置后台继续运行</p>
+<p><code>fg 任务序号</code>  将任务调至前台继续运行</p>
+<p><code>ps -ef|grep 关键字</code>  查找关键字进程</p>
+<p><code>kill -9  PID</code>     结束PID编号的进程</p>
+<p><code>top</code> 显示系统进程资源占用情况</p>
+<p><code>uname -a</code>  显示系统详细信息</p>
+<p><code>hostname</code> 显示&#x2F;修改主机名称</p>
+<p><code>who</code> 显示当前登入系统的用户</p>
+<p>w 显示更加详细的登入用户信息以及平均负载</p>
+<p><code>dmesg&gt;log.txt</code>  将开机和内核输出信息输出log.txt文件中</p>
+<h2 id="权限"><a href="#权限" class="headerlink" title="权限"></a>权限</h2><p><code>chmod</code>  修改权限</p>
+<p><code>chmod -R 777 abc</code> 给文件夹abc文件夹所有文件授权777</p>
+<p>rw-  rw-  r–<br> u    g    o<br>字符修改权限  chmod g-w,o-r 456.txt</p>
+<p>数字修改权限<br>r w x<br>4 2 1<br>rwx rwx r-x<br> 7   7   5</p>
+<p>例如要将 456.txt 权限修改成文件所属用户可读可写，同组用户可读可写，其他用户可读<br>                                 6                     6                 4<br>chmod 664 456.txt<br>将目录文件abc 修改成 所属用户可读可写可执行，同组用户可读可执行 其他用户没权限<br>                              7                        5                0<br>修改目录及子目录权限<br>chmod -R 777 abc</p>
+<p>chown 属主    文件名<br>chgrp 属主组  文件名</p>
+<p>查看文件内容:<br><code>cat</code> 适合看文件内容相对较少的文件<br><code>more/less</code> 分页查看文件内容<br><code>tail</code> 用来查看文件的末尾部分，适合查看日志等内容会一直增加的文件  -f<br><code>head</code> 查看文件的头部部分<br><code>vi</code>也可以查看</p>
+<h2 id="vi编辑器"><a href="#vi编辑器" class="headerlink" title="vi编辑器"></a><code>vi</code>编辑器</h2><p>命令模式下<br>可以按 <code>yy</code> 复制光标所在行</p>
+<p>按 <code>p</code>可以粘贴复制的内容</p>
+<p>按 <code>dd</code>可以删除光标所在行<br><code>/+关键字符 按N</code> 可以从上往下依次查找<br><code>?+关键字符  按N</code> 可以从下往上依次查找<br>比如快速定位到800行    <code>:800</code></p>
+<p><code>回到首行  按 ~ </code>  或者 <code> :0</code><br>回到末行 <code>   :$</code></p>
+<h2 id="查看文件信息"><a href="#查看文件信息" class="headerlink" title="查看文件信息"></a>查看文件信息</h2><p><code>file</code> 查看文件类型<br><code>stat</code> 查看文件的详细信息</p>
+<h2 id="文件对比"><a href="#文件对比" class="headerlink" title="文件对比"></a>文件对比</h2><p><code>diff</code> 比较两个文件的差异</p>
+<p><code>diff  1.txt  2.txt</code></p>
+<h2 id="文件查找-find"><a href="#文件查找-find" class="headerlink" title="文件查找 - find"></a>文件查找 - <code>find</code></h2><h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find <span class="selector-attr">[path]</span> <span class="selector-attr">[expression]</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>参数说明</strong> :</p>
+<p><strong>path</strong> 是要查找的目录路径，可以是一个目录或文件名，也可以是多个路径，多个路径之间用空格分隔，如果未指定路径，则默认为当前目录。</p>
+<p><strong>expression</strong> 是可选参数，用于指定查找的条件，可以是文件名、文件类型、文件大小等等。</p>
+<p>expression 中可使用的选项有二三十个之多，以下列出最常用的部份：</p>
+<ul>
+<li><code>-name pattern</code>：按文件名查找，支持使用通配符 <code>*</code> 和 <code>?</code>。</li>
+<li><code>-type type</code>：按文件类型查找，可以是 <code>f</code>（普通文件）、<code>d</code>（目录）、<code>l</code>（符号链接）等。</li>
+<li><code>-size [+-]size[cwbkMG]</code>：按文件大小查找，支持使用 <code>+</code> 或 <code>-</code> 表示大于或小于指定大小，单位可以是 <code>c</code>（字节）、<code>w</code>（字数）、<code>b</code>（块数）、<code>k</code>（KB）、<code>M</code>（MB）或 <code>G</code>（GB）。</li>
+<li><code>-mtime days</code>：按修改时间查找，支持使用 <code>+</code> 或 <code>-</code> 表示在指定天数前或后，days 是一个整数表示天数。</li>
+<li><code>-user username</code>：按文件所有者查找。</li>
+<li><code>-group groupname</code>：按文件所属组查找。</li>
+</ul>
+<p>find 命令中用于时间的参数如下：</p>
+<ul>
+<li><code>-amin n</code>：查找在 n 分钟内被访问过的文件。</li>
+<li><code>-atime n</code>：查找在 n*24 小时内被访问过的文件。</li>
+<li><code>-cmin n</code>：查找在 n 分钟内状态发生变化的文件（例如权限）。</li>
+<li><code>-ctime n</code>：查找在 n*24 小时内状态发生变化的文件（例如权限）。</li>
+<li><code>-mmin n</code>：查找在 n 分钟内被修改过的文件。</li>
+<li><code>-mtime n</code>：查找在 n*24 小时内被修改过的文件。</li>
+</ul>
+<p>在这些参数中，n 可以是一个正数、负数或零。正数表示在指定的时间内修改或访问过的文件，负数表示在指定的时间之前修改或访问过的文件，零表示在当前时间点上修改或访问过的文件。</p>
+<p>例如：**-mtime 0** 表示查找今天修改过的文件，**-mtime -7** 表示查找一周以前修改过的文件。</p>
+<p>关于时间 n 参数的说明：</p>
+<ul>
+<li><strong>+n</strong>：查找比 n 天前更早的文件或目录。</li>
+<li><strong>-n</strong>：查找在 n 天内更改过属性的文件或目录。</li>
+<li><strong>n</strong>：查找在 n 天前（指定那一天）更改过属性的文件或目录。</li>
+</ul>
+<h3 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h3><p>查找当前目录下名为 file.txt 的文件：</p>
+<figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find . -<span class="keyword">name</span> <span class="keyword">file</span>.txt</span><br></pre></td></tr></table></figure>
+
+<p>将当前目录及其子目录下所有文件后缀为 <strong>.c</strong> 的文件列出来:</p>
+<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># find . -name <span class="string">&quot;*.c&quot;</span></span></span><br></pre></td></tr></table></figure>
+
+<p>将当前目录及其子目录中的所有文件列出：</p>
+<figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># <span class="built_in">find</span> . -<span class="built_in">type</span> f</span><br></pre></td></tr></table></figure>
+
+<p>查找 &#x2F;home 目录下大于 1MB 的文件：</p>
+<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find /home -size +<span class="number">1</span>M</span><br></pre></td></tr></table></figure>
+
+<p>查找 &#x2F;var&#x2F;log 目录下在 7 天前修改过的文件：</p>
+<figure class="highlight arcade"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">find</span> /<span class="keyword">var</span>/<span class="built_in">log</span> -mtime +<span class="number">7</span></span><br></pre></td></tr></table></figure>
+
+<p>将当前目录及其子目录下所有最近 20 天前更新过的文件列出，不多不少正好 20 天前的:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">find . -ctime  20</span></span><br></pre></td></tr></table></figure>
+
+<p>将当前目录及其子目录下所有 20 天前及更早更新过的文件列出:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">find . -ctime  +20</span></span><br></pre></td></tr></table></figure>
+
+<p>将当前目录及其子目录下所有最近 20 天内更新过的文件列出:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">find . -ctime  20</span></span><br></pre></td></tr></table></figure>
+
+<p>查找 &#x2F;var&#x2F;log 目录中更改时间在 7 日以前的普通文件，并在删除之前询问它们：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">find /var/log -<span class="built_in">type</span> f -mtime +7 -ok <span class="built_in">rm</span> &#123;&#125; \;</span></span><br></pre></td></tr></table></figure>
+
+<p>查找当前目录中文件属主具有读、写权限，并且文件所属组的用户和其他用户具有读权限的文件：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">find . -<span class="built_in">type</span> f -perm 644 -<span class="built_in">exec</span> <span class="built_in">ls</span> -l &#123;&#125; \;</span></span><br></pre></td></tr></table></figure>
+
+<p>查找系统中所有文件长度为 0 的普通文件，并列出它们的完整路径：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">find / -<span class="built_in">type</span> f -size 0 -<span class="built_in">exec</span> <span class="built_in">ls</span> -l &#123;&#125; \;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="ipX相关"><a href="#ipX相关" class="headerlink" title="ipX相关"></a>ipX相关</h2><p>查询ip地址<br>ifconfig<br>设置ip地址<br>ifconfig eth0 192.168.1.9<br>测试网络连通性<br>ping 192.168.1.9</p>
+<h2 id="ssh相关"><a href="#ssh相关" class="headerlink" title="ssh相关"></a>ssh相关</h2><p>远程登入<br>ssh 192.168.1.9&#96;</p>
+<p>远程复制<br>scp 文件名 IP:目录</p>
+<p>scp -r 目录 IP:目录</p>
+<p>scp ip:文件名  目录</p>
+<p>scp 192.168.1.99:&#x2F;home&#x2F;scott&#x2F;lesi.txt  .&#x2F;</p>
+<h2 id="历史记录"><a href="#历史记录" class="headerlink" title="历史记录"></a>历史记录</h2><p>查看之前输入的命令<br>history<br>history  10   最近输入的10条命令<br>clear 清屏</p>
+<h2 id="查看端口号"><a href="#查看端口号" class="headerlink" title="查看端口号"></a>查看端口号</h2><p>查看端口号占用情况 （端口号是指相应进程调用tcp&#x2F;udp传输协议的编号）  oracle 1521   mysql 3306</p>
+<p>netstat -anp|grep 8080  查看端口号8080的占用情况</p>
+<h2 id="挂载磁盘，USB等设备"><a href="#挂载磁盘，USB等设备" class="headerlink" title="挂载磁盘，USB等设备"></a>挂载磁盘，USB等设备</h2><p>挂载 （将设备跟目录关联起来）<br>mount &#x2F;dev&#x2F;sda1   &#x2F;home&#x2F;scott</p>
+<p>卸载<br>umount &#x2F;home&#x2F;scott</p>
+<h2 id="查看文件使用空间"><a href="#查看文件使用空间" class="headerlink" title="查看文件使用空间"></a>查看文件使用空间</h2><p><code>du -a</code></p>
+<h2 id="软件安装包操作rpm-RedHat"><a href="#软件安装包操作rpm-RedHat" class="headerlink" title="软件安装包操作rpm - [RedHat]"></a>软件安装包操作rpm - [RedHat]</h2><p>rpm -qa|grep softname   查找软件包的安装版本情况<br>rpm -e  softname   卸载软件包<br>rpm -ivh softname  安装软件包</p>
+<h2 id="创建链接-ln"><a href="#创建链接-ln" class="headerlink" title="创建链接 - ln"></a>创建链接 - <code>ln</code></h2><h3 id="语法-1"><a href="#语法-1" class="headerlink" title="语法"></a>语法</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ln <span class="selector-attr">[参数]</span><span class="selector-attr">[源文件或目录]</span><span class="selector-attr">[目标文件或目录]</span></span><br></pre></td></tr></table></figure>
+
+<p>其中参数的格式为</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-attr">[-bdfinsvF]</span> <span class="selector-attr">[-S backup-suffix]</span> <span class="selector-attr">[-V &#123;numbered,existing,simple&#125;]</span></span><br><span class="line"><span class="selector-attr">[--help]</span> <span class="selector-attr">[--version]</span> <span class="selector-attr">[--]</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>命令功能</strong> :<br>Linux文件系统中，有所谓的链接(link)，我们可以将其视为档案的别名，而链接又可分为两种 : 硬链接(hard link)与软链接(symbolic link)，硬链接的意思是一个档案可以有多个名称，而软链接的方式则是产生一个特殊的档案，该档案的内容是指向另一个档案的位置。硬链接是存在同一个文件系统中，而软链接却可以跨越不同的文件系统。</p>
+<p>不论是硬链接或软链接都不会将原本的档案复制一份，只会占用非常少量的磁碟空间。</p>
+<p><strong>软链接</strong>：</p>
+<ul>
+<li>1.软链接，以路径的形式存在。类似于Windows操作系统中的快捷方式</li>
+<li>2.软链接可以 跨文件系统 ，硬链接不可以</li>
+<li>3.软链接可以对一个不存在的文件名进行链接</li>
+<li>4.软链接可以对目录进行链接</li>
+</ul>
+<p><strong>硬链接</strong>：</p>
+<ul>
+<li>1.硬链接，以文件副本的形式存在。但不占用实际空间。</li>
+<li>2.不允许给目录创建硬链接</li>
+<li>3.硬链接只有在同一个文件系统中才能创建</li>
+</ul>
+<h4 id="命令参数"><a href="#命令参数" class="headerlink" title="命令参数"></a>命令参数</h4><p><strong>必要参数</strong>：</p>
+<ul>
+<li>–backup[&#x3D;CONTROL] 备份已存在的目标文件</li>
+<li>-b 类似 <strong>–backup</strong> ，但不接受参数</li>
+<li>-d 允许超级用户制作目录的硬链接</li>
+<li>-f 强制执行</li>
+<li>-i 交互模式，文件存在则提示用户是否覆盖</li>
+<li>-n 把符号链接视为一般目录</li>
+<li>-s 软链接(符号链接)</li>
+<li>-v 显示详细的处理过程</li>
+</ul>
+<p><strong>选择参数</strong>：</p>
+<ul>
+<li>-S “-S&lt;字尾备份字符串&gt; “或 “–suffix&#x3D;&lt;字尾备份字符串&gt;”</li>
+<li>-V “-V&lt;备份方式&gt;”或”–version-control&#x3D;&lt;备份方式&gt;”</li>
+<li>–help 显示帮助信息</li>
+<li>–version 显示版本信息</li>
+</ul>
+<h3 id="实例-1"><a href="#实例-1" class="headerlink" title="实例"></a>实例</h3><p>给文件创建软链接，为log2013.log文件创建软链接link2013，如果log2013.log丢失，link2013将失效：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ln -s log2013.log link2013</span><br></pre></td></tr></table></figure>
+
+<p>输出：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost test]# ll</span><br><span class="line">-rw-r--r-- 1 root bin      61 11-13 06:03 log2013.log</span><br><span class="line">[root@localhost test]# ln -s log2013.log link2013</span><br><span class="line">[root@localhost test]# ll</span><br><span class="line">lrwxrwxrwx 1 root root     11 12-07 16:01 link2013 -&gt; log2013.log</span><br><span class="line">-rw-r--r-- 1 root bin      61 11-13 06:03 log2013.log</span><br></pre></td></tr></table></figure>
+
+<p>给文件创建硬链接，为log2013.log创建硬链接ln2013，log2013.log与ln2013的各项属性相同</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ln log2013.log ln2013</span><br></pre></td></tr></table></figure>
+
+<p>输出：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost test]# ll</span><br><span class="line">lrwxrwxrwx 1 root root     11 12-07 16:01 link2013 -&gt; log2013.log</span><br><span class="line">-rw-r--r-- 1 root bin      61 11-13 06:03 log2013.log</span><br><span class="line">[root@localhost test]# ln log2013.log ln2013</span><br><span class="line">[root@localhost test]# ll</span><br><span class="line">lrwxrwxrwx 1 root root     11 12-07 16:01 link2013 -&gt; log2013.log</span><br><span class="line">-rw-r--r-- 2 root bin      61 11-13 06:03 ln2013</span><br><span class="line">-rw-r--r-- 2 root bin      61 11-13 06:03 log2013.log</span><br></pre></td></tr></table></figure>
+
+<h2 id="Linux查看版本当前操作系统发行版信息"><a href="#Linux查看版本当前操作系统发行版信息" class="headerlink" title="Linux查看版本当前操作系统发行版信息"></a>Linux查看版本当前操作系统发行版信息</h2><p>使用 <code>cat /etc/issue</code> 或 <code>cat /etc/redhat-release</code></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>原作者： </strong>归七
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="http://fansirsqi.github.io/linux/linux/linux-chang-yong-ming-ling/" title="linux 命令小记">http://fansirsqi.github.io/linux/linux/linux-chang-yong-ming-ling/</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpoLUNO"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/shell/" rel="tag"><i class="fa fa-tag"></i> shell</a>
+              <a href="/tags/Linux%E5%91%BD%E4%BB%A4/" rel="tag"><i class="fa fa-tag"></i> Linux命令</a>
+              <a href="/tags/bash/" rel="tag"><i class="fa fa-tag"></i> bash</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/linux/linux/vi-ming-ling-xue-xi/" rel="prev" title="linux vi 命令学习">
+                  <i class="fa fa-angle-left"></i> linux vi 命令学习
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/ruan-jian-ce-shi/test/xing-neng-ce-shi/" rel="next" title="性能测试">
+                  性能测试 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments gitalk-container"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2021 – 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Fansir</span>
+  </div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+      <span>站点总字数：</span>
+    <span title="站点总字数">55k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span>站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">3:21</span>
+  </span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+  <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZw==">NexT.Gemini</span> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.24/fancybox/fancybox.umd.js" integrity="sha256-oyhjPiYRWGXaAt+ny/mTMWOnN1GBoZDUQnzzgC7FRI4=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+  <script src="/js/third-party/fancybox.js"></script>
+
+  <script src="/js/third-party/pace.js"></script>
+
+
+  
+  <script data-pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/2.3.0/quicklink.umd.js" integrity="sha256-yvJQOINiH9fWemHn0vCA5lsHWJaHs6/ZmO+1Ft04SvM=" crossorigin="anonymous"></script>
+  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"url":"http://fansirsqi.github.io/linux/linux/linux-chang-yong-ming-ling/"}</script>
+  <script src="/js/third-party/quicklink.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.css" integrity="sha256-AJnUHL7dBv6PGaeyPQJcgQPDjt/Hn/PvYZde1iqfp8U=" crossorigin="anonymous">
+
+<script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"Fansirsqi","repo":"fansirsqi.github.io","client_id":"242426985831ab7a182d","client_secret":"9f722c40bb448adfa5a0562d4c86eb49aedb4505","admin_user":"Fansirsqi","distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","language":["zh-CN"],"js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.min.js","integrity":"sha256-MVK9MGD/XJaGyIghSVrONSnoXoGh3IFxLw0zfvzpxR4="},"path_md5":"e1ff243f5a5bc9c6a604c60297399129"}</script>
+<script src="/js/third-party/comments/gitalk.js"></script>
+
+</body>
+</html>

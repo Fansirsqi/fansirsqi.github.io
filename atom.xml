@@ -6,7 +6,7 @@
   <link href="http://fansirsqi.github.io/atom.xml" rel="self"/>
   
   <link href="http://fansirsqi.github.io/"/>
-  <updated>2024-02-06T01:46:58.585Z</updated>
+  <updated>2024-02-06T05:28:45.225Z</updated>
   <id>http://fansirsqi.github.io/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>记录一下经典音乐</title>
-    <link href="http://fansirsqi.github.io/2024/02/06/life/yin-le-ji-lu/"/>
-    <id>http://fansirsqi.github.io/2024/02/06/life/yin-le-ji-lu/</id>
-    <published>2024-02-06T01:46:58.585Z</published>
-    <updated>2024-02-06T01:46:58.585Z</updated>
+    <link href="http://fansirsqi.github.io/uncategorized/life/yin-le-ji-lu/"/>
+    <id>http://fansirsqi.github.io/uncategorized/life/yin-le-ji-lu/</id>
+    <published>2024-02-06T05:28:45.225Z</published>
+    <updated>2024-02-06T05:28:45.225Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;2002年&quot;&gt;&lt;a href=&quot;#2002年&quot; class=&quot;headerlink&quot; title=&quot;2002年&quot;&gt;&lt;/a&gt;2002年&lt;/h2&gt;&lt;table&gt;
@@ -108,10 +108,10 @@
   
   <entry>
     <title>在NAS上使用 openclash</title>
-    <link href="http://fansirsqi.github.io/2024/02/03/other/zai-nas-shang-shi-yong-openclash/"/>
-    <id>http://fansirsqi.github.io/2024/02/03/other/zai-nas-shang-shi-yong-openclash/</id>
+    <link href="http://fansirsqi.github.io/nas/other/zai-nas-shang-shi-yong-openclash/"/>
+    <id>http://fansirsqi.github.io/nas/other/zai-nas-shang-shi-yong-openclash/</id>
     <published>2024-02-03T16:00:00.000Z</published>
-    <updated>2024-02-06T01:46:58.589Z</updated>
+    <updated>2024-02-06T05:28:45.229Z</updated>
     
     
     <summary type="html">&lt;h3 id=&quot;首先得装一个docker&quot;&gt;&lt;a href=&quot;#首先得装一个docker&quot; class=&quot;headerlink&quot; title=&quot;首先得装一个docker&quot;&gt;&lt;/a&gt;首先得装一个&lt;code&gt;docker&lt;/code&gt;&lt;/h3&gt;&lt;p&gt;直接在套件中心搜就行&lt;/p&gt;
@@ -133,10 +133,10 @@
   
   <entry>
     <title>Windows 0x80190001错误</title>
-    <link href="http://fansirsqi.github.io/2023/11/01/win/0x80190001/"/>
-    <id>http://fansirsqi.github.io/2023/11/01/win/0x80190001/</id>
+    <link href="http://fansirsqi.github.io/windows/win/0x80190001/"/>
+    <id>http://fansirsqi.github.io/windows/win/0x80190001/</id>
     <published>2023-11-01T16:00:00.000Z</published>
-    <updated>2024-02-06T01:46:58.589Z</updated>
+    <updated>2024-02-06T05:28:45.229Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Windows-0x80190001错误&quot;&gt;&lt;a href=&quot;#Windows-0x80190001错误&quot; class=&quot;headerlink&quot; title=&quot;Windows 0x80190001错误&quot;&gt;&lt;/a&gt;Windows 0x80190001错误&lt;/h2&gt;&lt;p&gt;&lt;code&gt;PlanA&lt;/code&gt;&lt;/p&gt;
@@ -153,10 +153,10 @@
   
   <entry>
     <title>Centos 虚拟机部署指南</title>
-    <link href="http://fansirsqi.github.io/2023/11/01/other/centos-xu-ni-ji-bu-shu-zhi-nan/"/>
-    <id>http://fansirsqi.github.io/2023/11/01/other/centos-xu-ni-ji-bu-shu-zhi-nan/</id>
+    <link href="http://fansirsqi.github.io/linux/other/centos-xu-ni-ji-bu-shu-zhi-nan/"/>
+    <id>http://fansirsqi.github.io/linux/other/centos-xu-ni-ji-bu-shu-zhi-nan/</id>
     <published>2023-11-01T15:57:08.000Z</published>
-    <updated>2024-02-06T01:46:58.589Z</updated>
+    <updated>2024-02-06T05:28:45.229Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;部署完毕后发现不能用ifconfig&quot;&gt;&lt;a href=&quot;#部署完毕后发现不能用ifconfig&quot; class=&quot;headerlink&quot; title=&quot;部署完毕后发现不能用ifconfig&quot;&gt;&lt;/a&gt;部署完毕后发现不能用ifconfig&lt;/h2&gt;&lt;p&gt;度了一下解决方法如下&lt;/p&gt;
@@ -185,10 +185,10 @@
   
   <entry>
     <title>扭曲的爱情观</title>
-    <link href="http://fansirsqi.github.io/2023/06/30/life/duan-shi-pin-dao-di-ba-ai-qing-guan-niu-qu-shi-me-yang-liao/"/>
-    <id>http://fansirsqi.github.io/2023/06/30/life/duan-shi-pin-dao-di-ba-ai-qing-guan-niu-qu-shi-me-yang-liao/</id>
+    <link href="http://fansirsqi.github.io/ji-tang/life/duan-shi-pin-dao-di-ba-ai-qing-guan-niu-qu-shi-me-yang-liao/"/>
+    <id>http://fansirsqi.github.io/ji-tang/life/duan-shi-pin-dao-di-ba-ai-qing-guan-niu-qu-shi-me-yang-liao/</id>
     <published>2023-06-30T16:00:00.000Z</published>
-    <updated>2024-02-06T01:46:58.585Z</updated>
+    <updated>2024-02-06T05:28:45.225Z</updated>
     
     
     <summary type="html">&lt;blockquote&gt;
@@ -218,10 +218,10 @@
   
   <entry>
     <title>P2P终结者-绿色高级版</title>
-    <link href="http://fansirsqi.github.io/2023/03/27/other/p2p-zhong-jie-zhe-lu-se-gao-ji-ban/"/>
-    <id>http://fansirsqi.github.io/2023/03/27/other/p2p-zhong-jie-zhe-lu-se-gao-ji-ban/</id>
+    <link href="http://fansirsqi.github.io/pi-ruan-fen-xiang/other/p2p-zhong-jie-zhe-lu-se-gao-ji-ban/"/>
+    <id>http://fansirsqi.github.io/pi-ruan-fen-xiang/other/p2p-zhong-jie-zhe-lu-se-gao-ji-ban/</id>
     <published>2023-03-27T16:00:00.000Z</published>
-    <updated>2024-02-06T01:46:58.589Z</updated>
+    <updated>2024-02-06T05:28:45.229Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;P2P-终结者是什么&quot;&gt;&lt;a href=&quot;#P2P-终结者是什么&quot; class=&quot;headerlink&quot; title=&quot;P2P 终结者是什么&quot;&gt;&lt;/a&gt;P2P 终结者是什么&lt;/h2&gt;&lt;p&gt;&lt;code&gt;P2P终结者&lt;/code&gt;是由 Net.Soft 工作室开发的一套专门用来控制企业网络 P2P 下载流量的网络管理软件。软件针对目前 P2P 软件过多占用带宽的问题，提供了一个非常简单的解决方案。软件基于底层协议分析处理实现，具有很好的透明性。软件可以适应绝大多数网络环境，包括代理服务器、ADSL 路由器共享上网，Lan 专线等网络接入环境。&lt;/p&gt;
@@ -244,10 +244,10 @@
   
   <entry>
     <title>QSGIN</title>
-    <link href="http://fansirsqi.github.io/2023/03/27/other/qsgin/"/>
-    <id>http://fansirsqi.github.io/2023/03/27/other/qsgin/</id>
+    <link href="http://fansirsqi.github.io/other/other/qsgin/"/>
+    <id>http://fansirsqi.github.io/other/other/qsgin/</id>
     <published>2023-03-27T16:00:00.000Z</published>
-    <updated>2024-02-06T01:46:58.589Z</updated>
+    <updated>2024-02-06T05:28:45.229Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;QSGIN&quot;&gt;&lt;a href=&quot;#QSGIN&quot; class=&quot;headerlink&quot; title=&quot;QSGIN&quot;&gt;&lt;/a&gt;QSGIN&lt;/h2&gt;&lt;p&gt;&lt;code&gt;docker run -d --restart=always --name qsign -p &amp;#123;host_port&amp;#125;:&amp;#123;internal_port&amp;#125; -e BASE_PATH=/srv/qsign/qsign/txlib/&amp;#123;version&amp;#125; -v &amp;#123;host_abs_config.json_path&amp;#125;:/srv/qsign/qsign/txlib/&amp;#123;version&amp;#125;/config.json xzhouqd/qsign:core-&amp;#123;core-ver&amp;#125;&lt;/code&gt;&lt;/p&gt;
@@ -266,10 +266,10 @@
   
   <entry>
     <title>Android SDK Manager用法</title>
-    <link href="http://fansirsqi.github.io/2022/12/19/other/android-sdk-manager-yong-fa/"/>
-    <id>http://fansirsqi.github.io/2022/12/19/other/android-sdk-manager-yong-fa/</id>
+    <link href="http://fansirsqi.github.io/wen-dang/jiao-cheng/other/android-sdk-manager-yong-fa/"/>
+    <id>http://fansirsqi.github.io/wen-dang/jiao-cheng/other/android-sdk-manager-yong-fa/</id>
     <published>2022-12-19T16:00:00.000Z</published>
-    <updated>2024-02-06T01:46:58.585Z</updated>
+    <updated>2024-02-06T05:28:45.225Z</updated>
     
     
     <summary type="html">&lt;p&gt;下载工具包解压&lt;/p&gt;
@@ -291,10 +291,10 @@
   
   <entry>
     <title>Unity-C#学习</title>
-    <link href="http://fansirsqi.github.io/2022/09/22/linux/c-chu-ji-ru-men-unity/"/>
-    <id>http://fansirsqi.github.io/2022/09/22/linux/c-chu-ji-ru-men-unity/</id>
+    <link href="http://fansirsqi.github.io/unity/linux/c-chu-ji-ru-men-unity/"/>
+    <id>http://fansirsqi.github.io/unity/linux/c-chu-ji-ru-men-unity/</id>
     <published>2022-09-22T16:00:00.000Z</published>
-    <updated>2024-02-06T01:46:58.585Z</updated>
+    <updated>2024-02-06T05:28:45.225Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;一-Unity-C-初级编程&quot;&gt;&lt;a href=&quot;#一-Unity-C-初级编程&quot; class=&quot;headerlink&quot; title=&quot;一. Unity C#初级编程&quot;&gt;&lt;/a&gt;一. Unity C#初级编程&lt;/h1&gt;&lt;h2 id=&quot;1-作为行为组件的脚本&quot;&gt;&lt;a href=&quot;#1-作为行为组件的脚本&quot; class=&quot;headerlink&quot; title=&quot;1. 作为行为组件的脚本&quot;&gt;&lt;/a&gt;1. 作为行为组件的脚本&lt;/h2&gt;&lt;p&gt;这里将脚本挂载到物体上，控制他本身材质的颜色…猜测&lt;/p&gt;</summary>
@@ -312,17 +312,19 @@
   
   <entry>
     <title>C#学习</title>
-    <link href="http://fansirsqi.github.io/2022/09/22/linux/c-xie-cheng/"/>
-    <id>http://fansirsqi.github.io/2022/09/22/linux/c-xie-cheng/</id>
+    <link href="http://fansirsqi.github.io/unity/linux/c-xie-cheng/"/>
+    <id>http://fansirsqi.github.io/unity/linux/c-xie-cheng/</id>
     <published>2022-09-22T16:00:00.000Z</published>
-    <updated>2024-02-06T01:46:58.585Z</updated>
+    <updated>2024-02-06T05:28:45.225Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;</summary>
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+
+&lt;figure class=&quot;highlight c#&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span</summary>
         
       
     
@@ -339,10 +341,10 @@
   
   <entry>
     <title>Canvas学习</title>
-    <link href="http://fansirsqi.github.io/2022/09/22/web/canvas-xue-xi/"/>
-    <id>http://fansirsqi.github.io/2022/09/22/web/canvas-xue-xi/</id>
+    <link href="http://fansirsqi.github.io/qian-duan/web/canvas-xue-xi/"/>
+    <id>http://fansirsqi.github.io/qian-duan/web/canvas-xue-xi/</id>
     <published>2022-09-22T16:00:00.000Z</published>
-    <updated>2024-02-06T01:46:58.589Z</updated>
+    <updated>2024-02-06T05:28:45.229Z</updated>
     
     
     <summary type="html">&lt;h4 id=&quot;控制画布大小&quot;&gt;&lt;a href=&quot;#控制画布大小&quot; class=&quot;headerlink&quot; title=&quot;控制画布大小&quot;&gt;&lt;/a&gt;控制画布大小&lt;/h4&gt;&lt;p&gt;控制画布大小&lt;/p&gt;
@@ -363,10 +365,10 @@
   
   <entry>
     <title>Vite-admin学习</title>
-    <link href="http://fansirsqi.github.io/2022/09/22/web/vite-admin/"/>
-    <id>http://fansirsqi.github.io/2022/09/22/web/vite-admin/</id>
+    <link href="http://fansirsqi.github.io/qian-duan/web/vite-admin/"/>
+    <id>http://fansirsqi.github.io/qian-duan/web/vite-admin/</id>
     <published>2022-09-22T16:00:00.000Z</published>
-    <updated>2024-02-06T01:46:58.589Z</updated>
+    <updated>2024-02-06T05:28:45.229Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;架构&quot;&gt;&lt;a href=&quot;#架构&quot; class=&quot;headerlink&quot; title=&quot;架构&quot;&gt;&lt;/a&gt;架构&lt;/h2&gt;&lt;figure class=&quot;highlight q&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;src&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;-components&lt;span class=&quot;comment&quot;&gt;//组件文件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;-hooks&lt;span class=&quot;comment&quot;&gt;//业务逻辑文件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;-router&lt;span class=&quot;comment&quot;&gt;//路由文件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;-service&lt;span class=&quot;comment&quot;&gt;//发起请求文件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;-store&lt;span class=&quot;comment&quot;&gt;//状态管理文件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;-utils&lt;span class=&quot;comment&quot;&gt;//公共文件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;-&lt;span class=&quot;built_in&quot;&gt;views&lt;/span&gt;&lt;span class=&quot;comment&quot;&gt;//页面级组件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -386,10 +388,10 @@
   
   <entry>
     <title>Vue3学习</title>
-    <link href="http://fansirsqi.github.io/2022/09/22/web/vue3-xue-xi-bi-ji/"/>
-    <id>http://fansirsqi.github.io/2022/09/22/web/vue3-xue-xi-bi-ji/</id>
+    <link href="http://fansirsqi.github.io/qian-duan/web/vue3-xue-xi-bi-ji/"/>
+    <id>http://fansirsqi.github.io/qian-duan/web/vue3-xue-xi-bi-ji/</id>
     <published>2022-09-22T16:00:00.000Z</published>
-    <updated>2024-02-06T01:46:58.589Z</updated>
+    <updated>2024-02-06T05:28:45.229Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;第一章，入门&quot;&gt;&lt;a href=&quot;#第一章，入门&quot; class=&quot;headerlink&quot; title=&quot;第一章，入门&quot;&gt;&lt;/a&gt;第一章，入门&lt;/h2&gt;&lt;h3 id=&quot;1-创建工程&quot;&gt;&lt;a href=&quot;#1-创建工程&quot; class=&quot;headerlink&quot; title=&quot;1. 创建工程&quot;&gt;&lt;/a&gt;1. 创建工程&lt;/h3&gt;&lt;h4 id=&quot;使用脚手架-vue-cli创建&quot;&gt;&lt;a href=&quot;#使用脚手架-vue-cli创建&quot; class=&quot;headerlink&quot; title=&quot;使用脚手架 vue-cli创建&quot;&gt;&lt;/a&gt;使用脚手架 &lt;code&gt;vue-cli&lt;/code&gt;创建&lt;/h4&gt;&lt;h5 id=&quot;安装脚手架-vue-cli&quot;&gt;&lt;a href=&quot;#安装脚手架-vue-cli&quot; class=&quot;headerlink&quot; title=&quot;安装脚手架 vue-cli&quot;&gt;&lt;/a&gt;安装脚手架 &lt;code&gt;vue-cli&lt;/code&gt;&lt;/h5&gt;&lt;ul&gt;
@@ -412,10 +414,10 @@
   
   <entry>
     <title>自定义设置Pycharm文件头</title>
-    <link href="http://fansirsqi.github.io/2022/07/25/other/zi-ding-yi-she-zhi-pycharm-wen-jian-tou/"/>
-    <id>http://fansirsqi.github.io/2022/07/25/other/zi-ding-yi-she-zhi-pycharm-wen-jian-tou/</id>
+    <link href="http://fansirsqi.github.io/ide-she-zhi/other/zi-ding-yi-she-zhi-pycharm-wen-jian-tou/"/>
+    <id>http://fansirsqi.github.io/ide-she-zhi/other/zi-ding-yi-she-zhi-pycharm-wen-jian-tou/</id>
     <published>2022-07-25T03:03:14.000Z</published>
-    <updated>2024-02-06T01:46:58.589Z</updated>
+    <updated>2024-02-06T05:28:45.229Z</updated>
     
     
     <summary type="html">&lt;h4 id=&quot;1-打开设置&quot;&gt;&lt;a href=&quot;#1-打开设置&quot; class=&quot;headerlink&quot; title=&quot;1. 打开设置&quot;&gt;&lt;/a&gt;1. 打开设置&lt;/h4&gt;&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/Fansirsqi/blog-Images@main/images/202207251104285.png&quot; alt=&quot;1step&quot;&gt;&lt;/p&gt;
@@ -433,10 +435,10 @@
   
   <entry>
     <title>软件测试面试题整理-持续更新</title>
-    <link href="http://fansirsqi.github.io/2022/07/12/test/ruan-jian-ce-shi-zheng-li-mian-shi-ti/"/>
-    <id>http://fansirsqi.github.io/2022/07/12/test/ruan-jian-ce-shi-zheng-li-mian-shi-ti/</id>
+    <link href="http://fansirsqi.github.io/ruan-jian-ce-shi/test/ruan-jian-ce-shi-zheng-li-mian-shi-ti/"/>
+    <id>http://fansirsqi.github.io/ruan-jian-ce-shi/test/ruan-jian-ce-shi-zheng-li-mian-shi-ti/</id>
     <published>2022-07-12T16:00:00.000Z</published>
-    <updated>2024-02-06T01:46:58.589Z</updated>
+    <updated>2024-02-06T05:28:45.229Z</updated>
     
     
     <summary type="html">&lt;p&gt;写在前面,大部分是CP来的,希望对你有一点帮助,主要就是看你对这些东西的熟悉程度,面试造飞机,上班拧螺丝大多如此,其实我觉得吧实际工作中,能做到高效简单最好,那那面试官怎么去判断评定你呢,我想大概就这些了吧!&lt;br&gt;加油!&lt;code&gt;&amp;lt;!--more--&amp;gt;&lt;/code&gt;&lt;/p&gt;
@@ -461,10 +463,10 @@
   
   <entry>
     <title>Git命令学习</title>
-    <link href="http://fansirsqi.github.io/2022/05/12/linux/git-xue-xi/"/>
-    <id>http://fansirsqi.github.io/2022/05/12/linux/git-xue-xi/</id>
+    <link href="http://fansirsqi.github.io/git/linux/git-xue-xi/"/>
+    <id>http://fansirsqi.github.io/git/linux/git-xue-xi/</id>
     <published>2022-05-12T16:00:00.000Z</published>
-    <updated>2024-02-06T01:46:58.585Z</updated>
+    <updated>2024-02-06T05:28:45.225Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;code&gt;git clone&lt;/code&gt;克隆远程分支&lt;br&gt;&lt;code&gt;git checkout&lt;/code&gt;切换分支&lt;br&gt;默认远程分支的名字叫 &lt;code&gt;origin/xxx&lt;/code&gt; 切换到远程分支会切换到分离状态&lt;/p&gt;
@@ -488,10 +490,10 @@
   
   <entry>
     <title>Centos开启SSH服务</title>
-    <link href="http://fansirsqi.github.io/2022/05/12/other/centos-kai-qi-ssh-fu-wu/"/>
-    <id>http://fansirsqi.github.io/2022/05/12/other/centos-kai-qi-ssh-fu-wu/</id>
+    <link href="http://fansirsqi.github.io/linux/other/centos-kai-qi-ssh-fu-wu/"/>
+    <id>http://fansirsqi.github.io/linux/other/centos-kai-qi-ssh-fu-wu/</id>
     <published>2022-05-12T16:00:00.000Z</published>
-    <updated>2024-02-06T01:46:58.585Z</updated>
+    <updated>2024-02-06T05:28:45.229Z</updated>
     
     
     <summary type="html">&lt;h3 id=&quot;Centos开启SSH服务&quot;&gt;&lt;a href=&quot;#Centos开启SSH服务&quot; class=&quot;headerlink&quot; title=&quot;Centos开启SSH服务&quot;&gt;&lt;/a&gt;&lt;code&gt;Centos&lt;/code&gt;开启SSH服务&lt;/h3&gt;&lt;p&gt;首先确认是否安装 &lt;code&gt;openssh-server&lt;/code&gt;&lt;/p&gt;
@@ -516,10 +518,10 @@
   
   <entry>
     <title>Linux设置用户名密码</title>
-    <link href="http://fansirsqi.github.io/2022/05/12/other/linux-she-zhi-root-mi-ma/"/>
-    <id>http://fansirsqi.github.io/2022/05/12/other/linux-she-zhi-root-mi-ma/</id>
+    <link href="http://fansirsqi.github.io/linux/other/linux-she-zhi-root-mi-ma/"/>
+    <id>http://fansirsqi.github.io/linux/other/linux-she-zhi-root-mi-ma/</id>
     <published>2022-05-12T16:00:00.000Z</published>
-    <updated>2024-02-06T01:46:58.589Z</updated>
+    <updated>2024-02-06T05:28:45.229Z</updated>
     
     
     <summary type="html">&lt;h3 id=&quot;Linux修改-root用户密码&quot;&gt;&lt;a href=&quot;#Linux修改-root用户密码&quot; class=&quot;headerlink&quot; title=&quot;Linux修改 root用户密码&quot;&gt;&lt;/a&gt;&lt;code&gt;Linux&lt;/code&gt;修改 &lt;code&gt;root&lt;/code&gt;用户密码&lt;/h3&gt;&lt;p&gt;有些发行版 &lt;code&gt;Linux&lt;/code&gt;安装好后，root初始密码（默认密码）不知道，&lt;br&gt;当你从输入 &lt;code&gt;su - root&lt;/code&gt;或者 &lt;code&gt;sudo&lt;/code&gt;会提示鉴权失败!&lt;br&gt;其实su的密码需要我们设置一下。&lt;/p&gt;</summary>
@@ -535,10 +537,10 @@
   
   <entry>
     <title>宝塔登录面板重置密码</title>
-    <link href="http://fansirsqi.github.io/2022/05/12/other/bao-ta-deng-lu-mian-ban-chong-zhi-mi-ma/"/>
-    <id>http://fansirsqi.github.io/2022/05/12/other/bao-ta-deng-lu-mian-ban-chong-zhi-mi-ma/</id>
+    <link href="http://fansirsqi.github.io/bao-ta-mian-ban/other/bao-ta-deng-lu-mian-ban-chong-zhi-mi-ma/"/>
+    <id>http://fansirsqi.github.io/bao-ta-mian-ban/other/bao-ta-deng-lu-mian-ban-chong-zhi-mi-ma/</id>
     <published>2022-05-12T16:00:00.000Z</published>
-    <updated>2024-02-06T01:46:58.589Z</updated>
+    <updated>2024-02-06T05:28:45.229Z</updated>
     
     
     <summary type="html">&lt;h3 id=&quot;宝塔登录面板重置密码&quot;&gt;&lt;a href=&quot;#宝塔登录面板重置密码&quot; class=&quot;headerlink&quot; title=&quot;宝塔登录面板重置密码&quot;&gt;&lt;/a&gt;宝塔登录面板重置密码&lt;/h3&gt;&lt;p&gt;进入ssh输入以下命令重置密码（把命令最后面的 &lt;code&gt;testpasswd&lt;/code&gt;替换成你要改的新密码）&lt;/p&gt;
@@ -561,10 +563,10 @@
   
   <entry>
     <title>Docker学习</title>
-    <link href="http://fansirsqi.github.io/2022/05/07/linux/docker-xue-xi/"/>
-    <id>http://fansirsqi.github.io/2022/05/07/linux/docker-xue-xi/</id>
+    <link href="http://fansirsqi.github.io/linux/linux/docker-xue-xi/"/>
+    <id>http://fansirsqi.github.io/linux/linux/docker-xue-xi/</id>
     <published>2022-05-07T15:57:08.000Z</published>
-    <updated>2024-02-06T01:46:58.585Z</updated>
+    <updated>2024-02-06T05:28:45.225Z</updated>
     
     
     <summary type="html">&lt;h3 id=&quot;如何同时运行多个容器&quot;&gt;&lt;a href=&quot;#如何同时运行多个容器&quot; class=&quot;headerlink&quot; title=&quot;如何同时运行多个容器&quot;&gt;&lt;/a&gt;如何同时运行多个容器&lt;/h3&gt;&lt;h3 id=&quot;Docker-Compose&quot;&gt;&lt;a href=&quot;#Docker-Compose&quot; class=&quot;headerlink&quot; title=&quot;Docker Compose&quot;&gt;&lt;/a&gt;Docker Compose&lt;/h3&gt;&lt;p&gt;如果您已经完成了如何运行容器？指南中，您看到必须单独启动每个容器。想象一下，如果一个工具可以用一个命令启动多个容器，那该有多好。这个工具就是 &lt;code&gt;Docker Compose&lt;/code&gt;。&lt;/p&gt;

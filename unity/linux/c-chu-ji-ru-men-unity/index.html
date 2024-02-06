@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.3.0">
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha256-CTSx/A06dm1B063156EVh15m6Y67pAjZZaQc89LLSrU=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.24/fancybox/fancybox.css" integrity="sha256-vQkngPS8jiHHH0I6ABTZroZk8NPZ7b+MUReOFE9UsXQ=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/pink/pace-theme-bounce.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"fansirsqi.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.18.2","exturl":true,"sidebar":{"position":"left","width":210,"display":"always","padding":3,"offset":36},"copycode":{"enable":true,"style":"mac"},"fold":{"enable":true,"height":500},"bookmark":{"enable":false,"color":"#b94242","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+
+
+<link rel="canonical" href="http://fansirsqi.github.io/unity/linux/c-chu-ji-ru-men-unity/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://fansirsqi.github.io/unity/linux/c-chu-ji-ru-men-unity/","path":"unity/linux/c-chu-ji-ru-men-unity/","title":"Unity-C#学习"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Unity-C#学习 | 依旧归七</title>
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-webfont@1.1.0/lxgwwenkai-regular.css"/>
+
+<script src="https://fastly.jsdelivr.net/gh/Fansirsqi/live2d-widget/autoload.js"></script>
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="依旧归七" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">依旧归七</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Byseven</p>
+      <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
+      <p id="hitokoto">
+        <a href="#" id="hitokoto_text">✨...✨</a>
+      </p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">25</span></a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">84</span></a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">49</span></a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+<link rel="stylesheet" href="https://npm.elemecdn.com/aplayer@1.10.1/dist/APlayer.min.css">
+<script src="https://npm.elemecdn.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
+<script src="https://npm.elemecdn.com/meting@2.0.1/dist/Meting.min.js"></script>
+<meting-js server="netease" fixed="true" autoplay="false" theme="#409EFF" list-folded="true" type="playlist" id="799311034"></meting-js>
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80-Unity-C-%E5%88%9D%E7%BA%A7%E7%BC%96%E7%A8%8B"><span class="nav-text">一. Unity C#初级编程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E4%BD%9C%E4%B8%BA%E8%A1%8C%E4%B8%BA%E7%BB%84%E4%BB%B6%E7%9A%84%E8%84%9A%E6%9C%AC"><span class="nav-text">1. 作为行为组件的脚本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E5%8F%98%E9%87%8F%E4%B8%8E%E5%87%BD%E6%95%B0"><span class="nav-text">2. 变量与函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E7%BA%A6%E5%AE%9A%E4%B8%8E%E8%AF%AD%E6%B3%95"><span class="nav-text">3. 约定与语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-IF%E8%AF%AD%E5%8F%A5"><span class="nav-text">4. IF语句</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E5%BE%AA%E7%8E%AF"><span class="nav-text">5. 循环</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#a-For%E5%BE%AA%E7%8E%AF"><span class="nav-text">a. For循环</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#b-While%E5%BE%AA%E7%8E%AF"><span class="nav-text">b. While循环</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#c-DoWhile%E5%BE%AA%E7%8E%AF"><span class="nav-text">c. DoWhile循环</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#d-Foreach%E5%BE%AA%E7%8E%AF"><span class="nav-text">d. Foreach循环</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-%E4%BD%9C%E7%94%A8%E5%9F%9F%E5%92%8C%E8%AE%BF%E9%97%AE%E4%BF%AE%E9%A5%B0%E7%AC%A6"><span class="nav-text">6. 作用域和访问修饰符</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#ScopeAndAccessModifiers"><span class="nav-text">ScopeAndAccessModifiers</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#AnotherClass"><span class="nav-text">AnotherClass</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-Awake-%E5%92%8C-Start"><span class="nav-text">7.Awake 和 Start</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-Update-%E5%92%8C-FixedUpdate"><span class="nav-text">8. Update 和 FixedUpdate</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-%E7%9F%A2%E9%87%8F%E6%95%B0%E5%AD%A6"><span class="nav-text">9. 矢量数学</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-%E5%90%AF%E7%94%A8%E5%92%8C%E7%A6%81%E7%94%A8%E7%BB%84%E4%BB%B6"><span class="nav-text">10. 启用和禁用组件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#11-%E6%BF%80%E6%B4%BB%E6%B8%B8%E6%88%8F%E5%AF%B9%E8%B1%A1"><span class="nav-text">11. 激活游戏对象</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#ActiveObjects"><span class="nav-text">ActiveObjects</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CheckState"><span class="nav-text">CheckState</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#12-Translate-%E5%92%8C-Rotate"><span class="nav-text">12. Translate 和 Rotate</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#TransformFunctions"><span class="nav-text">TransformFunctions</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#13-Look-At"><span class="nav-text">13. Look At</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#CameraLookAt"><span class="nav-text">CameraLookAt</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#14-%E7%BA%BF%E6%80%A7%E6%8F%92%E5%80%BC"><span class="nav-text">14. 线性插值</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#tag-link"><span class="nav-text">tag-link</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#15-Destroy"><span class="nav-text">15.Destroy</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#16-GetButton-%E5%92%8C-GetKey"><span class="nav-text">16.GetButton 和 GetKey</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#17-GetAxis"><span class="nav-text">17.GetAxis</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Fansir"
+      src="/images/cavatar.gif">
+  <p class="site-author-name" itemprop="name">Fansir</p>
+  <div class="site-description" itemprop="description">一个小博客</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">49</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">25</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">84</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2ZhbnNpcnNxaQ==" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;fansirsqi"><i class="fab fa-github fa-fw"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="bWFpbHRvOmZhbnNpcmxpdUAxNjMuY29t" title="163-Mail → mailto:fansirliu@163.com"><i class="fa fa-regular fa-envelope fa-fw"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9zcGFjZS5iaWxpYmlsaS5jb20vNjEzMTU1Njk0" title="bilibili → https:&#x2F;&#x2F;space.bilibili.com&#x2F;613155694"><i class="fab fa-bilibili fa-fw"></i></span>
+      </span>
+  </div>
+  <div class="cc-license animated" itemprop="license">
+    <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpoLUNO"><img src="https://cdnjs.cloudflare.com/ajax/libs/creativecommons-vocabulary/2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="sidebar-inner sidebar-blogroll">
+      <div class="links-of-blogroll animated">
+        <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+          ✨魔法链接✨
+        </div>
+        <ul class="links-of-blogroll-list">
+            <li class="links-of-blogroll-item">
+              <span class="exturl" data-url="aHR0cHM6Ly9nZWVrLnJyYWJpdHMuY29tLyMvcmVnaXN0ZXI/Y29kZT1hQ3B3VUpoRQ==" title="https:&#x2F;&#x2F;geek.rrabits.com&#x2F;#&#x2F;register?code&#x3D;aCpwUJhE">Rrabits-Cloudgeek</span>
+            </li>
+            <li class="links-of-blogroll-item">
+              <span class="exturl" data-url="aHR0cHM6Ly9zYWt1cmFjYXQud29ybGQvIy9yZWdpc3Rlcj9jb2RlPWFXQVVZblhy" title="https:&#x2F;&#x2F;sakuracat.world&#x2F;#&#x2F;register?code&#x3D;aWAUYnXr">SakuraCat</span>
+            </li>
+            <li class="links-of-blogroll-item">
+              <span class="exturl" data-url="aHR0cHM6Ly9zb2NrYm9vbS5sb3ZlL2F1dGgvcmVnaXN0ZXI/YWZmaWQ9MTEwNTMz" title="https:&#x2F;&#x2F;sockboom.love&#x2F;auth&#x2F;register?affid&#x3D;110533">SockBoom</span>
+            </li>
+            <li class="links-of-blogroll-item">
+              <span class="exturl" data-url="aHR0cHM6Ly9zYXVydXJ1cy5pbmsvIy9yZWdpc3Rlcj9jb2RlPW5Ka2ROQldy" title="https:&#x2F;&#x2F;saururus.ink&#x2F;#&#x2F;register?code&#x3D;nJkdNBWr">Saururus</span>
+            </li>
+            <li class="links-of-blogroll-item">
+              <span class="exturl" data-url="aHR0cHM6Ly9ndW9saWNoZW5nLmNjL2luZGV4LnBocCMvcmVnaXN0ZXI/Y29kZT16c21ZSUpudg==" title="https:&#x2F;&#x2F;guolicheng.cc&#x2F;index.php#&#x2F;register?code&#x3D;zsmYIJnv">果粒橙</span>
+            </li>
+            <li class="links-of-blogroll-item">
+              <span class="exturl" data-url="aHR0cHM6Ly94bi0tbWVzcjhiMzZ4LmNvbS8jL3JlZ2lzdGVyP2NvZGU9RG9OSnhkbWk=" title="https:&#x2F;&#x2F;xn--mesr8b36x.com&#x2F;#&#x2F;register?code&#x3D;DoNJxdmi">Big-Airport</span>
+            </li>
+            <li class="links-of-blogroll-item">
+              <span class="exturl" data-url="aHR0cHM6Ly94bi0tbWVzMzU4YWJ5MmFwZmcuY29tLyMvcmVnaXN0ZXI/Y29kZT10aENJNnMxWQ==" title="https:&#x2F;&#x2F;xn--mes358aby2apfg.com&#x2F;#&#x2F;register?code&#x3D;thCI6s1Y">赔钱机场</span>
+            </li>
+            <li class="links-of-blogroll-item">
+              <span class="exturl" data-url="aHR0cHM6Ly93d3cuZWVqc3EubmV0LyMvcmVnaXN0ZXI/Y29kZT1qcWFkR05MMg==" title="https:&#x2F;&#x2F;www.eejsq.net&#x2F;#&#x2F;register?code&#x3D;jqadGNL2">EEVPN</span>
+            </li>
+        </ul>
+      </div>
+    </div>
+        <div class="pjax">
+        <div class="sidebar-inner sidebar-post-related">
+          <div class="animated">
+              <div class="links-of-blogroll-title"><i class="fa fa-signs-post fa-fw"></i>
+    相关文章
+  </div>
+  <ul class="popular-posts">
+    <li class="popular-posts-item">
+      <a class="popular-posts-link" href="/ide/other/vs2019-kuai-jie-jian/" rel="bookmark">
+        <time class="popular-posts-time">2021-10-23</time>
+        <br>
+      VS2019 较常用快捷键
+      </a>
+    </li>
+  </ul>
+
+          </div>
+        </div>
+        </div>
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://fansirsqi.github.io/unity/linux/c-chu-ji-ru-men-unity/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/cavatar.gif">
+      <meta itemprop="name" content="Fansir">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="依旧归七">
+      <meta itemprop="description" content="一个小博客">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Unity-C#学习 | 依旧归七">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Unity-C#学习
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-09-23 00:00:00" itemprop="dateCreated datePublished" datetime="2022-09-23T00:00:00+08:00">2022-09-23</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2024-02-06 13:28:45" itemprop="dateModified" datetime="2024-02-06T13:28:45+08:00">2024-02-06</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Unity/" itemprop="url" rel="index"><span itemprop="name">Unity</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>8 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h1 id="一-Unity-C-初级编程"><a href="#一-Unity-C-初级编程" class="headerlink" title="一. Unity C#初级编程"></a>一. Unity C#初级编程</h1><h2 id="1-作为行为组件的脚本"><a href="#1-作为行为组件的脚本" class="headerlink" title="1. 作为行为组件的脚本"></a>1. 作为行为组件的脚本</h2><p>这里将脚本挂载到物体上，控制他本身材质的颜色…猜测</p>
+<span id="more"></span>
+
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> UnityEngine;</span><br><span class="line"><span class="keyword">using</span> System.Collections;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ExampleBehaviourScript</span> : <span class="title">MonoBehaviour</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Update</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (Input.GetKeyDown(KeyCode.R))</span><br><span class="line">        &#123;</span><br><span class="line">            GetComponent&lt;Renderer&gt; ().material.color = Color.red;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (Input.GetKeyDown(KeyCode.G))</span><br><span class="line">        &#123;</span><br><span class="line">            GetComponent&lt;Renderer&gt;().material.color = Color.green;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (Input.GetKeyDown(KeyCode.B))</span><br><span class="line">        &#123;</span><br><span class="line">            GetComponent&lt;Renderer&gt;().material.color = Color.blue;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-变量与函数"><a href="#2-变量与函数" class="headerlink" title="2. 变量与函数"></a>2. 变量与函数</h2><p>定义变量前需要确定类型</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> UnityEngine;</span><br><span class="line"><span class="keyword">using</span> System.Collections;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">VariablesAndFunctions</span> : <span class="title">MonoBehaviour</span></span><br><span class="line">&#123;   </span><br><span class="line">    <span class="built_in">int</span> myInt = <span class="number">5</span>;</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Start</span> ()</span></span><br><span class="line">    &#123;</span><br><span class="line">        myInt = MultiplyByTwo(myInt);</span><br><span class="line">        Debug.Log (myInt);</span><br><span class="line">    &#125;</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">    <span class="function"><span class="built_in">int</span> <span class="title">MultiplyByTwo</span> (<span class="params"><span class="built_in">int</span> number</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">int</span> ret;</span><br><span class="line">        ret = number * <span class="number">2</span>;</span><br><span class="line">        <span class="keyword">return</span> ret;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-约定与语法"><a href="#3-约定与语法" class="headerlink" title="3. 约定与语法"></a>3. 约定与语法</h2><p>即代码规范</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> UnityEngine;</span><br><span class="line"><span class="keyword">using</span> System.Collections;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">BasicSyntax</span> : <span class="title">MonoBehaviour</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Start</span> ()</span></span><br><span class="line">    &#123;</span><br><span class="line">        Debug.Log(transform.position.x);</span><br><span class="line">      </span><br><span class="line">        <span class="keyword">if</span>(transform.position.y &lt;= <span class="number">5f</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            Debug.Log (<span class="string">&quot;I&#x27;m about to hit the ground!&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-IF语句"><a href="#4-IF语句" class="headerlink" title="4. IF语句"></a>4. IF语句</h2><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> UnityEngine;</span><br><span class="line"><span class="keyword">using</span> System.Collections;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">IfStatements</span> : <span class="title">MonoBehaviour</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">float</span> coffeeTemperature = <span class="number">85.0f</span>;</span><br><span class="line">    <span class="built_in">float</span> hotLimitTemperature = <span class="number">70.0f</span>;</span><br><span class="line">    <span class="built_in">float</span> coldLimitTemperature = <span class="number">40.0f</span>;</span><br><span class="line">  </span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Update</span> ()</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(Input.GetKeyDown(KeyCode.Space))</span><br><span class="line">            TemperatureTest();</span><br><span class="line">      </span><br><span class="line">        coffeeTemperature -= Time.deltaTime * <span class="number">5f</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">TemperatureTest</span> ()</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">// 如果咖啡的温度高于最热的饮用温度...</span></span><br><span class="line">        <span class="keyword">if</span>(coffeeTemperature &gt; hotLimitTemperature)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="comment">// ... 执行此操作。</span></span><br><span class="line">            print(<span class="string">&quot;Coffee is too hot.&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 如果不是，但咖啡的温度低于最冷的饮用温度...</span></span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(coffeeTemperature &lt; coldLimitTemperature)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="comment">// ... 执行此操作。</span></span><br><span class="line">            print(<span class="string">&quot;Coffee is too cold.&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 如果两者都不是，则...</span></span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="comment">// ... 执行此操作。</span></span><br><span class="line">            print(<span class="string">&quot;Coffee is just right.&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="5-循环"><a href="#5-循环" class="headerlink" title="5. 循环"></a>5. 循环</h2><h3 id="a-For循环"><a href="#a-For循环" class="headerlink" title="a. For循环"></a>a. <code>For</code>循环</h3><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> UnityEngine;</span><br><span class="line"><span class="keyword">using</span> System.Collections;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ForLoop</span> : <span class="title">MonoBehaviour</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">int</span> numEnemies = <span class="number">3</span>;</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Start</span> ()</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="built_in">int</span> i = <span class="number">0</span>; i &lt; numEnemies; i++)</span><br><span class="line">        &#123;</span><br><span class="line">            Debug.Log(<span class="string">&quot;Creating enemy number: &quot;</span> + i);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="b-While循环"><a href="#b-While循环" class="headerlink" title="b. While循环"></a>b. <code>While</code>循环</h3><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> UnityEngine;</span><br><span class="line"><span class="keyword">using</span> System.Collections;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">WhileLoop</span> : <span class="title">MonoBehaviour</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">int</span> cupsInTheSink = <span class="number">4</span>;</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Start</span> ()</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">while</span>(cupsInTheSink &gt; <span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            Debug.Log (<span class="string">&quot;I&#x27;ve washed a cup!&quot;</span>);</span><br><span class="line">            cupsInTheSink--;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="c-DoWhile循环"><a href="#c-DoWhile循环" class="headerlink" title="c. DoWhile循环"></a>c. <code>DoWhile</code>循环</h3><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> UnityEngine;</span><br><span class="line"><span class="keyword">using</span> System.Collections;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">DoWhileLoop</span> : <span class="title">MonoBehaviour</span> </span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Start</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">bool</span> shouldContinue = <span class="literal">false</span>;</span><br><span class="line">      </span><br><span class="line">        <span class="keyword">do</span></span><br><span class="line">        &#123;</span><br><span class="line">            print (<span class="string">&quot;Hello World&quot;</span>);</span><br><span class="line">          </span><br><span class="line">        &#125;<span class="keyword">while</span>(shouldContinue == <span class="literal">true</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="d-Foreach循环"><a href="#d-Foreach循环" class="headerlink" title="d. Foreach循环"></a>d. <code>Foreach</code>循环</h3><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> UnityEngine;</span><br><span class="line"><span class="keyword">using</span> System.Collections;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ForeachLoop</span> : <span class="title">MonoBehaviour</span> </span><br><span class="line">&#123;   </span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Start</span> ()</span> </span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">string</span>[] strings = <span class="keyword">new</span> <span class="built_in">string</span>[<span class="number">3</span>];</span><br><span class="line">      </span><br><span class="line">        strings[<span class="number">0</span>] = <span class="string">&quot;First string&quot;</span>;</span><br><span class="line">        strings[<span class="number">1</span>] = <span class="string">&quot;Second string&quot;</span>;</span><br><span class="line">        strings[<span class="number">2</span>] = <span class="string">&quot;Third string&quot;</span>;</span><br><span class="line">      </span><br><span class="line">        <span class="keyword">foreach</span>(<span class="built_in">string</span> item <span class="keyword">in</span> strings)</span><br><span class="line">        &#123;</span><br><span class="line">            print (item);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="6-作用域和访问修饰符"><a href="#6-作用域和访问修饰符" class="headerlink" title="6. 作用域和访问修饰符"></a>6. 作用域和访问修饰符</h2><h3 id="ScopeAndAccessModifiers"><a href="#ScopeAndAccessModifiers" class="headerlink" title="ScopeAndAccessModifiers"></a><code>ScopeAndAccessModifiers</code></h3><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> UnityEngine;</span><br><span class="line"><span class="keyword">using</span> System.Collections;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ScopeAndAccessModifiers</span> : <span class="title">MonoBehaviour</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">int</span> alpha = <span class="number">5</span>;</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">private</span> <span class="built_in">int</span> beta = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">private</span> <span class="built_in">int</span> gamma = <span class="number">5</span>;</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">private</span> AnotherClass myOtherClass;</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Start</span> ()</span></span><br><span class="line">    &#123;</span><br><span class="line">        alpha = <span class="number">29</span>;</span><br><span class="line">      </span><br><span class="line">        myOtherClass = <span class="keyword">new</span> AnotherClass();</span><br><span class="line">        myOtherClass.FruitMachine(alpha, myOtherClass.apples);</span><br><span class="line">    &#125;</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Example</span> (<span class="params"><span class="built_in">int</span> pens, <span class="built_in">int</span> crayons</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">int</span> answer;</span><br><span class="line">        answer = pens * crayons * alpha;</span><br><span class="line">        Debug.Log(answer);</span><br><span class="line">    &#125;</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Update</span> ()</span></span><br><span class="line">    &#123;</span><br><span class="line">        Debug.Log(<span class="string">&quot;Alpha is set to: &quot;</span> + alpha);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="AnotherClass"><a href="#AnotherClass" class="headerlink" title="AnotherClass"></a><code>AnotherClass</code></h3><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> UnityEngine;</span><br><span class="line"><span class="keyword">using</span> System.Collections;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">AnotherClass</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">int</span> apples;</span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">int</span> bananas;</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">    <span class="keyword">private</span> <span class="built_in">int</span> stapler;</span><br><span class="line">    <span class="keyword">private</span> <span class="built_in">int</span> sellotape;</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">FruitMachine</span> (<span class="params"><span class="built_in">int</span> a, <span class="built_in">int</span> b</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">int</span> answer;</span><br><span class="line">        answer = a + b;</span><br><span class="line">        Debug.Log(<span class="string">&quot;Fruit total: &quot;</span> + answer);</span><br><span class="line">    &#125;</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">OfficeSort</span> (<span class="params"><span class="built_in">int</span> a, <span class="built_in">int</span> b</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">int</span> answer;</span><br><span class="line">        answer = a + b;</span><br><span class="line">        Debug.Log(<span class="string">&quot;Office Supplies total: &quot;</span> + answer);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="7-Awake-和-Start"><a href="#7-Awake-和-Start" class="headerlink" title="7.Awake 和 Start"></a>7.Awake 和 Start</h2><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> UnityEngine;</span><br><span class="line"><span class="keyword">using</span> System.Collections;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">AwakeAndStart</span> : <span class="title">MonoBehaviour</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">//只需挂载脚本，而不需要勾选</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Awake</span> ()</span></span><br><span class="line">    &#123;</span><br><span class="line">        Debug.Log(<span class="string">&quot;Awake called.&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">  </span><br><span class="line">    <span class="comment">//勾选了，才会执行这里</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Start</span> ()</span></span><br><span class="line">    &#123;</span><br><span class="line">        Debug.Log(<span class="string">&quot;Start called.&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="8-Update-和-FixedUpdate"><a href="#8-Update-和-FixedUpdate" class="headerlink" title="8. Update 和 FixedUpdate"></a>8. <code>Update</code> 和 <code>FixedUpdate</code></h2><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> UnityEngine;</span><br><span class="line"><span class="keyword">using</span> System.Collections;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">UpdateAndFixedUpdate</span> : <span class="title">MonoBehaviour</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">/*按照固定时间调用</span></span><br><span class="line"><span class="comment">    *调用之后，会立刻进行任何必要的物理计算</span></span><br><span class="line"><span class="comment">    *因此任何影响刚体(即物理对象)的动作，都应该使用FixedUpdate()执行</span></span><br><span class="line"><span class="comment">    *最好使用力来定义移动</span></span><br><span class="line"><span class="comment">    **/</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">FixedUpdate</span> ()</span></span><br><span class="line">    &#123;</span><br><span class="line">        Debug.Log(<span class="string">&quot;FixedUpdate time :&quot;</span> + Time.deltaTime);</span><br><span class="line">    &#125;</span><br><span class="line">  </span><br><span class="line">    <span class="comment">/*游戏中每一帧的调用</span></span><br><span class="line"><span class="comment">    *基本上只要需要变化或者调整</span></span><br><span class="line"><span class="comment">    *非物理对象的移动</span></span><br><span class="line"><span class="comment">    *简单的计时器</span></span><br><span class="line"><span class="comment">    *输入监测</span></span><br><span class="line"><span class="comment">    *！！请注意，update并不是按照固定时间调用的，帧与帧之间的处理时间不一致会导致Update()调用间隔</span></span><br><span class="line"><span class="comment">    **/</span></span><br><span class="line">  </span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Update</span> ()</span></span><br><span class="line">    &#123;</span><br><span class="line">        Debug.Log(<span class="string">&quot;Update time :&quot;</span> + Time.deltaTime);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>VST中在任何想要插入函数的地方按住 <code>Ctrl</code>+<code>Shift</code>+<code>M</code></p>
+<h2 id="9-矢量数学"><a href="#9-矢量数学" class="headerlink" title="9. 矢量数学"></a>9. 矢量数学</h2><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Vector3.Dot(VectorA,VectorB)</span><br><span class="line">Vector3.Cross(VectorA,VectorB)<span class="comment">//用于坦克扭矩..</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="10-启用和禁用组件"><a href="#10-启用和禁用组件" class="headerlink" title="10. 启用和禁用组件"></a>10. 启用和禁用组件</h2><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> UnityEngine;</span><br><span class="line"><span class="keyword">using</span> System.Collections;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">EnableComponents</span> : <span class="title">MonoBehaviour</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">private</span> Light myLight;</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Start</span> ()</span></span><br><span class="line">    &#123;</span><br><span class="line">        myLight = GetComponent&lt;Light&gt;();</span><br><span class="line">    &#125;</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Update</span> ()</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(Input.GetKeyUp(KeyCode.Space))</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="comment">//这个逻辑很棒，自动取反不需要if else啥的</span></span><br><span class="line">            myLight.enabled = !myLight.enabled;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="11-激活游戏对象"><a href="#11-激活游戏对象" class="headerlink" title="11. 激活游戏对象"></a>11. 激活游戏对象</h2><h3 id="ActiveObjects"><a href="#ActiveObjects" class="headerlink" title="ActiveObjects"></a><code>ActiveObjects</code></h3><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> UnityEngine;</span><br><span class="line"><span class="keyword">using</span> System.Collections;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ActiveObjects</span> : <span class="title">MonoBehaviour</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Start</span> ()</span></span><br><span class="line">    &#123;</span><br><span class="line">        gameObject.SetActive(<span class="literal">false</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="CheckState"><a href="#CheckState" class="headerlink" title="CheckState"></a><code>CheckState</code></h3><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> UnityEngine;</span><br><span class="line"><span class="keyword">using</span> System.Collections;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">CheckState</span> : <span class="title">MonoBehaviour</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">public</span> GameObject myObject;</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Start</span> ()</span></span><br><span class="line">    &#123;</span><br><span class="line">        Debug.Log(<span class="string">&quot;Active Self: &quot;</span> + myObject.activeSelf);</span><br><span class="line">        Debug.Log(<span class="string">&quot;Active in Hierarchy&quot;</span> + myObject.activeInHierarchy);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>如果它的父对象被隐藏，需要先将父对象设置为激活状态，再操作子对象</p>
+<h2 id="12-Translate-和-Rotate"><a href="#12-Translate-和-Rotate" class="headerlink" title="12. Translate 和 Rotate"></a>12. Translate 和 Rotate</h2><blockquote>
+<p>平移与旋转常用函数</p>
+</blockquote>
+<h3 id="TransformFunctions"><a href="#TransformFunctions" class="headerlink" title="TransformFunctions"></a><code>TransformFunctions</code></h3><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> UnityEngine;</span><br><span class="line"><span class="keyword">using</span> System.Collections;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">TransformFunctions</span> : <span class="title">MonoBehaviour</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">float</span> moveSpeed = <span class="number">10f</span>;</span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">float</span> turnSpeed = <span class="number">50f</span>;</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Update</span> ()</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">//这样会每帧，向z轴方向下移动，每帧移动1单位</span></span><br><span class="line">        <span class="comment">//transform.Translate(new Vector3(0,0,1))</span></span><br><span class="line">        <span class="keyword">if</span>(Input.GetKey(KeyCode.UpArrow))</span><br><span class="line">            <span class="comment">//按照每秒多少米的速度移动</span></span><br><span class="line">            transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);</span><br><span class="line">      </span><br><span class="line">        <span class="keyword">if</span>(Input.GetKey(KeyCode.DownArrow))</span><br><span class="line">            transform.Translate(-Vector3.forward * moveSpeed * Time.deltaTime);</span><br><span class="line">        <span class="comment">//Vector3.up表示围绕哪个轴转，</span></span><br><span class="line">        <span class="comment">//turnSpeed旋转速度</span></span><br><span class="line">        <span class="keyword">if</span>(Input.GetKey(KeyCode.LeftArrow))</span><br><span class="line">            transform.Rotate(Vector3.up, -turnSpeed * Time.deltaTime);</span><br><span class="line">      </span><br><span class="line">        <span class="keyword">if</span>(Input.GetKey(KeyCode.RightArrow))</span><br><span class="line">            transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>如果想用碰撞体移动某个对象，也就是会产生物理作用的物体，则不应该使用上者，而是应该考虑 <code>Physics</code>函数</p>
+<h2 id="13-Look-At"><a href="#13-Look-At" class="headerlink" title="13. Look At"></a>13. Look At</h2><blockquote>
+<p>摄像机跟随游戏物体</p>
+</blockquote>
+<h3 id="CameraLookAt"><a href="#CameraLookAt" class="headerlink" title="CameraLookAt"></a><code>CameraLookAt</code></h3><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> UnityEngine;</span><br><span class="line"><span class="keyword">using</span> System.Collections;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">CameraLookAt</span> : <span class="title">MonoBehaviour</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">public</span> Transform target;</span><br><span class="line">  </span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Update</span> ()</span></span><br><span class="line">    &#123;</span><br><span class="line">        transform.LookAt(target);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="14-线性插值"><a href="#14-线性插值" class="headerlink" title="14. 线性插值"></a>14. 线性插值</h2><p>在制作游戏时，有时可以在两个值之间进行线性插值。</p>
+<p>这是通过 Lerp 函数来完成的。线性插值会在两个给定值之间找到某个百分比的值。</p>
+<p>例如，我们可以在数字 3 和 5 之间按 50% 进行线性插值以得到数字 4。这是因为 4 是 3 和 5 之间距离的 50%。</p>
+<p>在 Unity 中，有多个 Lerp 函数可用于不同类型。对于我们刚才使用的示例，与之等效的将是 Mathf.Lerp 函数，</p>
+<p><strong>如下所示：</strong></p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 在此示例中，result = 4</span></span><br><span class="line"><span class="built_in">float</span> result = Mathf.Lerp (<span class="number">3f</span>, <span class="number">5f</span>, <span class="number">0.5f</span>);</span><br></pre></td></tr></table></figure>
+
+<p>Mathf.Lerp 函数接受 3 个 float 参数：一个 float 参数表示要进行插值的起始值，另一个 float 参数表示要进行插值的结束值，最后一个 float 参数表示要进行插值的距离。在此示例中，插值为 0.5，表示 50%。如果为 0，则函数将返回“from”值；如果为 1，则函数将返回“to”值。</p>
+<p>Lerp 函数的其他示例包括 <code>Color.Lerp</code> 和 <code>Vector3.Lerp</code>。这些函数的工作方式与 <code>Mathf.Lerp</code> 完全相同，但是“from”和“to”值分别为 Color 和 Vector3 类型。在每个示例中，第三个参数仍然是一个 float 参数，表示要插值的大小。这些函数的结果是找到一种颜色（两种给定颜色的某种混合）以及一个矢量（占两个给定矢量之间的百分比）。</p>
+<p><strong>让我们看看另一个示例：</strong></p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Vector3 <span class="keyword">from</span> = <span class="keyword">new</span> Vector3 (<span class="number">1f</span>, <span class="number">2f</span>, <span class="number">3f</span>);</span><br><span class="line">Vector3 to = <span class="keyword">new</span> Vector3 (<span class="number">5f</span>, <span class="number">6f</span>, <span class="number">7f</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 此处 result = (4, 5, 6)</span></span><br><span class="line">Vector3 result = Vector3.Lerp (<span class="keyword">from</span>, to, <span class="number">0.75f</span>);</span><br></pre></td></tr></table></figure>
+
+<p>在此示例中，结果为 (4, 5, 6)，因为 4 位于 1 到 5 之间的 75% 处，5 位于 2 到 6 之间的 75% 处，而 6 位于 3 到 7 之间的 75% 处。</p>
+<p>使用 <code>Color.Lerp</code>时适用同样的原理。在 Color 结构中，颜色由代表红色、蓝色、绿色和 Alpha 的 4 个 float 参数表示。使用 Lerp 时，与 <code>Mathf.Lerp</code> 和 <code>Vector3.Lerp</code> 一样，这些 float 数值将进行插值。</p>
+<p>在某些情况下，可使用 Lerp 函数使值随时间平滑。</p>
+<p><strong>请考虑以下代码段：</strong></p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Update</span> ()</span></span><br><span class="line">&#123;</span><br><span class="line">    light.intensity = Mathf.Lerp(light.intensity, <span class="number">8f</span>, <span class="number">0.5f</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>如果光的强度从 0 开始，则在第一次更新后，其值将设置为 4。下一帧会将其设置为 6，然后设置为 7，再然后设置为 7.5，依此类推。因此，经过几帧后，光强度将趋向于 8，但随着接近目标，其变化速率将减慢。请注意，这是在若干个帧的过程中发生的。如果我们不希望与帧率有关，</p>
+<p><strong>则可以使用以下代码：</strong></p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Update</span> ()</span></span><br><span class="line">&#123;</span><br><span class="line">    light.intensity = Mathf.Lerp(light.intensity, <span class="number">8f</span>, <span class="number">0.5f</span> * Time.deltaTime);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这意味着强度变化将按每秒而不是每帧发生。</p>
+<p>请注意，在对值进行平滑时，通常情况下最好使用 SmoothDamp 函数。仅当您确定想要的效果时，才应使用 Lerp 进行平滑。</p>
+<h3 id="tag-link"><a href="#tag-link" class="headerlink" title="tag-link"></a>tag-link</h3><blockquote>
+<p><span class="exturl" data-url="aHR0cHM6Ly9sZWFybi51M2QuY24vdHV0b3JpYWwvYmVnaW5uZXItZ2FtZXBsYXktc2NyaXB0aW5nP2NoYXB0ZXJJZD02MzU2MmIyOWVkY2E3MjAwMWYyMWQxNzkjNjA0MDVlZTAyOWNiYmYwMDIxZGRhNjAz">C#初级编程 | Unity 中文课堂 (u3d.cn)<i class="fa fa-external-link-alt"></i></span></p>
+</blockquote>
+<h2 id="15-Destroy"><a href="#15-Destroy" class="headerlink" title="15.Destroy"></a>15.Destroy</h2><p><strong>DestroyBasic</strong></p>
+<p>挂载在本身</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> UnityEngine;</span><br><span class="line"><span class="keyword">using</span> System.Collections;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">DestroyBasic</span> : <span class="title">MonoBehaviour</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Update</span> ()</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(Input.GetKey(KeyCode.Space))</span><br><span class="line">        &#123;</span><br><span class="line">            Destroy(gameObject);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>DestroyOther</strong></p>
+<p>让其他组件挂载在一个挂载这个脚本的组件</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> UnityEngine;</span><br><span class="line"><span class="keyword">using</span> System.Collections;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">DestroyOther</span> : <span class="title">MonoBehaviour</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">public</span> GameObject other;</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Update</span> ()</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(Input.GetKey(KeyCode.Space))</span><br><span class="line">        &#123;</span><br><span class="line">            Destroy(other);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>DestroyComponent</strong></p>
+<p>处理纹理，删掉相关渲染纹理~物体还在，纹理没了，应该相当于删掉了</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> UnityEngine;</span><br><span class="line"><span class="keyword">using</span> System.Collections;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">DestroyComponent</span> : <span class="title">MonoBehaviour</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Update</span> ()</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(Input.GetKey(KeyCode.Space))</span><br><span class="line">        &#123;</span><br><span class="line">            Destroy(GetComponent&lt;MeshRenderer&gt;());</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="16-GetButton-和-GetKey"><a href="#16-GetButton-和-GetKey" class="headerlink" title="16.GetButton 和 GetKey"></a>16.GetButton 和 GetKey</h2><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">   <span class="built_in">bool</span> down = Input.GetKeyDown(KeyCode.Space);</span><br><span class="line">   <span class="built_in">bool</span> held = Input.GetKey(KeyCode.Space);</span><br><span class="line">   <span class="built_in">bool</span> up = Input.GetKeyUp(KeyCode.Space);</span><br><span class="line"><span class="comment">//按下时-&gt;按住了</span></span><br><span class="line">down = <span class="literal">true</span></span><br><span class="line">   held = <span class="literal">true</span></span><br><span class="line">   up = <span class="literal">false</span></span><br><span class="line">   <span class="comment">//-&gt;松开了,的一瞬间</span></span><br><span class="line">down = <span class="literal">false</span></span><br><span class="line">   held = <span class="literal">false</span></span><br><span class="line">   up = <span class="literal">true</span></span><br><span class="line">   <span class="comment">//松开—&gt;全部</span></span><br><span class="line">down = <span class="literal">false</span></span><br><span class="line">   held = <span class="literal">false</span></span><br><span class="line">   up = <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>KeyInput</strong></p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> UnityEngine;</span><br><span class="line"><span class="keyword">using</span> System.Collections;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">KeyInput</span> : <span class="title">MonoBehaviour</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">public</span> GUITexture graphic;</span><br><span class="line">    <span class="keyword">public</span> Texture2D standard;</span><br><span class="line">    <span class="keyword">public</span> Texture2D downgfx;</span><br><span class="line">    <span class="keyword">public</span> Texture2D upgfx;</span><br><span class="line">    <span class="keyword">public</span> Texture2D heldgfx;</span><br><span class="line">  </span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Start</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        graphic.texture = standard;</span><br><span class="line">    &#125;</span><br><span class="line">  </span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Update</span> ()</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">bool</span> down = Input.GetKeyDown(KeyCode.Space);</span><br><span class="line">        <span class="built_in">bool</span> held = Input.GetKey(KeyCode.Space);</span><br><span class="line">        <span class="built_in">bool</span> up = Input.GetKeyUp(KeyCode.Space);</span><br><span class="line">      </span><br><span class="line">        <span class="keyword">if</span>(down)</span><br><span class="line">        &#123;</span><br><span class="line">            graphic.texture = downgfx;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(held)</span><br><span class="line">        &#123;</span><br><span class="line">            graphic.texture = heldgfx;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(up)</span><br><span class="line">        &#123;</span><br><span class="line">            graphic.texture = upgfx;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            graphic.texture = standard; </span><br><span class="line">        &#125;</span><br><span class="line">      </span><br><span class="line">        guiText.text = <span class="string">&quot; &quot;</span> + down + <span class="string">&quot;\n &quot;</span> + held + <span class="string">&quot;\n &quot;</span> + up;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>ButtonInput</strong></p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> UnityEngine;</span><br><span class="line"><span class="keyword">using</span> System.Collections;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ButtonInput</span> : <span class="title">MonoBehaviour</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">public</span> GUITexture graphic;</span><br><span class="line">    <span class="keyword">public</span> Texture2D standard;</span><br><span class="line">    <span class="keyword">public</span> Texture2D downgfx;</span><br><span class="line">    <span class="keyword">public</span> Texture2D upgfx;</span><br><span class="line">    <span class="keyword">public</span> Texture2D heldgfx;</span><br><span class="line">  </span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Start</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        graphic.texture = standard;</span><br><span class="line">    &#125;</span><br><span class="line">  </span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Update</span> ()</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">bool</span> down = Input.GetButtonDown(<span class="string">&quot;Jump&quot;</span>);</span><br><span class="line">        <span class="built_in">bool</span> held = Input.GetButton(<span class="string">&quot;Jump&quot;</span>);</span><br><span class="line">        <span class="built_in">bool</span> up = Input.GetButtonUp(<span class="string">&quot;Jump&quot;</span>);</span><br><span class="line">      </span><br><span class="line">        <span class="keyword">if</span>(down)</span><br><span class="line">        &#123;</span><br><span class="line">            graphic.texture = downgfx;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(held)</span><br><span class="line">        &#123;</span><br><span class="line">            graphic.texture = heldgfx;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(up)</span><br><span class="line">        &#123;</span><br><span class="line">            graphic.texture = upgfx;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            graphic.texture = standard;</span><br><span class="line">        &#125;</span><br><span class="line">  </span><br><span class="line">        guiText.text = <span class="string">&quot; &quot;</span> + down + <span class="string">&quot;\n &quot;</span> + held + <span class="string">&quot;\n &quot;</span> + up;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="17-GetAxis"><a href="#17-GetAxis" class="headerlink" title="17.GetAxis"></a>17.GetAxis</h2><p><strong>返回的是浮点数</strong></p>
+<p><code>Gravity</code>影响按钮松开后归零的速度，越大，归零越快</p>
+<p><code>Dead</code>这个值越大，按按钮的动作就要越猛，可能</p>
+<p><code>Sensitivity</code>控制按下时，Axis达到1或-1的速度，与 <code>Gravity</code>相反</p>
+<p><code>Snap</code>同时按下正负按钮时，归零</p>
+<p><strong>AxisExample</strong></p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> UnityEngine;</span><br><span class="line"><span class="keyword">using</span> System.Collections;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">AxisExample</span> : <span class="title">MonoBehaviour</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">float</span> range;</span><br><span class="line">    <span class="keyword">public</span> GUIText textOutput;</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Update</span> ()</span> </span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">float</span> h = Input.GetAxis(<span class="string">&quot;Horizontal&quot;</span>);</span><br><span class="line">        <span class="built_in">float</span> xPos = h * range;</span><br><span class="line">      </span><br><span class="line">        transform.position = <span class="keyword">new</span> Vector3(xPos, <span class="number">2f</span>, <span class="number">0</span>);</span><br><span class="line">        textOutput.text = <span class="string">&quot;Value Returned: &quot;</span>+h.ToString(<span class="string">&quot;F2&quot;</span>);  </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>AxisRawExample</strong></p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> UnityEngine;</span><br><span class="line"><span class="keyword">using</span> System.Collections;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">AxisRawExample</span> : <span class="title">MonoBehaviour</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">float</span> range;</span><br><span class="line">    <span class="keyword">public</span> GUIText textOutput;</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Update</span> ()</span> </span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">float</span> h = Input.GetAxisRaw(<span class="string">&quot;Horizontal&quot;</span>);</span><br><span class="line">        <span class="built_in">float</span> xPos = h * range;</span><br><span class="line">      </span><br><span class="line">        transform.position = <span class="keyword">new</span> Vector3(xPos, <span class="number">2f</span>, <span class="number">0</span>);</span><br><span class="line">        textOutput.text = <span class="string">&quot;Value Returned: &quot;</span>+h.ToString(<span class="string">&quot;F2&quot;</span>);  </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>DualAxisExample</strong></p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> UnityEngine;</span><br><span class="line"><span class="keyword">using</span> System.Collections;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">DualAxisExample</span> : <span class="title">MonoBehaviour</span> </span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">float</span> range;</span><br><span class="line">    <span class="keyword">public</span> GUIText textOutput;</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Update</span> ()</span> </span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">float</span> h = Input.GetAxis(<span class="string">&quot;Horizontal&quot;</span>);</span><br><span class="line">        <span class="built_in">float</span> v = Input.GetAxis(<span class="string">&quot;Vertical&quot;</span>);</span><br><span class="line">        <span class="built_in">float</span> xPos = h * range;</span><br><span class="line">        <span class="built_in">float</span> yPos = v * range;</span><br><span class="line">      </span><br><span class="line">        transform.position = <span class="keyword">new</span> Vector3(xPos, yPos, <span class="number">0</span>);</span><br><span class="line">        textOutput.text = <span class="string">&quot;Horizontal Value Returned: &quot;</span>+h.ToString(<span class="string">&quot;F2&quot;</span>)+<span class="string">&quot;\nVertical Value Returned: &quot;</span>+v.ToString(<span class="string">&quot;F2&quot;</span>);  </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>原作者： </strong>归七
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="http://fansirsqi.github.io/unity/linux/c-chu-ji-ru-men-unity/" title="Unity-C#学习">http://fansirsqi.github.io/unity/linux/c-chu-ji-ru-men-unity/</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpoLUNO"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/Unity/" rel="tag"><i class="fa fa-tag"></i> Unity</a>
+              <a href="/tags/C/" rel="tag"><i class="fa fa-tag"></i> C#</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/unity/linux/c-xie-cheng/" rel="prev" title="C#学习">
+                  <i class="fa fa-angle-left"></i> C#学习
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/wen-dang/jiao-cheng/other/android-sdk-manager-yong-fa/" rel="next" title="Android SDK Manager用法">
+                  Android SDK Manager用法 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments gitalk-container"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2021 – 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Fansir</span>
+  </div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+      <span>站点总字数：</span>
+    <span title="站点总字数">55k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span>站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">3:21</span>
+  </span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+  <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZw==">NexT.Gemini</span> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.24/fancybox/fancybox.umd.js" integrity="sha256-oyhjPiYRWGXaAt+ny/mTMWOnN1GBoZDUQnzzgC7FRI4=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+  <script src="/js/third-party/fancybox.js"></script>
+
+  <script src="/js/third-party/pace.js"></script>
+
+
+  
+  <script data-pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/2.3.0/quicklink.umd.js" integrity="sha256-yvJQOINiH9fWemHn0vCA5lsHWJaHs6/ZmO+1Ft04SvM=" crossorigin="anonymous"></script>
+  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"url":"http://fansirsqi.github.io/unity/linux/c-chu-ji-ru-men-unity/"}</script>
+  <script src="/js/third-party/quicklink.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.css" integrity="sha256-AJnUHL7dBv6PGaeyPQJcgQPDjt/Hn/PvYZde1iqfp8U=" crossorigin="anonymous">
+
+<script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"Fansirsqi","repo":"fansirsqi.github.io","client_id":"242426985831ab7a182d","client_secret":"9f722c40bb448adfa5a0562d4c86eb49aedb4505","admin_user":"Fansirsqi","distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","language":["zh-CN"],"js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.min.js","integrity":"sha256-MVK9MGD/XJaGyIghSVrONSnoXoGh3IFxLw0zfvzpxR4="},"path_md5":"c81039137c2ff11fa7ad55270d5dee1c"}</script>
+<script src="/js/third-party/comments/gitalk.js"></script>
+
+</body>
+</html>
