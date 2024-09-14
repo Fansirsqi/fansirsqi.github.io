@@ -88,7 +88,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">26</span></a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">85</span></a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">51</span></a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">24</span></a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">82</span></a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">48</span></a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -157,18 +157,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">51</span>
+          <span class="site-state-item-count">48</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">26</span>
+        <span class="site-state-item-count">24</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">85</span>
+        <span class="site-state-item-count">82</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -297,7 +297,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-09-14 18:24:18" itemprop="dateModified" datetime="2024-09-14T18:24:18+08:00">2024-09-14</time>
+      <time title="修改时间：2024-09-14 18:31:11" itemprop="dateModified" datetime="2024-09-14T18:31:11+08:00">2024-09-14</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -341,9 +341,9 @@
 <p><code>tar</code>参数有 <code>z</code>，<code>c</code>，<code>x</code>，<code>v</code>，<code>f</code></p>
 <span id="more"></span>
 
-<p><code>-z </code>表示压缩操作类型是 .tar.gz</p>
-<p><code>-c </code>表示当前行为是打包</p>
-<p><code>-x </code>表示当前行为是解压文件包</p>
+<p><code>-z</code>表示压缩操作类型是 .tar.gz</p>
+<p><code>-c</code>表示当前行为是打包</p>
+<p><code>-x</code>表示当前行为是解压文件包</p>
 <p><code>-v</code> 参数要求显示命令执行过程</p>
 <p><code>-f</code> 指定打包后文件名</p>
 <p><code>-C</code> 解压到指定路径</p>
@@ -373,9 +373,9 @@
 <p><code>yum install zip -y</code></p>
 <p><code>yum install unzip -y</code></p>
 <p><strong>zip常用参数有 r，q，d</strong></p>
-<p><code>-r </code>压缩文件夹，递归执行，压缩文件夹下所有文件</p>
-<p><code>-q </code>不显示压缩过程，默认会在控制台打印压缩文件过程</p>
-<p><code>-d </code>压缩过程中剔除指定文件， -d参数后跟随的文件不打包到压缩包里</p>
+<p><code>-r</code>压缩文件夹，递归执行，压缩文件夹下所有文件</p>
+<p><code>-q</code>不显示压缩过程，默认会在控制台打印压缩文件过程</p>
+<p><code>-d</code>压缩过程中剔除指定文件， -d参数后跟随的文件不打包到压缩包里</p>
 <p>压缩文件夹且排除指定文件不压缩：</p>
 <p><code>ip -r dirpath/ -d a.txt b.text</code></p>
 <p><strong>unzip常用参数有 n，v，d</strong></p>
@@ -446,7 +446,8 @@
 
 <h2 id="系统时间"><a href="#系统时间" class="headerlink" title="系统时间"></a>系统时间</h2><ul>
 <li><p><code>date</code>显示或者设置当前的系统时间</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">date</span><br><span class="line">date MMDDhhmmYYYY 设置时间月日时分年 要root权限</span><br><span class="line">date &quot;+%Y-%m-%d %H: %M %S&quot; 按指定格式输出时间+有点关键 自由发挥</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">date</span><br><span class="line">date MMDDhhmmYYYY 设置时间月日时分年 要root权限</span><br><span class="line">date &quot;+%Y-%m-%d %H: %M %S&quot; 按指定格式输出时间+有点关键 自由发挥</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</li>
 <li><p><strong><code>hwclock</code> bios硬件内的时间</strong></p>
 </li>
 </ul>
@@ -493,7 +494,7 @@ sda1   sd SCSI接口的硬盘， a1 第一块物理硬盘的第一个分区
 <h2 id="vi编辑器"><a href="#vi编辑器" class="headerlink" title="vi编辑器"></a><code>vi</code>编辑器</h2><p>命令模式下<br>可以按 <code>yy</code> 复制光标所在行</p>
 <p>按 <code>p</code>可以粘贴复制的内容</p>
 <p>按 <code>dd</code>可以删除光标所在行<br><code>/+关键字符 按N</code> 可以从上往下依次查找<br><code>?+关键字符  按N</code> 可以从下往上依次查找<br>比如快速定位到800行    <code>:800</code></p>
-<p><code>回到首行  按 ~ </code>  或者 <code> :0</code><br>回到末行 <code>   :$</code></p>
+<p><code>回到首行  按 ~</code>  或者 <code>:0</code><br>回到末行 <code>:$</code></p>
 <h2 id="查看文件信息"><a href="#查看文件信息" class="headerlink" title="查看文件信息"></a>查看文件信息</h2><p><code>file</code> 查看文件类型<br><code>stat</code> 查看文件的详细信息</p>
 <h2 id="文件对比"><a href="#文件对比" class="headerlink" title="文件对比"></a>文件对比</h2><p><code>diff</code> 比较两个文件的差异</p>
 <p><code>diff  1.txt  2.txt</code></p>
@@ -700,14 +701,14 @@ sda1   sd SCSI接口的硬盘， a1 第一块物理硬盘的第一个分区
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">57k</span>
+    <span title="站点总字数">56k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">3:28</span>
+    <span title="站点阅读时长">3:25</span>
   </span>
 </div>
 <div class="busuanzi-count">
